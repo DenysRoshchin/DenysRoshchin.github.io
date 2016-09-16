@@ -225,17 +225,44 @@ textarea{
 .grid__items:nth-child(3n){
 	margin-right: 0;
 }
+/*SERVICE*/
 .service{
 	padding-top: 128px;
+	padding-bottom: 251px;
+}
+.service__columns{
+	margin-top: 125px;
 }
 .service__left{
+	width: 106px;
+}
+.service__items{
+	margin: 5px 0;
+}
+.service__links{
+	display: block;
+	width: 106px;
+	height: 94px;
+	background: #fbfbfb url(../img/service_sprites.png) 20px 25px no-repeat;
+}
+.service__links:hover{
+	-webkit-box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+}
+.service__links--2{
+	background-position: 18px -75px;
+}
+.service__links--3{
+	background-position: 18px -175px;
+}
+.service__center{
 	width: 518px;
-	margin-top: 125px;
 	margin-left: 230px;
 }
 .service__title{
 	margin-bottom: 25px;
-	font: 30px "Open Sans Regular", arial, sans-serif;
+	font: 30px/48px "Open Sans Regular", arial, sans-serif;
 	color: #404040;
 }
 .service__title:after{
@@ -259,6 +286,127 @@ textarea{
 	-moz-box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
 }
+.service__right{
+	position: absolute;
+	right: -40px;
+	bottom: -90px;
+}
+/*TEAM*/
+.team{
+	padding-top: 126px;
+	padding-bottom: 145px;
+	background: #fbfbfb;
+}
+.team__columns{
+	margin-top: 123px;
+}
+.team__items{
+	width: 362px;
+	height: 446px;
+	margin-right: 27px;
+	position: relative;
+	background: #ff5c36;
+}
+.team__items:last-child{
+	margin-right: 0px;
+}
+.team__name{
+	width: 261px;
+	height: 95px;
+	position: absolute;
+	bottom: -25px;
+	left: 47px;
+	background: #fff;
+	-webkit-box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+	-webkit-transition: bottom .3s ease-in-out;
+	-o-transition: bottom .3s ease-in-out;
+	transition: bottom .3s ease-in-out;
+}
+.team__title{
+	font: 30px "Open Sans Semibold", arial, sans-serif;
+	line-height: 55px;
+}
+.skills{
+	position: absolute;
+	top: 165px;
+	left: 107px;
+}
+.skills__text{
+	font: 11px "Open Sans Regular", arial, sans-serif;
+	line-height: 32px;
+}
+.skills__bar{
+	width: 150px;
+	height: 4px;
+	background: #817f7e;
+}
+.skills__slide{
+	display: block;
+	width: 80%;
+	height: 4px;
+	background: #ff6e47;
+	animation: sliding 1s ease-in-out;
+}
+.skills--slide{
+	width: 60%;
+	animation: sliding2 1s ease-in-out;
+}
+.skills--slide2{
+	width: 100%;
+	animation: sliding3 1s ease-in-out;
+}
+@keyframes sliding {
+  0% {
+    width: 0;
+  }
 
+  100% {
+    width: 80%;
+  }
+}
+@keyframes sliding2 {
+  0% {
+    width: 0;
+  }
 
+  100% {
+    width: 60%;
+  }
+}
+@keyframes sliding3 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+.social__items{
+	display: inline-block;
+	width: 17px;
+	height: 19px;
+	background: url(../img/social_sprites.png);
+}
+.facebook{
+	background-position: 34px 0;
+}
+.skills{
+	display: none;
+}
+.team__items:hover .team__name--hover{
+	background-color: transparent;
+	bottom: 10px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.team__items:hover .skills{
+	display: block;
+}
+.team__items:hover{
+	background: #fff3f0;
+
+}
 
