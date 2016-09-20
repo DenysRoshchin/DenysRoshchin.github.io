@@ -7,8 +7,6 @@ $(document).ready(function(){
  			nextArrow: $('.next'),
  			prevArrow: $('.prev'),
   	  slidesToScroll: 2,
-  	 //  autoplay: true,
-  		// autoplaySpeed: 2000,
 	})
 });
 

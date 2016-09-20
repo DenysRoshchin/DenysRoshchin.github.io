@@ -12,6 +12,14 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Source Sans Proregular';
+    src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body{
 	font: 16px "Open Sans", arial, sans-serif;
 }
@@ -57,6 +65,9 @@ body{
 }
 .red{
 	color: #fc6744;
+}
+.bold{
+	font-weight: 900;
 }
 /*TOP*/
 header{
@@ -111,6 +122,7 @@ input{
 	margin: 40px 0;
 	border: none;
 	border-bottom: 1px solid #000;
+	font: 15px "Open Sans Regular", arial, sans-serif;
 }
 textarea{
 	width: 300px;
@@ -118,17 +130,34 @@ textarea{
 	padding-bottom: 47px;
 	border: none;
 	border-bottom: 1px solid #000;
+	font: 15px "Open Sans Regular", arial, sans-serif;
 }
 .message__button{
 	margin-top: 16px;
 	width: 236px;
 	height: 55px;
+	position: relative;
 	background: #fc6744;
 	border-radius: 26px;
 	border: none;
 	padding: 10px;
 	color: #fff;
 	font: 16px "Open Sans Regular", arial, sans-serif;
+}
+.message__button:hover{
+	-webkit-box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+}
+.message__button:after{
+	content: '';
+	display: block;
+	width: 17px;
+	height: 10px;
+	position: absolute;
+	top: 23px;
+	right: 31px;
+	background: url(../img/arrow.png);
 }
 /*CONTENT*/
 .process{
@@ -198,12 +227,23 @@ textarea{
 	left: 16px;
 	bottom: -26px;
 	border-radius: 25px;
-	border: none;
+	border: 1px solid #ededed;
 	background: #fff;
 	color: #000;
+}
+.know__button:hover{
 	-webkit-box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+}
+.know__button:before{
+	content: '';
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 50px;
+	background: url(../img/plus.png);
 }
 /*WORKS*/
 .works{
@@ -218,7 +258,6 @@ textarea{
 	width: 358px;
 	height: 358px;
 	background: #ff5c36;
-	border: 1px solid #000;
 	margin-right: 30px;
 	margin-bottom: 22px;
 }
@@ -279,12 +318,24 @@ textarea{
 .service__button{
 	width: 241px;
 	height: 55px;
+	position: relative;
 	border-radius: 30px;
-	border: none;
+	border: 1px solid #ededed;
 	background: #fff;
+}
+.service__button:hover{
 	-webkit-box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+}
+.service__button:before{
+	content: '';
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 50px;
+	background: url(../img/plus.png);
 }
 .service__right{
 	position: absolute;
@@ -294,7 +345,7 @@ textarea{
 /*TEAM*/
 .team{
 	padding-top: 126px;
-	padding-bottom: 145px;
+	padding-bottom: 176px;
 	background: #fbfbfb;
 }
 .team__columns{
@@ -409,4 +460,169 @@ textarea{
 	background: #fff3f0;
 
 }
+/*CLIENTS*/
+.clients{
+	padding-top: 135px;
+	padding-bottom: 163px;
+}
+.clients__wrapper{
+	margin: 70px -27px 0px;
+	padding: 0 10px;
+}
+.clients__items{
+	width: 546px;
+	margin: 55px 27px 0px;
+	border: 1px solid #000;
+	padding: 94px 50px 35px 50px;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font: 17px "Source Sans Proregular";
+}
+.clients__items:last-child{
+	margin-right: 0;
+}
+.clients__text{
+	line-height: 28px;
+}	
+.clients__text:before{
+	content: '';
+	display: block;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	border: 1px solid #000;
+	position: absolute;
+	top: -56px;
+	left: 217px;
+	background: #fff;
+}
+.clients__text:after{
+	content: '';	
+	display: block;
+	height: 13px;
+	width: 60px;
+	margin: 0 auto;
+	margin-top: 5px;
+	background: url(../img/star.png) repeat-x;
+}
+.clients__sign{
+	padding-top: 25px;
+}
+/*CLIENTS ARROWS*/
 
+.prev{
+	display: block;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 325px;
+	left: -31px;
+	background: #fff;
+	outline: none;
+	border: 0px;
+	border-radius: 50%;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+}
+.prev:hover, .next:hover{
+	/*opacity:0;*/
+	background: #ff6e47;
+	color: #fff;
+}
+.next{
+	display: block;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 325px;
+	right: -26px;
+	background: #fff;
+	outline: none;
+	border: 0px;
+	border-radius: 50%;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+}
+/*LINKS*/
+.links{
+	background: #fbfbfb;
+	padding-top: 80px;
+	padding-bottom: 90px;
+}
+.links__item{
+	display: inline-block;
+	margin-right: 61px;
+}
+.links__item:last-child{
+	margin-right: 0;
+}
+.links__links{
+	display: block;
+	width: 135px;
+	height: 33px;
+}
+/*FOOTER*/
+footer{
+	background: #f7f7f7;
+	padding-top: 41px;
+	padding-bottom: 52px;
+}
+.nav__wrap{
+	width: 532px;
+	margin: 0 auto;
+	padding-top: 43px;
+}
+.footer__button{
+	width: 236px;
+	height: 55px;
+	border-radius: 25px;
+	border: 1px solid #ededed;
+	background: #fff;
+	font: 16px "Open Sans Regular", arial, sans-serif;
+}
+.footer__button:hover{
+	-webkit-box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+}
+.footer__items{
+	display: inline-block;
+	margin-right: 7px;
+}
+.footer__links{
+	display: block;
+	width: 57px;
+	height: 57px;
+	background: url(../img/social_sprites_footer.png);
+}
+.twit{
+	background-position: 170px 0;
+}
+.globe{
+	background-position: 342px 0;
+}
+.be{
+	background-position: 512px 0;
+}
+.footer__links:hover{
+	background-position: 0 -55px;
+}
+.twit:hover{
+	background-position: -57px -55px;
+}
+.globe:hover{
+	background-position: -112px -55px;
+}
+.be:hover{
+	background-position: -169px -55px;
+}
+.copyright{
+	margin-top: 21px;
+	margin-left: 20px;
+}
