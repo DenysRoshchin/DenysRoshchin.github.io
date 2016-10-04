@@ -1,8 +1,143 @@
 @import 'reset', 'fonts', 'variables';
+.container{
+	width: 1160px;
+	margin: 0 auto;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.t-right{
+	text-align: right;
+}
+.t-left{
+	text-align: left;
+}
+.t-center{
+	text-align: center;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+%headers{
+	font-family: $medium;
+	color: $black;
+	text-transform: capitalize;
+}
+@mixin linkBg($x){
+	background-position: $x 0px;
+	&:hover{
+		background-position: $x -20px;
+	}
+}
+// HEADER
+header{
+	padding-top: 37px;
+}
+.logo{
+	position: relative;
+	padding-left: 50px;
+}
+.logo__link:before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 4px;
+	left: 5px;
+	width: 36px;
+	height: 36px;
+	background: url(../img/logo_icon.png);
+}
+.logo__link{
+	@extend %headers;
+	cursor: pointer;
+	font-size: 30px;
+}
+.logo__subtitle{
+	padding-top: 2px;
+	padding-left: 2px;
+	font-family: $light;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: $gray;
+}
+.social__items{
+	display: inline-block;
+	padding-top: 11px;
+	margin-left: 9px;
+}
+.social__links{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/social_header.png);
+}
+.social__links--face{
+	@include linkBg(0px)
+}
+.social__links--twit{
+	@include linkBg(-20px)
+}
+.social__links--rss{
+	@include linkBg(-40px)
+}
+.social__links--link{
+	@include linkBg(-60px)
+}
+.social__links--skype{
+	@include linkBg(-80px)
+}
+// NAVIGATION
+.navigation{
+		margin-top: 35px;
+	.container{
+		background: $black;
+		line-height: 56px;
+	}
+}
+.nav__items{
+	float: left;
+	width: 120px;
+}
+.nav__links{
+	display: block;
+	border-right: 1px solid $borderBlack;
+	font-family: $condensed;
+	text-transform: uppercase;
+	text-align: center;
+	color: $white;
+	font-size: 15px;
+	&:hover{
+		color: $yellow;
+	}
+}
+.nav__links--active{
+	background: $mainBlue;
+}
+.search{
+		width: 228px;
+		height: 35px;
+		margin-right: 8px;
+		padding-left: 10px;
+		color: #35383c;
+		background: #35383c;
+		border: 1px solid #000;
+		outline: none;
+}
+.search:after{
+	content: '';
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/search.png) no-repeat;
+}
 
-body {
-	background: red;
-}
-h1 {
-	font-size: 20px;
-}
+
+
+
+
