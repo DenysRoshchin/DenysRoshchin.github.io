@@ -161,11 +161,17 @@
 		<div class="wrapper clearfix">
 			<h2 class="contact__title">contact</h2>
 				<form action="" class="form left">
-					<input type="text" name="full name" placeholder="full name" id="">
-					<input type="email" name="email" id="">
+					<label for="#name">
+						<p class="full__name">full name</p>
+						<input type="text" name="" id="name">
+					</label>
+					<label for="#email">
+						<p class="email">email</p>
+						<input type="email" name="email" id="">
+					</label>
 				</form>	
 				<div class="right">
-					<article class="">
+					<article class="right__article">
 						<p class="right__text">Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop </p>
 						<p class="right__text">halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart. Jujubes</p>
 						<p class="right__text">bear claw donut chupa chups.</p>
@@ -178,8 +184,23 @@
 					</article>
 				</div>
 					<textarea name="" id="" cols="190" rows="17"></textarea>
+					<button class="form__button">message</button>
 		</div>
 	</section>
+<footer class="footer">
+	<div class="wrapper">
+		<nav class="top__menu footer--menu left">
+							<ul>
+								<li class="top__items footer--items"><a href="#" class="top__links footer--links footer--items">home</a></li>
+								<li class="top__items footer--items"><a href="#" class="top__links footer--links">services</a></li>
+								<li class="top__items footer--items"><a href="#" class="top__links footer--links">portfolio</a></li>
+								<li class="top__items footer--items"><a href="#" class="top__links footer--links">contact</a></li>
+								
+							</ul>
+						</nav>
+		
+	</div>
+</footer>
 <script src="js/main.min.js"></script>
 </body>
 </html>
