@@ -18,7 +18,8 @@ gulp.task('sass', function() {
 })
 
 gulp.task('watch', ['browserSync', 'sass', 'useref', 'image', 'fonts'], function() {
-	gulp.watch('src/scss/style.scss', ['sass'])
+	gulp.watch('src/scss/*.scss', ['sass'])
+	gulp.watch('src/scss/*.css', ['sass'])
 	gulp.watch('src/*.html').on('change', browserSync.reload)
 	gulp.watch('src/js/*.js', browserSync.reload)
 })
@@ -46,6 +47,6 @@ gulp.task('image', function() {
 })
 
 gulp.task('fonts', function() {
-	return gulp.src('src/fonts/*.+()')
+	return gulp.src('src/fonts/*.+(woff|woff2)')
 	.pipe(gulp.dest('prod/fonts'))
 })

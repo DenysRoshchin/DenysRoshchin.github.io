@@ -1,7 +1,26 @@
 $(function() {
-	$('#owl-ex').owlCarousel({
+	$('.owl-carousel').owlCarousel({
 		items : 1,
-		control : true
+		nav : true,
+		navigationText : false,
+		loop : true,
+		// autoplay : true
 	});
-console.log('a')
+	
+	$('.owl-carousel2').owlCarousel({
+		items : 6,
+		center : true,
+		loop : true,
+		pagination : false,
+		margin : 10,
+		nav : true,
+		// autoplay : true
+	})
+
+	$('.slider2__items').click(function(event) {
+		event.preventDefault();
+		$('.slider2__items').removeClass('slider2__items--active')
+		$(this).addClass('slider2__items slider2__items--active')
+	})
+
 })

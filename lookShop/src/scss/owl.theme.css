@@ -4,26 +4,49 @@
 */
 
 .owl-theme .owl-controls{
-	margin-top: 10px;
+	/*margin-top: 10px;*/
 	text-align: center;
 }
 
 /* Styling Next and Prev buttons */
 
 .owl-theme .owl-controls .owl-buttons div{
-	color: #FFF;
+	/*color: transparent;*/
 	display: inline-block;
 	zoom: 1;
 	*display: inline;/*IE7 life-saver */
-	margin: 5px;
-	padding: 3px 10px;
+	width: 30px;
+	height: 117px;
 	font-size: 12px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-	background: #869791;
+	background: #fff;
 	filter: Alpha(Opacity=50);/*IE7 fix*/
 	opacity: 0.5;
+}
+.owl-next{
+	position: absolute;
+	top: 152px;
+	right: 0;
+}
+.owl-next:after{
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 50px 0 0 10px;
+	background: url(../img/sliderarrowright.png) no-repeat;
+}
+.owl-prev{
+	position: absolute;
+	top: 152px;
+	left: 0;
+}
+.owl-prev:after{
+	content: '';
+	display: block;
+	margin: 50px 0 0 8px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/sliderarrowleft.png) no-repeat;
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
@@ -70,6 +93,13 @@
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
+}
+.owl-controls{
+	display: none;
+}
+.owl-pagination{
+	position: absolute;
+	left: 479px;
 }
 
 /* preloading images */

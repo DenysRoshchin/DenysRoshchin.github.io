@@ -2,28 +2,11 @@
 				'fonts',
 				'variables';
 .container{
-	width: 970px;
+	max-width: 970px;
 	margin: 0 auto;
 }
-.left{
-	float: left;
-}
-.right{
-	float: right;
-}
-.clearfix:after{
-	content: '';
-	display: block;
-	clear: both;
-}
-.t-left{
-	text-align: left;
-}
-.t-center{
-	text-align: center;
-}
-.t-right{
-	text-align: right;
+@mixin bg($x){
+	background-position: $x 0px;
 }
 // HEADER
 .header__top{
@@ -159,13 +142,65 @@
 // SLIDER
 .slider{
 	background: #f6f3ec;
+	margin-bottom: 75px;
 }
-.photo{
-	width: 495px;
-	float: left;
+.carousel__photo{
+	padding-left: 50px;
 }
-
-.carousel__items{
+.carousel__text-button{
+	position: absolute;
+	left: 135px;
+	bottom: 93px;
+	padding: 15px 35px;
+	background: $pink;
+	border: none;
+	border-radius: 2px;
+	color: $white;
+	text-transform: uppercase;
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 20px;
+		left: 130px;
+		width: 5px;
+		height: 10px;
+		background: url(../img/arrowrightw.png) no-repeat;
+	}
+}
+// UPDATED
+.updated{
+	background: $footerColor;
+}
+.updated .container{
+	font-size: 11px;
+}
+.email{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+.email__inp{
+	margin-left: 15px;
+	padding: 5px;
+	height: 20px;
+	font-size: 11px;
+}
+.find{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.find__menu{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -173,55 +208,126 @@
 	display: flex;
 	justify-content: space-between;
 }
-.carousel__text{
-	// width: 460px;
+.find__items{
+	display: inline-block;
+	width: 51px;
 	text-align: center;
 }
-.carousel__title{
-	position: relative;
-	font-family: $luxury;
-	font-size: 46px;
-	text-transform: capitalize;
-	&:after{
-		content: '';
-		display: block;
-		position: absolute;
-		top: 32px;
-		left: 120px;
-		width: 80px;
-		height: 1px;
-		background: #000;
-	}
-	&:before{
-		content: '';
-		display: block;
-		position: absolute;
-		top: 32px;
-		left: -81px;
-		width: 80px;
-		height: 1px;
-		background: #000;
-	}
-}
-.carousel__subtitle{
-	position: relative;
-	text-transform: uppercase;
-	font-size: 48px;
-	font-family: $openSans;
-	font-weight: bold;
-	&:after{
-		content: '';
-		display: block;
-		position: absolute;
-		left: 390px;
-		height: 4px;
-		width: 180px;
-		background: #000;
-	}
-
-}
-.span__subtitle{
+.find__links{
 	display: block;
+	width: 21px;
+	height: 23px;
+	background: url(../img/findsprites.png) no-repeat;
+}
+.find__links--twitt{
+	@include bg(-20px);
+}
+.find__links--pint{
+	@include bg(-42px);
+}
+// IMG
+.img{
+	margin: 50px 0px 81px 0px;
+}
+.imgblock{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.left{
+	flex: 1;
+}
+.right{
+	flex: 1;
+}
+.right__bottom{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex: 1;
+}
+.girlinglass{
+	flex: 1;
+}
+// SLIDER2-NACIGATION
+.slider2__menu{
+	margin: 0;
+	padding: 0;
+}
+.slider2__links{
+	display: block;
+	text-transform: uppercase;
+	padding: 20px 10px;
+	color: #000;
+}
+.slider2__items--active{
+	background: $pink;
+	color: $white;
+}
+// SLIDER2
+.slider2{
+	background: $pink;
+	padding: 20px 0;
+}
+.slider2__menu{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.carousel__items2{
+	width: 220px;
+	background: #fff;
+}
+.carousel__sale{
+	position: absolute;
+	margin: 0;
+	z-index: 1000;
+}
+.carousel__sale:after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	border-bottom: 45px solid #000;
+	border-left: 45px solid #bbb;
+}
+.carousel__bottom{
+	text-align: center;
+}
+.bottom__text{
+	text-transform: uppercase;
+}
+.bottom__price{
+	font-weight: bold;
+}
+.bottom__button{
+	text-transform: uppercase;
+	color: $white;
+	font-size: 13px;
+	padding: 10px 22px 10px 10px;
+	background: $pink;
+	border: none;
+	margin-bottom: 10px;
+	position: relative;
+	&:after{
+		content: '';
+		display: block;
+		width: 15px;
+		height: 15px;
+		position: absolute;
+		top: 11px;
+		right: 2px;
+		background: url(../img/plus.png) no-repeat;
+	}
 }
 
 
