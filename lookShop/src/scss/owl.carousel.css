@@ -170,6 +170,10 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  transition: all 0.6s ease-in-out;
+}
+.owl-item:hover{
+	transform: scale(1.1);
 }
 .owl-carousel .owl-item img {
   display: block;
