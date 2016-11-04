@@ -51,16 +51,16 @@ main{
 	flex: 1;
 }
 /*IMG-BLOCK*/
-.img-block{
-	margin: 40px auto;
-	border: 2px solid #000;
-}
+/*.img-block{
+}*/
 .images{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	margin: 40px auto;
+	border: 2px solid #000;
 }
 .right{
 	display: -webkit-flex;
