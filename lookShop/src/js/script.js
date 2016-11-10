@@ -12,8 +12,7 @@ $(function() {
 		center : true,
 		loop : true,
 		pagination : false,
-		margin : 10,
-		nav : true,
+		nav : true
 		// autoplay : true
 	})
 

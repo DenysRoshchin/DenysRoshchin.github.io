@@ -89,21 +89,44 @@
   user-select: none;
 }
 .owl-prev{
-	background: #000;
+	display: none;
+	background: rgba(253, 252, 251, 0.8);
 	width: 20px;
-	height: 40px;
+	height: 65px;
 	color: transparent;
 	position: absolute;
-	top: 152px;
+	top: 187px;
 }
 .owl-next{
-		background: #000;
+	display: none;
+	background: rgba(253, 252, 251, 0.8);
 	width: 20px;
-	height: 40px;
+	height: 65px;
 	color: transparent;
 	position: absolute;
-	top: 152px;
+	top: 187px;
 	right: 0;
+}
+#owl-ex .owl-stage-outer .owl-controls .owl-nav .owl-prev:before{
+	content: '';
+	display: block;
+	width: 15px;
+	height: 21px;
+	position: absolute;
+	top: 24px;
+	left: 2px;
+	background: url(../img/sliderarrows.png);
+}
+#owl-ex .owl-stage-outer .owl-controls .owl-nav .owl-next:before{
+	content: '';
+	display: block;
+	width: 15px;
+	height: 21px;
+	position: absolute;
+	top: 24px;
+	left: 2px;
+	background: url(../img/sliderarrows.png);
+	background-position: 15px 0;
 }
 .owl-carousel2 .owl-controls .owl-nav .owl-prev{
 	width: 47px;
@@ -148,6 +171,7 @@
 }
 .owl-carousel.owl-loaded {
   display: block;
+  /*padding-left: 13px;*/
 }
 .owl-carousel.owl-loading {
   opacity: 0;
@@ -171,9 +195,6 @@
   -ms-user-select: none;
   user-select: none;
   transition: all 0.6s ease-in-out;
-}
-.owl-item:hover{
-	transform: scale(1.1);
 }
 .owl-carousel .owl-item img {
   display: block;
@@ -276,3 +297,20 @@
   position: relative;
   z-index: 1;
 }
+@media (max-width: 768px) {
+	.owl-carousel2 .owl-controls .owl-nav .owl-prev{
+		right: 77px;
+	}
+	.owl-carousel2 .owl-controls .owl-nav .owl-next{
+		right: 29px;
+	}
+	.owl-carousel.owl-loaded {
+  	padding-left: 13px;
+}
+}
+@media (max-width: 640px) {
+	.owl-carousel2 .owl-controls .owl-nav .owl-prev{
+		display: none;
+	}
+}
+
