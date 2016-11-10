@@ -708,7 +708,6 @@ template {
   display: flex; }
 
 .carousel__items2 {
-  width: 220px;
   background: #fff;
   transition: all 0.6s ease-in-out; }
   .carousel__items2:hover {
@@ -718,8 +717,8 @@ template {
 
 .shop_it {
   position: absolute;
-  top: 93px;
-  left: 43px;
+  top: 113px;
+  left: 65px;
   z-index: 1;
   display: none;
   transition: all 1s ease-out 1s; }
@@ -954,6 +953,8 @@ template {
     padding: 0px; }
   .header__bottom .container {
     flex-wrap: wrap; }
+  .header__bottom {
+    padding-bottom: 0; }
   nav {
     display: -webkit-flex;
     display: -moz-flex;
@@ -965,7 +966,7 @@ template {
     position: relative;
     order: 3;
     width: 100%;
-    margin: 40px 0;
+    margin: 20px 0;
     padding: 0 10px;
     align-items: center;
     background: #fd926d; }
@@ -1060,4 +1061,8 @@ template {
   .clearance__top:before, .clearance__top:after {
     display: none; }
   .none-640 {
-    display: none; } }
+    display: none; }
+  .clearance--items .carousel__photo2 {
+    width: 100%; }
+  .clearance__bottom {
+    justify-content: space-around; } }

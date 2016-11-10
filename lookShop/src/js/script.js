@@ -1,7 +1,7 @@
 $(function() {
 	$('.owl-carousel').owlCarousel({
 		items : 1,
-		nav : true,
+		nav : false,
 		navigationText : false,
 		loop : true,
 		// autoplay : true
@@ -12,7 +12,9 @@ $(function() {
 		center : true,
 		loop : true,
 		pagination : false,
-		nav : true
+		nav : true,
+		margin : 20,
+		
 		// autoplay : true
 	})
 

@@ -305,7 +305,7 @@
 		right: 29px;
 	}
 	.owl-carousel.owl-loaded {
-  	padding-left: 13px;
+  	/*padding-left: 13px;*/
 }
 }
 @media (max-width: 640px) {
