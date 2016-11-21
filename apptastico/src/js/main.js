@@ -4,6 +4,8 @@ $(function() {
 		slidesToShow: 4,
 		centerMode: true,
 		centerPadding: 60,
+		prevArrow: false,
+    	nextArrow: false,
 		 responsive: [
     {
       breakpoint: 1024,
@@ -17,7 +19,8 @@ $(function() {
       breakpoint: 750,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        
       }
     },
     {
