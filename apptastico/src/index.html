@@ -5,17 +5,174 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Apptastico</title>
 	<!-- build:css css/style.min.css -->
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<!-- endbuild -->
 </head>
 <body>
+	<header class="header-main">
+		<div class="container">
+			<div class="row header-main__top">
+				<div class="col-lg-6 col-md-6 header-main__left">
+					<a href="#news" class="header-main__logo page-scroll"><h2 class="header-main__logo">Apptastico</h2></a>
+				</div>
+				<div class="col-lg-6  col-md-6 header-main__right">
+					<nav class="header-main__nav">
+						<ul class="header-main__menu">
+							<li class="header-main__items"><a href="#" class="header-main__links">home</a></li>
+							<li class="header-main__items"><a href="#" class="header-main__links">about</a></li>
+							<li class="header-main__items"><a href="#slider" class="header-main__links page-scroll">work</a></li>
+							<li class="header-main__items"><a href="#footer" class="header-main__links page-scroll">contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="row header-main__bottom">
+				<div class="col-lg-6 col-md-6 col-sm-6 header-main__photo">
+					<img src="img/iPhone.png" alt="" class="main__photo">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 header-main__txt">
+					<h1 class="header-main__title">We design iOS apps</h1>
+					<p class="header-main__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam velit itaque nobis voluptatibus ipsa est?</p>
+					<p class="header-main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda fuga dolores ullam ipsa, hic facilis quidem doloribus sint non odio ducimus, veniam doloremque atque molestiae sunt dignissimos quis minima dicta.</p>
+					<button class="header-main__button">Request a quote</button>
+					&nbsp;&nbsp;<span class="header-main__span">or</span>&nbsp;&nbsp;
+					<a href="#" class="header-main__link ">See our recent work</a>
+				</div>
+			</div>
+		</div>
+	</header>	
+	<div class="brands">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 brands-img">
+					<img src="img/2.png" alt="">
+					<img src="img/3.png" alt="">
+					<img src="img/4.png" alt="">
+					<img src="img/5.png" alt="">
+					<img src="img/6.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="articles ">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 articles__items">
+					<h4 class="articles__title articles__title--phone">Engaging interfaces</h4>
+					<p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consectetur, dolor cumque velit. Rerum, sed.</p>
+					<button class="articles__button">Read more</button>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 articles__items">
+					<h4 class="articles__title articles__title--usage">Engaging interfaces</h4>
+					<p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consectetur, dolor cumque velit. Rerum, sed.</p>
+					<button class="articles__button">Read more</button>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 articles__items">
+					<h4 class="articles__title articles__title--solid">Engaging interfaces</h4>
+					<p class="articles__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consectetur, dolor cumque velit. Rerum, sed.</p>
+					<button class="articles__button">Read more</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="container">
+		<div class="row" id="slider">
+			<div class="col-lg-12 slick dir="rtl">
+				<div class="slick__photo"><img src="img/Dummy-img1.jpg" alt="" class="slick__img"></div>
+				<div class="slick__photo"><img src="img/Dummy-img2.jpg" alt="" class="slick__img"></div>
+				<div class="slick__photo"><img src="img/Dummy-img3.jpg" alt="" class="slick__img"></div>
+				<div class="slick__photo"><img src="img/Dummy-img4.jpg" alt="" class="slick__img"></div>
+				<div class="slick__photo"><img src="img/Dummy-img1.jpg" alt="" class="slick__img"></div>
+				<div class="slick__photo"><img src="img/Dummy-img2.jpg" alt="" class="slick__img"></div>
+				<div class="slick__photo"><img src="img/Dummy-img3.jpg" alt="" class="slick__img"></div>
+				<div class="slick__photo"><img src="img/Dummy-img4.jpg" alt="" class="slick__img"></div>
+		</div>
+	</div>
+	<div class="container" id="news">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 blog">
+				<div class="row">
+					<h3 class="blog__tit">From our blog</h3>
+					<div class="col-lg-4 col-md-4 col-sm-3 blog__photo">
+						<img src="img/Dummy-img7.jpg" alt="" class="blog__img">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-9 col-xs-12 blog__article">
+						<header class="blog__header">
+							<h4 class="blog__title">Our work process reviewed</h4>
+						</header>
+						<div class="content">
+							<p class="blog__txt">
+								Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus mauris. <a href="" class="blog__link">Read more...</a>
+							</p>
+							<time datetime="2016-11-19 12:16">19/11/16 - 12:17AM</time>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-3 blog__photo">
+						<img src="img/Dummy-img8.jpg" alt="" class="blog__img">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-9 col-xs-12 blog__article">
+						<header class="blog__header">
+							<h4 class="blog__title">Who we are at Appcompany</h4>
+						</header>
+						<div class="content">
+							<p class="blog__txt">
+								Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus mauris. <a href="" class="blog__link">Read more...</a>
+							</p>
+							<time datetime="2016-11-19 12:16">19/11/16 - 12:17AM</time>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="wrap__link">Older entries</a>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 twitt">
+				<h3 class="twitt__title">Our Twitter feed</h3>
+				<article class="twitt__article">
+					<span class="twitt__span">@apptastico</span> 
+					In <a href="#" class="twitt__links">pellentesque.com</a>faucibus vestibulum. Nulla at nulla justo, eget Duis aliquet egestas <a href="#" class="twitt__links">#purus</a> in <a href="#" class="twitt__links">#blandit.</a>#blandit.
+					<time class="twitt__time" datetime="2016-11-19 12:16">19/11/16 - 12:17AM</time>
+				</article>
+				<article class="twitt__article">
+					<span class="twitt__span">@apptastico</span> 
+					In <a href="#" class="twitt__links">pellentesque.com</a>faucibus vestibulum. Nulla at nulla justo, eget Duis aliquet egestas <a href="#" class="twitt__links">#purus</a> in <a href="#" class="twitt__links">#blandit.</a>#blandit.
+					<time class="twitt__time" datetime="2016-11-19 12:16">19/11/16 - 12:17AM</time>
+				</article>
+				<article class="twitt__article">
+					<span class="twitt__span">@apptastico</span> 
+					In <a href="#" class="twitt__links">pellentesque.com</a>faucibus vestibulum. Nulla at nulla justo, eget Duis aliquet egestas <a href="#" class="twitt__links">#purus</a> in <a href="#" class="twitt__links">#blandit.</a>#blandit.
+					<time class="twitt__time" datetime="2016-11-19 12:16">19/11/16 - 12:17AM</time>
+				</article>
+				<a href="#" class="twitt__link">Follow us on Twitter</a>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="row" id="footer">
+			<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+				<p class="copy">&copy; Christoffer Jensen 2013</p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+				<ul class="social">
+					<li class="social__items"><a href="#" class="social__links"></a></li>
+					<li class="social__items"><a href="#" class="social__links social__links--tw "></a></li>
+					<li class="social__items"><a href="#" class="social__links social__links--in"></a></li>
+					<li class="social__items"><a href="#" class="social__links social__link--globe"></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 	
-
-	<p>HELLO WORLD</p>
-
 	<!-- build:js js/main.min.js -->
+   <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="slick/slick.js"></script>
 	<script src="js/main.js"></script>
-	<script src="js/js2.js"></script>
 	<!-- endbuild  -->
 </body>
 </html>
