@@ -706,26 +706,22 @@ template {
 time {
   color: #b6b6b6; }
 
-#footer {
+.footer {
   border-top: 1px solid #c3c3c3;
   padding: 20px 0;
   margin-top: 40px; }
 
 .social {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex; }
+  padding: 0; }
 
 .social__items {
-  margin-right: 10px; }
+  display: inline-block; }
   .social__items:last-child {
     margin-right: 0; }
 
 .social__links {
   content: '';
-  display: block;
+  display: inline-block;
   width: 32px;
   height: 33px;
   background: url(../img/social-spr.png) no-repeat;
@@ -760,4 +756,7 @@ time {
   .articles__items {
     padding: 40px 0; }
   .blog__photo {
-    display: none; } }
+    display: none; }
+  .copy {
+    padding-top: 8px;
+    font-size: 11px; } }

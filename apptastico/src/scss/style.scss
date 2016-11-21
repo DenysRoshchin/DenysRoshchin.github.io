@@ -250,24 +250,24 @@ time{
 	color: $timeTxt;
 }
 // FOOTER
-#footer{
+.footer{
 	border-top: 1px solid $brandsBot;
 	padding: 20px 0;
 	margin-top: 40px;
 }
 .social{
-	@include dFlex;
-	// justify-content: space-between;
+	padding: 0;
 }
 .social__items{
-	margin-right: 10px;
+	// margin-right: 10px;
+	display: inline-block;
 	&:last-child{
 		margin-right: 0;
 	}
 }
 .social__links{
 	content: '';
-	display: block;
+	display: inline-block;
 	width: 32px;
 	height: 33px;
 	background: url(../img/social-spr.png) no-repeat;
@@ -309,5 +309,9 @@ time{
 	}
 	.blog__photo{
 		display: none;
+	}
+	.copy{
+		padding-top: 8px;
+		font-size: 11px;
 	}
 }
