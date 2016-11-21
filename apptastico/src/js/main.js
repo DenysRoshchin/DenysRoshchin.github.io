@@ -6,6 +6,7 @@ $(function() {
 		centerPadding: 60,
 		prevArrow: false,
     	nextArrow: false,
+    	autoplay: true,
 		 responsive: [
     {
       breakpoint: 1024,

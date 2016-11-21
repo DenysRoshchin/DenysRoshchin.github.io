@@ -759,4 +759,6 @@ time {
     display: none; }
   .copy {
     padding-top: 8px;
-    font-size: 11px; } }
+    font-size: 11px; }
+  .header-main__menu {
+    padding: 0; } }
