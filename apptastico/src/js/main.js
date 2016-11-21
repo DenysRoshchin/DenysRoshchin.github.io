@@ -3,7 +3,14 @@ $(function() {
 		dots: false,
 		slidesToShow: 4,
 		centerMode: true,
-		centerPadding: 60
+		centerPadding: 60,
+		responsive: [
+			{
+				breakpoint:1200 {
+					slidesToShow: 3,
+				}
+			}
+		]
 	});
 
 	 $('a.page-scroll').on('click', function(event) {
