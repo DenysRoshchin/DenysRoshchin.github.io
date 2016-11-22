@@ -1,15 +1,42 @@
 @import 'var',
 		  'normalize';
 
-
 // HEADER
 .header-320{
 	padding: 15px 0;
 	background: $headerBg;
+	position: relative;
+}
+.menu{
+	color: white;
+	transition: all 1s;
+}
+.menu-wrap320{
+	
 }
 .header__menu{
-	display: block;
+	display: none;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+.menu__items{
+	display: inline-block;
+	transition: all 1s;
+}
+.menu__links{
+	transition: all 1s;
 }
 .menu-wrap320:hover .menu{
 	color: red;
 }
+.menu-wrap320:hover .header__menu{
+	display: block;
+	position: absolute;
+	top: 40px;
+	left: -150px;
+}
+
+
+
+
