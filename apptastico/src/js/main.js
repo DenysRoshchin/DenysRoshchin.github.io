@@ -1,4 +1,13 @@
 $(function() {
+	
+	$(window).scroll(function() {
+    if ($("body").offset().top > 50) {
+        $(".header-main").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+});
+
 	$('.slick').slick({
 		dots: false,
 		slidesToShow: 4,
@@ -6,7 +15,8 @@ $(function() {
 		centerPadding: 60,
 		prevArrow: false,
     	nextArrow: false,
-    	autoplay: true,
+    	// autoplay: true,
+    	// centerMode: true,
 		 responsive: [
     {
       breakpoint: 1024,
@@ -21,14 +31,16 @@ $(function() {
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-        
+        centerMode: true,
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: 10,
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -44,4 +56,5 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+
 });

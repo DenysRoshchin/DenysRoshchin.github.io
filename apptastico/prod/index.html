@@ -16,8 +16,8 @@
 				<div class="col-lg-6  col-md-6 header-main__right">
 					<nav class="header-main__nav">
 						<ul class="header-main__menu">
-							<li class="header-main__items"><a href="#" class="header-main__links">home</a></li>
-							<li class="header-main__items"><a href="#" class="header-main__links">about</a></li>
+							<li class="header-main__items"><a href="#" class="header-main__links page-scroll">home</a></li>
+							<li class="header-main__items"><a href="#articles" class="header-main__links page-scroll">about</a></li>
 							<li class="header-main__items"><a href="#slider" class="header-main__links page-scroll">work</a></li>
 							<li class="header-main__items"><a href="#footer" class="header-main__links page-scroll">contact</a></li>
 						</ul>
@@ -52,7 +52,7 @@
 			</div>
 		</div>
 	</div>
-	<section class="articles ">
+	<section class="articles" id="articles">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 articles__items">
@@ -73,8 +73,8 @@
 			</div>
 		</div>
 	</section>
-	<div class="container">
-		<div class="row" id="slider">
+	<div class="container" id="slider">
+		<div class="row">
 			<div class="col-lg-12 slick dir="rtl">
 				<div class="slick__photo">
 					<img src="img/Dummy-img1.jpg" alt="" class="slick__img">
@@ -162,23 +162,31 @@
 			</div>
 		</div>
 	</div>
-	<footer>
-		<div class="container">
-			<div class="row" id="footer">
-				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-					<p class="copy">&copy; Christoffer Jensen 2013</p>
+	<div class="container" id="footer">
+		<footer class="footer">
+		<p class="copy">&copy; Christoffer Jensen 2013 </p>
+		<ul class="social">
+						<li class="social__items"><a href="#" class="social__links"></a></li>
+						<li class="social__items"><a href="#" class="social__links social__links--tw"></a></li>
+						<li class="social__items"><a href="#" class="social__links social__links--in"></a></li>
+						<li class="social__items"><a href="#" class="social__links social__link--globe"></a></li>
+					</ul>
+			<!-- <div class="row">
+				<div class="col-lg-9 col-md-9  col-sm-9  col-xs-6">
+					<p class="copy"> &copy; Christoffer Jensen 2013</p>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+				<div class="col-lg-3 col-md-3  col-sm-3  col-xs-6">
 					<ul class="social">
 						<li class="social__items"><a href="#" class="social__links"></a></li>
-						<li class="social__items"><a href="#" class="social__links social__links--tw "></a></li>
+						<li class="social__items"><a href="#" class="social__links social__links--tw"></a></li>
 						<li class="social__items"><a href="#" class="social__links social__links--in"></a></li>
 						<li class="social__items"><a href="#" class="social__links social__link--globe"></a></li>
 					</ul>
 				</div>
-			</div>
-		</div>
-	</footer>
+			</div> -->
+		</footer>
+	</div>
+	
 	
 	<script src="js/main.min.js"></script>
 </body>
