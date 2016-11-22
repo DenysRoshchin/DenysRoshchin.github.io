@@ -402,33 +402,94 @@ template {
 [hidden] {
   display: none; }
 
-.header-320 {
-  padding: 15px 0;
+.header {
   background: #00172b;
-  position: relative; }
-
-.menu {
-  color: white;
-  transition: all 1s; }
+  padding: 20px 0; }
 
 .header__menu {
-  display: none;
-  -webkit-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out; }
+  visibility: hidden; }
 
-.menu__items {
-  display: inline-block;
-  transition: all 1s; }
-
-.menu__links {
-  transition: all 1s; }
-
-.menu-wrap320:hover .menu {
-  color: red; }
-
-.menu-wrap320:hover .header__menu {
-  display: block;
+.hover {
   position: absolute;
-  top: 40px;
-  left: -150px; }
+  top: 2px;
+  right: 10px;
+  display: block;
+  width: 30px;
+  height: 25px;
+  background: url(../img/icon_menu.png); }
+
+.header__nav:hover .header__menu {
+  visibility: visible; }
+
+.header__nav:hover .hover {
+  visibility: hidden; }
+
+.header-menu__items {
+  display: inline-block; }
+
+.wwd {
+  text-align: center;
+  border-bottom: 2px solid #e1e1e1;
+  position: relative; }
+
+.wwd::before, .wwd::after {
+  content: '';
+  position: absolute;
+  left: 45%;
+  bottom: -42px;
+  border: 20px solid transparent;
+  border-top: 20px solid #e1e1e1; }
+
+.wwd::after {
+  border-top: 20px solid white;
+  bottom: -40px; }
+
+.wwd__title {
+  text-transform: capitalize; }
+
+.articles {
+  margin-top: 60px;
+  text-align: center; }
+
+.articles__items {
+  margin-bottom: 80px; }
+
+.articles__btn {
+  margin-top: 10px;
+  padding: 10px 40px;
+  border: 1px solid #00abff;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #00abff; }
+
+.articles__btn--blue {
+  padding: 10px 90px;
+  background: #00abff;
+  color: #fff; }
+
+.contacts {
+  border-top: 4px solid #00abff;
+  background: #00172b;
+  padding: 15px 0;
+  border-bottom: 1px solid #00abff; }
+
+.contacts__txt {
+  color: #fff; }
+
+.contacts__email {
+  color: #00abff; }
+
+.footer {
+  background: #00172b; }
+
+.navbar-default {
+  background: transparent;
+  border: none; }
+
+.footer__links {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: url(../img/soc-spr.png) center no-repeat; }
