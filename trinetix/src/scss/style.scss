@@ -1,0 +1,15 @@
+@import 'var',
+		  'normalize';
+
+
+// HEADER
+.header-320{
+	padding: 15px 0;
+	background: $headerBg;
+}
+.header__menu{
+	display: block;
+}
+.menu-wrap320:hover .menu{
+	color: red;
+}

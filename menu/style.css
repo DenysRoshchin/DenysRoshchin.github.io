@@ -8,6 +8,13 @@ body{
 	font: 1em Tahoma, Arial;
 	text-transform: uppercase;
 }
+.block{
+	height: 300px;
+	background: #888;
+}
+.block2{
+	background: #ccc;
+}
 .nav{
 	padding: 0;
 	margin: 30px;
@@ -21,6 +28,7 @@ body{
 	opacity: 1;
 }
 .nav__items{
+	float: left;
 	width: 50px;
 	height: 50px;
 	overflow: hidden;
@@ -33,7 +41,7 @@ body{
 	height: 175px;
 }
 .nav__links{
-	display: block;
+	display: inline-block;
 	width: 200px;
 	height: 40px;
 	line-height: 40px;
