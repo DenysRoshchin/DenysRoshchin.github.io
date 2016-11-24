@@ -12,11 +12,8 @@ $(function() {
 		dots: false,
 		slidesToShow: 4,
 		centerMode: true,
-		centerPadding: 60,
 		prevArrow: false,
-    	nextArrow: false,
-    	// autoplay: true,
-    	// centerMode: true,
+    nextArrow: false,
 		 responsive: [
     {
       breakpoint: 1024,
