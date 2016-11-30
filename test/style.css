@@ -1,0 +1,52 @@
+.bd{
+	border: 1px solid #000;
+}
+.bd:hover .none{
+	display: block;
+
+}
+.hd-m{
+	width: 150px;
+	height: 300px;
+	overflow: scroll;
+}
+.name{
+	text-transform: uppercase;
+	position: relative;
+	text-indent: 15px;
+}
+.name:before{
+	content: '';
+	display: block;
+	width: 11px;
+	height: 11px;
+	background: url(Untitled-2.jpg);
+	position: absolute;
+	top: 4px;
+
+}
+.sub{
+	padding: 0;
+	margin: 10px 0;
+}
+.sub__it{
+	display: inline-block;
+}
+.sub__li{
+	display: block;
+	padding: 5px 10px;
+	border: 1px solid #000;
+}
+.none{
+	display: none;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.col-lg-4{
+	height: 414px;
+}
+
+
+
+

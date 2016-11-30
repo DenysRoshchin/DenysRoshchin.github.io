@@ -359,10 +359,8 @@
 	text-transform: uppercase;
 	margin: 5px 0;
 	white-space: nowrap; /* Запрещаем перенос строк */
-  overflow: hidden; /* Обрезаем все, что не помещается в область */
-  background: #fc0; /* Цвет фона */
-  padding: 5px; /* Поля вокруг текста */
-  text-overflow: ellipsis; /* Добавляем многоточие */
+   overflow: hidden; /* Обрезаем все, что не помещается в область */
+   text-overflow: ellipsis; /* Добавляем многоточие */
 }
 .bottom__price{
 	font-weight: bold;
