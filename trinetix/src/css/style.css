@@ -600,15 +600,17 @@ template {
 
 @media (max-width: 768px) {
   .menu--header {
-    margin-top: 40px;
-    margin-left: -60px;
-    display: none; }
-  .nav:hover .menu-icon {
-    visibility: hidden; }
+    margin-top: 20px;
+    margin-left: -325px;
+    display: none;
+    transition: all .5s ease-in-out; }
+  .nav:hover .menu--header {
+    display: block; }
   .menu__items--header {
     display: block;
     width: 100%;
-    top: 10px; }
+    top: 10px;
+    text-align: center; }
   .address__items:first-child {
     margin-bottom: 20px; }
   .wwd__txt {

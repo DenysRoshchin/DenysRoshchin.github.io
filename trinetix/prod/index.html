@@ -10,18 +10,19 @@
 	<header class="header">
 		<div class="container">
 			<div class="row header__top">
-				<div class="col-lg-2 logo">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 header__logo">
 					<img src="img/logo.png" alt="Logo" class="logo__img">
 				</div>
 				<!-- END of LOGO -->
-				<div class="col-lg-7 col-lg-offset-3 navigation">
+				<div class="col-lg-6 col-md-7 col-md-offset-3 col-sm-9 col-sm-offset-1 col-lg-offset-4 col-xs-6 navigation">
 					<nav class="nav">
-						<ul class="menu">
-							<li class="menu__items"><a href="#" class="menu__links menu__links--active">case studies</a></li>
-							<li class="menu__items"><a href="#" class="menu__links">services</a></li>
-							<li class="menu__items"><a href="#" class="menu__links">expertise</a></li>
-							<li class="menu__items"><a href="#" class="menu__links">about</a></li>
-							<li class="menu__items"><a href="#" class="menu__links">contact us</a></li>
+						<img src="img/menu-icon.png" alt="" class="menu-icon hidden-sm hidden-md hidden-lg ">
+						<ul class="menu menu--header">
+							<li class="menu__items menu__items--header"><a href="#articles" class="menu__links menu__links--header menu__links--active page-scroll">case studies</a></li>
+							<li class="menu__items menu__items--header"><a href="#" class="menu__links menu__links--header">services</a></li>
+							<li class="menu__items menu__items--header"><a href="#" class="menu__links menu__links--header">expertise</a></li>
+							<li class="menu__items menu__items--header"><a href="#wwd" class="menu__links menu__links--header page-scroll">about</a></li>
+							<li class="menu__items menu__items--header"><a href="#contacts" class="menu__links menu__links--header page-scroll">contact us</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -30,7 +31,7 @@
 			<!-- END of HEADER__TOP -->
 			<div class="row header__middle">
 				<div class="container">
-					<div class="col-lg-9  subscribe">
+					<div class="col-lg-9 col-md-9 hidden-xs  subscribe">
 						<p class="subscribe__title">We work with forward businesses to create new digital platforms, products and services.</p>
 					</div>
 				</div>	
@@ -38,14 +39,14 @@
 			<!-- END of HEADER__MIDDLE -->
 			<div class="row header__bottom">
 				<div class="container">
-					<div class="col-lg-8 bottom-nav">
+					<div class="col-lg-8 col-md-8 bottom-nav">
 						<nav class="nav">
 							<ul class="menu menu--bottom">
-								<li class="menu__items"><a href="#" class="menu__links menu__links--bottom">case studies</a></li>
-								<li class="menu__items"><a href="#" class="menu__links menu__links--bottom">services</a></li>
-								<li class="menu__items"><a href="#" class="menu__links menu__links--bottom">expertise</a></li>
-								<li class="menu__items"><a href="#" class="menu__links menu__links--bottom">about</a></li>
-								<li class="menu__items"><a href="#" class="menu__links menu__links--bottom">contact us</a></li>
+								<li class="menu__items"><a href="#" class="menu__links menu__links--bottom">all</a></li>
+								<li class="menu__items"><a href="#" class="menu__links menu__links--bottom">mobile</a></li>
+								<li class="menu__items"><a href="#" class="menu__links menu__links--bottom">web</a></li>
+								<li class="menu__items"><a href="#" class="menu__links menu__links--bottom">ar</a></li>
+								<li class="menu__items"><a href="#" class="menu__links menu__links--bottom">ux/ui</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -58,8 +59,8 @@
 	<!-- END of HEADER -->
 	<section class="underhead">
 		<div class="container">
-			<div class="row wwd">
-				<div class="col-lg-12">
+			<div class="row wwd" id="wwd">
+				<div class="col-lg-12 col-md-12">
 					<h1 class="wwd__title">what we do</h1>
 					<p class="wwd__txt">We launch different types of platforms and operating systems using distinguishes of every platform or operating system as adventage and a powerful tool.</p>
 				</div>
@@ -69,32 +70,17 @@
 		<!-- END of CONTAINER -->
 	</section>
 	<!-- END of UNDERHEAD -->
-	<article class="articles">
+	<article class="articles" id="articles">
 		<div class="container">
 			<div class="row articles__lines">
-				<div class="col-lg-6 articles__items">
+				<div class="col-lg-6 col-md-6  col-sm-6 articles__items">
 					<img src="img/illustration.jpg" alt="mobile apps" class="articles__photo">
 					<h3 class="articles__title">mobile apps</h3>
 					<p class="articles__txt">We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.</p>
 					<button class="articles__btn btn-primary">learn more</button>
 				</div>
-				<div class="col-lg-6 articles__items">
-					<img src="img/illustration.jpg" alt="mobile apps" class="articles__photo">
-					<h3 class="articles__title">mobile apps</h3>
-					<p class="articles__txt">We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.</p>
-					<button class="articles__btn btn-primary">learn more</button>
-				</div>
-			</div>
-			<!-- END of ARTICLES__LINES -->
-			<div class="row articles__lines">
-				<div class="col-lg-6 articles__items">
-					<img src="img/illustration.jpg" alt="mobile apps" class="articles__photo">
-					<h3 class="articles__title">mobile apps</h3>
-					<p class="articles__txt">We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.</p>
-					<button class="articles__btn btn-primary">learn more</button>
-				</div>
-				<div class="col-lg-6 articles__items">
-					<img src="img/illustration.jpg" alt="mobile apps" class="articles__photo">
+				<div class="col-lg-6 col-md-6  col-sm-6 articles__items">
+					<img src="img/illustration1.jpg" alt="mobile apps" class="articles__photo">
 					<h3 class="articles__title">mobile apps</h3>
 					<p class="articles__txt">We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.</p>
 					<button class="articles__btn btn-primary">learn more</button>
@@ -102,8 +88,23 @@
 			</div>
 			<!-- END of ARTICLES__LINES -->
 			<div class="row articles__lines">
-				<div class="col-lg-6 col-lg-offset-3 articles__items">
-					<img src="img/illustration.jpg" alt="mobile apps" class="articles__photo">
+				<div class="col-lg-6 col-md-6  col-sm-6 articles__items">
+					<img src="img/illustration2.jpg" alt="mobile apps" class="articles__photo">
+					<h3 class="articles__title">mobile apps</h3>
+					<p class="articles__txt">We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.</p>
+					<button class="articles__btn btn-primary">learn more</button>
+				</div>
+				<div class="col-lg-6 col-md-6  col-sm-6 articles__items">
+					<img src="img/illustration3.jpg" alt="mobile apps" class="articles__photo">
+					<h3 class="articles__title">mobile apps</h3>
+					<p class="articles__txt">We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.</p>
+					<button class="articles__btn btn-primary">learn more</button>
+				</div>
+			</div>
+			<!-- END of ARTICLES__LINES -->
+			<div class="row articles__lines">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-sm-offset-3 col-md-offset-3 col-lg-offset-3 articles__items">
+					<img src="img/illustration4.jpg" alt="mobile apps" class="articles__photo">
 					<h3 class="articles__title">mobile apps</h3>
 					<p class="articles__txt">We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.</p>
 					<button class="articles__btn btn-primary">learn more</button>
@@ -117,7 +118,7 @@
 	<div class="enjoy">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-10 col-lg-offset-1 content">
+				<div class="col-lg-10 col-md-10 col-md-offset-1 col-lg-offset-1 content">
 					<p class="content__txt">We enjoy what we do.</p> <p class="content__txt">Working with smart people at great projects.</p><p class="content__txt">Contact us if you want to work with us.</p>
 					<button class="content__btn btn-primary">contact us</button>
 				</div>
@@ -126,20 +127,20 @@
 		<!-- END of CONTAINER -->
 	</div>
 	<!-- END of ENJOY -->
-	<div class="contacts">
+	<div class="contacts" id="contacts">
 		<div class="container">
 			<div class="row address">
-				<div class="col-lg-3 address__items">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 address__items">
 					<p class="address__txt">Headquarters:</p>
 					<p class="address__txt">11 E. Chavdar Street, Office 222,</p>
 					<p class="address__txt">Kiev, Ukraine 04335</p>
 				</div>
-				<div class="col-lg-3 address__items">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 address__items">
 					<p class="address__txt">USA:</p>
 					<p class="address__email">usa.hr@trinetix.com</p>
 					<p class="address__txt">+1 212-336-1440</p>
 				</div>
-				<div class="col-lg-3 address__items">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 address__items">
 					<p class="address__txt">Ukraine</p>
 					<p class="address__email">usa.hr@trinetix.com</p>
 					<p class="address__txt">+1 212-336-1440</p>
@@ -153,10 +154,10 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row footer__content">
-				<div class="col-lg-2 footer__items">
+				<div class="col-lg-2 col-md-2 col-sm-8 hidden-xs footer__items">
 					<p class="footer__copy">&copy; 2010-2015 Trinetix LLC</p>
 				</div>
-				<div class="col-lg-6 footer__items">
+				<div class="col-lg-7 col-md-7 col-sm-7 hidden-sm hidden-xs footer__items">
 					<nav class="nav">
 						<ul class="menu menu--footer">
 							<li class="menu__items menu__items--active"><a href="#" class="menu__links">case studies</a></li>
@@ -167,7 +168,7 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="col-lg-4 footer__items">
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 footer__items">
 					<nav class="nav">
 						<ul class="menu menu--social">
 							<li class="menu__items"><a href="#" class="menu__links menu__links--social"><i class="fa fa-facebook fa-2x"></i></a></li>
@@ -176,6 +177,9 @@
 							<li class="menu__items"><a href="#" class="menu__links menu__links--social"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
 						</ul>
 					</nav>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 hidden-sm hidden-md hidden-lg footer__items">
+					<p class="footer__copy">&copy; 2010-2015 Trinetix LLC</p>
 				</div>
 			</div>
 			<!-- END of FOOTER__CONTENT -->

@@ -198,17 +198,19 @@
 }
 @media (max-width: 768px){
 	.menu--header{
-		margin-top: 40px;
-		margin-left: -60px;
+		margin-top: 20px;
+		margin-left: -325px;
 		display: none;
+		transition: all .5s ease-in-out;
 	}
-	.nav:hover .menu-icon{
-		visibility: hidden;
+	.nav:hover .menu--header{
+		display: block;
 	}
 	.menu__items--header{
 		display: block;
 		width: 100%;
 		top: 10px;
+		text-align: center;
 	}
 	.menu__links--header{
 		// padding: 10px 0px;
