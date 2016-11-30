@@ -95,6 +95,10 @@
 	color: $white;
 	font-family: $medium;
 	font-size: 13px;
+	transition: all .3s;
+	&:hover{
+		text-shadow: 0px 0px 9px rgba(150, 150, 150, 1);
+	}
 }
 .top__active {
 	border: 2px solid $blue;
@@ -170,15 +174,13 @@
 }
 // MAIN
 .main {
-	padding: 80px 0px 46px 0px;
+	padding: 80px 0px 50px 0px;
 }
 .main__title {
 	@extend .title-black;
 	color: $gray;
 	position: relative;
-}
-.main--menu{
-	margin-top: -35px;
+	float: left;
 }
 .main--items {
 	margin-right: 15px;
@@ -188,6 +190,9 @@
 }
 .main--links {
 	color: $gray;
+	&:hover{
+		text-shadow: 0px 0px 9px rgba(150, 150, 150, 1);
+	}
 }
 // PHOTOS
 .photos {
@@ -200,8 +205,8 @@
 	height: 25px;
 	background: url(../img/plus.png) center center no-repeat;
 	position: absolute;
-	top: 135px;
-	left: 135px;
+	top: 129px;
+	left: 125px;
 	display: none;
 }
 .photos__items {

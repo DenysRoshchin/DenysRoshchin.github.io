@@ -17,9 +17,9 @@
 				<nav class="top__menu right">
 					<ul>
 						<li class="top__items"><a href="#" class="top__links top__active">home</a></li>
-						<li class="top__items"><a href="#" class="top__links">services</a></li>
-						<li class="top__items"><a href="#" class="top__links">features</a></li>
-						<li class="top__items"><a href="#" class="top__links">portfolio</a></li>
+						<li class="top__items"><a href="#services" class="top__links page-scroll">services</a></li>
+						<li class="top__items"><a href="#video" class="top__links page-scroll">video</a></li>
+						<li class="top__items"><a href="#portfolio" class="top__links page-scroll">portfolio</a></li>
 						<li class="top__items"><a href="#" class="top__links">contact</a></li>
 					</ul>
 				</nav>
@@ -32,7 +32,7 @@
 			</div>	
 		</section>
 	</header>
-	<div class="services">
+	<div class="services" id="services">
 		<div class="wrapper clearfix">
 			<h2 class="services__title">services</h2>
 			<section class="services__items left">
@@ -53,7 +53,7 @@
 			</section>
 		</div>
 	</div>
-	<main class="main">
+	<main class="main" id="portfolio">
 		<div class="wrapper clearfix">
 			<div class="main__top clearfix">
 				<h2 class="main__title">portfolio</h2>
@@ -119,10 +119,10 @@
 				</div>
 		</div>
 	</main>
-	<section class="def__section">
+	<section class="def__section" id="video">
 		<div class="wrapper clearfix">
 			<div class="def__articles left">
-				<h2 class="def__title">just default section</h2>
+				<h2 class="def__title">Video</h2>
 				<article class="def__article"><span class="def__top">Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice cream wafer gummies cheesecake brownie.</span>
 				<span class="def__bottom">Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I love pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake marzipan oat cake bonbon I love candy canes toffee.</span></article>
 				<button class="def__button">visit me</button>
@@ -204,7 +204,10 @@
 	</div>
 </footer>
 <!-- build:js js/main.min.js -->
-<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
 <script src="js/script.js"></script>
 <!-- endbuild -->
 </body>

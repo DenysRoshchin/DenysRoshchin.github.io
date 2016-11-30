@@ -142,7 +142,10 @@ table {
   text-decoration: none;
   color: #fff;
   font-family: "Ubuntu Medium";
-  font-size: 13px; }
+  font-size: 13px;
+  transition: all .3s; }
+  .top__links:hover {
+    text-shadow: 0px 0px 9px #969696; }
 
 .top__active {
   border: 2px solid #4bcaff; }
@@ -215,14 +218,12 @@ table {
   line-height: 15px; }
 
 .main {
-  padding: 80px 0px 46px 0px; }
+  padding: 80px 0px 50px 0px; }
 
 .main__title {
   color: #4a555d;
-  position: relative; }
-
-.main--menu {
-  margin-top: -35px; }
+  position: relative;
+  float: left; }
 
 .main--items {
   margin-right: 15px; }
@@ -232,6 +233,8 @@ table {
 
 .main--links {
   color: #4a555d; }
+  .main--links:hover {
+    text-shadow: 0px 0px 9px #969696; }
 
 .photos {
   padding: 82px 0 0px 0; }
@@ -243,8 +246,8 @@ table {
   height: 25px;
   background: url(../img/plus.png) center center no-repeat;
   position: absolute;
-  top: 135px;
-  left: 135px;
+  top: 129px;
+  left: 125px;
   display: none; }
 
 .photos__items {
