@@ -1,9 +1,9 @@
 $(function() {
 
-	$('.menu__links').click(function() {
+	$('.nav__links').click(function() {
 		console.log('e')
-		$('.menu__links').removeClass('menu__links--active')
-		$(this).addClass('menu__links menu__links--active')
+		$('.nav__links').removeClass('nav__links--active');
+		$(this).addClass('nav__links nav__links--active');
 	})
 
 })

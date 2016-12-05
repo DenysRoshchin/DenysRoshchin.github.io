@@ -13,26 +13,32 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="row header__top">
-				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 header__logo">
-					<img src="img/logo.png" alt="Logo" class="logo__img">
-				</div>
-				<!-- END of LOGO -->
-				<div class="col-lg-6 col-md-7 col-md-offset-3 col-sm-9 col-sm-offset-1 col-lg-offset-4 col-xs-2 col-xs-offset-4 navigation">
-					<nav class="nav">
-						<img src="img/menu-icon.png" alt="" class="menu-icon hidden-sm hidden-md hidden-lg ">
-						<ul class="menu menu--header">
-							<li class="menu__items menu__items--header"><a href="#articles" class="menu__links menu__links--header menu__links--active page-scroll">case studies</a></li>
-							<li class="menu__items menu__items--header"><a href="#" class="menu__links menu__links--header">services</a></li>
-							<li class="menu__items menu__items--header"><a href="#" class="menu__links menu__links--header">expertise</a></li>
-							<li class="menu__items menu__items--header"><a href="#wwd" class="menu__links menu__links--header page-scroll">about</a></li>
-							<li class="menu__items menu__items--header"><a href="#contacts" class="menu__links menu__links--header page-scroll">contact us</a></li>
-						</ul>
-					</nav>
-				</div>
-				<!-- END of NAVIGATION -->
+			<div class="header__top">
+				<nav class="navbar navbar-inverse">
+  					<div class="container-fluid">
+					    <!-- Brand and toggle get grouped for better mobile display -->
+					    <div class="navbar-header">
+	      				<button type="button" class="navbar-toggle collapsed navbar-header__btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+	      				</button>
+	      				<a class="navbar-brand" href="#"><img src="img/logo.png" alt="Logo" class="logo__img"></a>
+	    				</div>
+	    				<!-- Collect the nav links, forms, and other content for toggling -->
+	    				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      				<ul class="nav navbar-nav navbar-right">
+	       				 <li class="nav__items"><a class="nav__links nav__links--active" href="#">case studies <span class="sr-only">(current)</span></a></li>
+	       				 <li class="nav__items"><a class="nav__links" href="#">services</a></li>
+	       				 <li class="nav__items"><a class="nav__links" href="#">expertise</a></li>
+	       				 <li class="nav__items"><a class="nav__links" href="#">about</a></li>
+	       				 <li class="nav__items"><a class="nav__links" href="#">contact</a></li>
+	      				</ul>
+	    				</div><!-- /.navbar-collapse -->
+  					</div><!-- /.container-fluid -->
+				</nav>
 			</div>
-			<!-- END of HEADER__TOP -->
 			<div class="row header__middle">
 				<div class="container">
 					<div class="col-lg-9 col-md-9 hidden-xs  subscribe">
@@ -193,9 +199,7 @@
 	<!-- END of FOOTER -->
 	<!-- build:js prod/js/script.min.js -->
 	<script
-	  src="https://code.jquery.com/jquery-3.1.1.js"
-	  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-	  crossorigin="anonymous"></script>
+	  src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/scrolling-nav.js"></script>
 	<script src="js/jquery.easing.min.js"></script>

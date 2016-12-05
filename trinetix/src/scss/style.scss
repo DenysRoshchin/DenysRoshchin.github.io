@@ -14,6 +14,16 @@
 		padding-left: 23px;
 	}
 }
+.nav{
+	&__links{
+		text-transform: uppercase;
+		color: $white;
+	}
+}
+.nav__links--active{
+	color: $blue !important;
+}
+
 .menu{
 	margin: 0;
 	padding: 0;
@@ -27,7 +37,7 @@
 		display: block;
 		padding: 10px 15px;
 		&:hover{
-			color: #000;
+			// color: #000;
 			background: #eee;
 			text-decoration: none;
 		}

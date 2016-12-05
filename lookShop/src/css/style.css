@@ -1,3 +1,4 @@
+@charset "UTF-8";
 a {
   text-decoration: none;
   color: #fff; }
@@ -743,11 +744,13 @@ template {
 
 .bottom__text {
   text-transform: uppercase;
-  margin: 5px 0; 
-  white-space: nowrap; /* Запрещаем перенос строк */
-  overflow: hidden; /* Обрезаем все, что не помещается в область */
-  text-overflow: ellipsis; /* Добавляем многоточие */
-}
+  margin: 5px 0;
+  white-space: nowrap;
+  /* Запрещаем перенос строк */
+  overflow: hidden;
+  /* Обрезаем все, что не помещается в область */
+  text-overflow: ellipsis;
+  /* Добавляем многоточие */ }
 
 .bottom__price {
   font-weight: bold;
