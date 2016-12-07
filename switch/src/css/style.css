@@ -750,3 +750,57 @@ section {
     -o-border-radius: 25px;
     border-radius: 25px;
     text-transform: uppercase; }
+
+.prefooter {
+  background: #333333;
+  padding: 40px 0 60px 0; }
+  .prefooter__txt {
+    color: #cccccc; }
+  .prefooter__header {
+    text-align: center;
+    margin-bottom: 20px; }
+
+.social--prefooter {
+  margin: 0 auto; }
+
+.posts__items {
+  margin-bottom: 10px; }
+
+.posts__txt {
+  color: #cccccc; }
+
+.posts__magazine {
+  color: #fff;
+  padding: 3px 5px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  color: #cccccc;
+  text-transform: uppercase;
+  background: #54d154; }
+
+.yellow {
+  background: #ffba00; }
+
+.blue {
+  background: #089dea; }
+
+.orange {
+  background: #f34d04; }
+
+.contact__txt {
+  color: #cccccc; }
+
+.bg {
+  background: #444444;
+  border: none;
+  margin-bottom: 2px; }
+
+.footer {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px 0 60px 0; }
+  .footer__logo {
+    padding-left: 70px; }

@@ -300,11 +300,61 @@ section{
 		text-transform: uppercase;
 	}
 }
+// PREFOOTER
+.prefooter{
+	background: $prefooterBg;
+	padding: 40px 0 60px 0;
+	&__txt{
+		color: $prefooterTxt;
+	}
+	&__header{
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}
 
-
-
-
-
+.social--prefooter{
+	margin: 0 auto;
+}
+.posts__items{
+	margin-bottom: 10px;
+}
+.posts__txt{
+	color: $prefooterTxt;
+}
+.posts__magazine{
+	color: $white;
+	padding: 3px 5px;
+	@include border-radius(3px)
+	color: $prefooterTxt;
+	text-transform: uppercase;
+	background: $green;
+}
+.yellow{
+	background: $yellow;
+}
+.blue{
+	background: $blue;
+}
+.orange{
+	background: $orange;
+}
+.contact__txt{
+	color: $prefooterTxt;
+}
+.bg{
+	background: $formBg;
+	border: none;
+	margin-bottom: 2px;
+}
+// FOOTER
+.footer{
+	background: rgba(0,0,0,.7);
+	padding: 40px 0 60px 0;
+	&__logo{
+		padding-left: 70px;
+	}
+}
 
 
 
