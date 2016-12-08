@@ -683,6 +683,9 @@ template {
 .girlinglass {
   flex: 1; }
 
+.man {
+  flex: 1; }
+
 .slider2__menu {
   margin: 0;
   padding: 0; }
