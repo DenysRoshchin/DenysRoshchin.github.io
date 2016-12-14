@@ -480,6 +480,8 @@ template {
     top: 0px;
     left: 370px;
     background: url(../img/rectangle2.png) center no-repeat; }
+  .first-row__span {
+    display: none; }
 
 .second-row {
   text-align: center;
@@ -530,3 +532,18 @@ template {
   .footer-right__span {
     display: block;
     margin-left: 300px; }
+
+@media (max-width: 450px) {
+  img {
+    width: 100%; }
+  .first-row {
+    text-align: center; }
+    .first-row__eng:after {
+      display: none; }
+    .first-row__span {
+      display: inline-block; }
+  .footer-left {
+    position: relative; }
+    .footer-left:before {
+      left: 65px;
+      top: -50px; } }

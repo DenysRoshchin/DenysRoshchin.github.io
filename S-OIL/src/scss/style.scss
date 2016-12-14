@@ -1,5 +1,6 @@
 @import 'norm',
 		  'var';
+	  
 // HEADER
 .header{
 	width: 100%;
@@ -91,6 +92,9 @@
 		left: 370px;
 		background: url(../img/rectangle2.png)center no-repeat;
 	}
+	&__span{
+		display: none;
+	}
 }
 .second-row{
 	text-align: center;
@@ -113,6 +117,7 @@
 .footer{
 	padding: 40px 0;
 	background: url(../img/footerBg.jpg)center no-repeat;
+	// background-size: cover;
 	&-left{
 		position: relative;
 		&:before{
@@ -150,7 +155,30 @@
 		margin-left: 300px;
 	}
 }
-
+@media(max-width: 450px){
+	img{
+	width: 100%;
+	}	
+	.first-row{
+		text-align: center;
+		&__eng:after{
+		display: none;
+		}
+		&__span{
+			display: inline-block;
+		}
+	}
+	.footer{
+		&-left{
+			position: relative;
+		&:before{
+			left: 65px;
+			top: -50px;
+			
+		}
+	}
+}
+}
 
 
 
