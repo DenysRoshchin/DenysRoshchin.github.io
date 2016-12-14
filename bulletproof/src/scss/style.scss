@@ -1,0 +1,294 @@
+@import 'norm',
+		  'var',
+		  'fonts',
+		  'mixins';
+// HEADER
+.header{
+	padding: 60px 0 246px 0;
+}
+.jumbotron{
+	background: url(../img/header_bg.jpg)center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 440px;
+	margin-top: 0;
+	color: $white;
+}
+.right__inp{
+	margin-right: 10px;
+	@include border-radius(25px);
+	border: none;
+	padding: 10px 25px;
+	background: $inpBg;
+	position: relative;
+	outline: none;
+	color: $white;
+}
+.right__btn{
+	font-family: $regular;
+	@include border-radius(25px);
+	border: none;
+	padding: 10px 25px;
+	background: $purple;
+	color: $white;
+	position: relative;
+	outline: none;
+	transition: all .3s;
+	&:hover{
+		color: $black;
+	}
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		left: -35px;
+		width: 15px;
+		height: 15px;
+		background: url(../img/search.png)center no-repeat;
+	}
+}
+.dropdown{
+	display: inline-block;
+}
+#dLabel{
+	width: 20px;
+	height: 22px;
+	border: none;
+	margin-left: 10px;
+	background: url(../img/menu.png)center no-repeat;
+}
+.menu{
+	top: 143%;
+	left: -58px;
+	&__items{
+		text-align: center;
+	}
+	&__links{
+		font-family: $regular;
+	}
+}
+.middle{
+	margin-top: 280px;
+	text-align: center;
+	&__title{
+		font: 70px $olight;
+		color: $white;
+	}
+	&__subtitle{
+		width: 450px;
+		color: $white;
+		text-align: left;
+	}
+}
+// SUPER
+.super{
+	margin-top: -30px;
+	background: $purple;
+	padding: 70px 0 184px 0;
+}
+.text{
+	&__title{
+		color: $white;
+		font: 40px $olight;
+	}
+	&__txt{
+		font: 16px $regular;
+		color: $white;
+		margin-bottom: 40px;
+	}
+	&__btn{
+		@include border-radius(25px);
+		padding: 10px 35px;
+		transition: all .3s;
+		border: none;
+	}
+}
+.photo{
+	position: relative;
+	&__img{
+		position: absolute;
+		top: -165px;
+	}
+}
+// POWER
+.power{
+	padding: 60px 0;
+}
+.article{
+	&__title{
+		font: 30px $olight;
+		color: $txtDark;
+		margin-bottom: 25px;
+	}
+	&__subtitle{
+		font: 20px $regular;
+		color: $txtLight;
+		margin-bottom: 15px;
+	}
+	&__txt{
+		color: $txtDark;
+	}
+	&__btn{
+		@include border-radius(25px);
+		transition: all .3s;
+		border: none;
+		margin-top: 30px;
+		padding: 10px 25px;
+	}
+}
+// DESIGN
+.design{
+	background: $dark;
+}
+.human{
+	text-align: center;
+	color: $white;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	&__title{
+		font: 40px $regular;
+	}
+	&__txt{
+		color: $humanTxt;
+	}
+}
+.img{
+	position: relative;
+	text-align: center;
+	&__btn{
+		background: none;
+		transition: all .4s;
+		text-transform: uppercase;
+		font-family: $olight;
+		position: absolute;
+		top: 140px;
+		left: 529px;
+		padding: 15px 30px;
+	}
+}
+// ARTICLES
+.articles{
+	background: $light;
+	padding: 60px 0 90px 0;
+}
+.articles-items{
+	&:before{
+		content: '';
+		display: block;
+		width: 50px;
+		height: 50px;
+		background: url(../img/design-spr.png)left no-repeat;
+	}
+	&__title{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		color: $white;
+	}
+	&__txt{
+		color: $humanTxt;
+	}
+}
+.articles-items--thing:before{
+	background-position: -50px 0;
+}
+.articles-items--brush:before{
+	background-position: -102px 0
+}
+.articles-items--search:before{
+	background-position: -153px 0;
+}
+.articles-items__title:before{
+	content: '01';
+	color: $txtLight;
+	font-size: 15px;
+	padding-right: 5px;
+}
+.articles-items__title--ref:before{
+		content: '02';
+	}
+.articles-items__title--dive:before{
+	content: '03';
+}
+.articles-items__title--research:before{
+	content: '04';
+}
+// CONECTIVITY
+.first-row{
+	margin: 0;
+	background: $conectivityBg;
+}
+.col-txt{
+	padding: 142px 100px 10px 274px;
+	&__title:before{
+		position: absolute;
+		top: -10px;
+		left: -2px;
+		content: '';
+		display: block;
+		width: 50px;
+		height: 35px;
+		background: url(../img/cloud.png)center no-repeat;
+	}
+	&__title{
+		margin-bottom: 30px;
+		font-family: $olight;
+		color: $light;
+		text-indent: 50px;
+		position: relative;
+	}
+	&__subtitle{
+		color: $txtLight;
+		margin-bottom: 30px;
+	}
+}
+.second-row{
+	margin-right: 0;
+	background: $lightBg;
+}
+.col-left{
+	padding-left: 278px;
+	z-index: 1;
+}
+.col-right{
+	background: $purple;
+	padding-left: 40px;
+	padding: 100px 280px 158px 90px;
+	color: $white;
+	&__date{
+		font-family: $regular;
+		font-style: italic;
+	}
+	&__txt{
+		margin: 20px 0 40px 0;
+		font: 23px $olight;
+		font-style: italic;
+	}
+}
+.col-right__name{
+	text-indent: 70px;
+	position: relative;
+	&:before{
+		position: absolute;
+		top: -19px;
+		left: 0px;
+		content: '';
+		display: block;
+		width: 59px;
+		height: 59px;
+		background: url(../img/photo.png)center no-repeat;
+	}
+}
+.third-row{
+	margin-right: 0;
+	background: $lightBg;
+}
+.third-left{
+	padding: 100px 100px 29px 274px;
+	background: $white;
+}
+.third-right{
+	background: $white;
+	img{
+		margin-left: 8px;
+	}
+}
