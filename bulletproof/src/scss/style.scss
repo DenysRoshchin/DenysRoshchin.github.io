@@ -292,3 +292,43 @@
 		margin-left: 8px;
 	}
 }
+.last-row{
+	height: 760px;
+	background: $purple url(../img/lastrow.jpg)center no-repeat;
+	margin-right: 0;
+}
+.col-right--last{
+	width: 863px;
+	padding-left: 274px;
+	padding-right: 200px;
+}
+// FOOTER
+.footer{
+	background: $footer;
+	color: $white;
+	padding: 80px 0;
+}
+.btn{
+	background: $purple;
+	&:hover{
+		background: #000;
+	}
+}
+.fa-check{
+	color: #fff;
+}
+.bottom{
+	margin-top: 40px;
+	&-items__title{
+		margin-bottom: 20px;
+	}
+	&-menu{
+		padding-left: 0px;
+	}
+	&-menu__items{
+		list-style-type: none;
+	}
+	&-menu__links{
+		color: $white;
+	}
+}
