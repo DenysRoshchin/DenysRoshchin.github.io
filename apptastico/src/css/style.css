@@ -451,6 +451,23 @@ template {
 .header-main {
   background: #4b5964; }
 
+.header-main__top {
+  animation: dropdown 2s ease-in-out; }
+
+@keyframes dropdown {
+  0% {
+    transform: translateY(-190%); }
+  60% {
+    transform: translateY(10%); }
+  70% {
+    transform: translateY(-4%); }
+  80% {
+    transform: translateY(4%); }
+  95% {
+    transform: translateY(-2%); }
+  100% {
+    transform: translateY(0%); } }
+
 .header-main__logo {
   font-family: "pacificoregular";
   color: #fff; }
