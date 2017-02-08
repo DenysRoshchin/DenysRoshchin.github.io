@@ -1,0 +1,324 @@
+
+@import 'var',
+		  'fonts',
+		  'mixins',
+		  'norm';
+img{
+	width: 100%;
+}
+ul,ol{
+	list-style-type: none;
+}
+// HEADER
+.header{
+	padding: 20px 0 200px;
+	background: url(../img/header__bg.jpg)center no-repeat;
+	background-size: cover;
+	// height: 1097px;
+}
+.logo{
+	&__link{
+		color: $white;
+		background: none;
+		font-size: 22px;
+		text-transform: uppercase;
+	}
+	&__link:hover{	
+		color: $white;	
+		text-decoration: none; 
+	}
+}
+.bold{
+	font-weight: bold;
+}
+.nav{
+	margin-bottom: 200px;
+	a{
+		text-transform: uppercase;
+	}
+}
+.name{
+	color: $white;
+	&__title{
+		margin-top: -4px;
+		margin-bottom: -10px;
+		font: 40px $lato;
+		text-transform: uppercase;
+	}
+	&__subtitle{
+		font-size: 24px;
+		text-transform: uppercase;
+	}
+}
+.slider{
+	margin-top: 100px;
+}
+.description{
+	color: $white;
+	font: 16px $lato;
+	text-align: center;
+	position: relative;
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		width: 30px;
+		top: 95px;
+		left: 228px;
+		border-bottom: 2px solid #fff;
+	}
+	&__txt{
+		margin-bottom: 40px;
+	}
+	&__btn{
+		padding: 10px 30px;
+		margin-bottom: 10px;
+		outline: none;
+		background: none;
+		font-size: 11px;
+		text-transform: uppercase;
+	}
+}
+// VITAE
+.vitae{
+	.row{
+		margin: 0;
+	}
+}
+.image{
+	padding: 0;
+	&__img{
+		width: 100%;
+	}
+}
+.text{
+	padding: 208px 120px;
+	text-align: center;
+	&__txt{
+		margin-bottom: 50px;
+		position: relative;
+	}
+	&__txt:after{
+		content: '';
+		display: block;
+		position: absolute;
+		width: 30px;
+		top: 95px;
+		left: 278px;
+		border-bottom: 2px solid #000;
+	}
+	&__btn{
+		margin-top: 20px;
+		padding: 10px 30px;
+		background: none;
+		color: $black;
+	}
+}
+// WORKS
+.works{
+	background: $gray;
+	.row{
+		text-align: center;
+	}
+	&__title{
+		@include title;
+	}
+}
+.items{
+	&__btn{
+		padding: 10px 30px;
+		background: none;
+		color: $black;
+		text-transform: uppercase;
+	}
+}
+// SERVICES
+.services{
+	.row{
+		// height: 200px;
+		margin: 0;
+		.col-lg-4{
+			padding: 0;
+		}
+	}
+	text-align: center;
+	&__title{
+		@include title;
+		&:after{
+			left: 818px;
+		}
+	}
+}
+// ABOUT
+.about{
+	background: url(../img/about-bg.jpg)center no-repeat;
+	text-align: center;
+}
+.about-desc{
+	&__title{
+		@include title;
+		color: $white;
+		margin-bottom: 20px;
+		&:after{
+			border-bottom: 2px solid #fff;
+			left: 555px;
+			top: 160px;
+		}
+	}
+	&__txt{
+		color: $white;
+		margin-bottom: 30px;
+	}
+}
+.team{
+	margin: 60px 0 40px;
+}
+.team-items{
+	border: 1px solid $white;
+	padding: 0;
+	margin-right: 30px;
+	&:last-child{
+		margin-right: 0;
+	}
+	&__photo{
+		border-bottom: 1px solid $white;
+	}
+	&__name{
+		padding-top: 10px;
+		color: $white;
+		text-transform: uppercase;
+		font: 12px $lato;
+	}
+}
+.social{
+	padding-left: 20px;
+	&__items{
+		display: inline-block;
+		margin-right: 15px;
+	}
+	&__links{
+		display: block;
+		width: 25px;
+		height: 25px;
+		background:  url(../img/social.png) 0 0 no-repeat;
+		// transition: background-position .2s;
+		&:hover{
+			background-position: 0 -27px;
+		}
+	}
+}
+.globe{
+	background-position: -27px 0;
+	&:hover{
+		background-position: -27px -27px;
+	}
+}
+.twitt{
+	background-position: -52px 0;
+	&:hover{
+		background-position: -52px -27px;
+	}
+}
+.g{
+	background-position: -80px 0;
+	&:hover{
+		background-position: -80px -27px;
+	}
+}
+// TESTIMONIALS
+.testimonials{
+	text-align: center;
+}
+.article{
+	font: $lato;
+	padding: 0 100px;
+	&__title{
+		@include title;
+		&:after{
+			left: 470px;
+		}
+	}
+	&__name{
+		margin: 40px 0 100px;
+		font-weight: bold;
+	}
+}
+// SUBSCRIBE
+.subscribe{
+	background: $blue;
+	text-align: center;
+}
+.newsletter{
+	&__title{
+		@include title;
+		color: $white;
+		&:after{
+			left: 550px;
+			border-bottom: 2px solid #fff;
+		}
+	}
+}
+.form-group{
+	width: 300px;
+	margin: 0 auto;
+}
+input[placeholder]{
+	background: $blue;
+	text-align: center;
+	color: #000;
+}
+input[type="submit"]{
+	background: $darkBlue;
+	color: $white;
+}
+.newsletter__logo{
+	margin-top: 40px;
+	text-transform: uppercase;
+	color: $white;
+	font: 24px $lato;
+}
+.social-icons{
+	width: 900px;
+	margin: 50px auto;
+	&__items{
+		display: inline-block;
+		margin-right: 30px;
+	}
+	&__links{
+		display: block;
+		width: 64px;
+		height: 69px;
+		background: url(../img/social-icons.png)0 0 no-repeat;
+	}
+}
+.face{
+	background-position: -64px 0;
+}
+.pint{
+	background-position: -128px 0;
+}
+.link{
+	background-position: -192px 0;
+}
+.skype{
+	background-position: -256px 0;
+}
+// FOOTER
+.footer{
+	background: $gray;
+	padding: 20px 0;
+}
+.foot-menu{
+	.nav{
+		padding: 0;
+		margin: 0;
+	}
+}
+.foot-info{
+	&__email,&__phone{
+		display: inline-block;
+		color: $lightGray;
+		margin-top: 10px;
+	}
+}
+

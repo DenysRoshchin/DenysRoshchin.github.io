@@ -1,3 +1,9 @@
+var str = 'sometimes the same is different';
+console.log(str);
+console.log(str.lastIndexOf('me'));
+console.log(str.length);
+console.log(str[16])
+
 $(function() {
 	
 	$(window).scroll(function() {
