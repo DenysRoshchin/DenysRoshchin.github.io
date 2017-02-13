@@ -92,7 +92,7 @@ ul,ol{
 	}
 }
 .text{
-	padding: 208px 120px;
+	padding: 200px 100px 0 100px;
 	text-align: center;
 	&__txt{
 		margin-bottom: 50px;
@@ -122,6 +122,7 @@ ul,ol{
 	}
 	&__title{
 		@include title;
+		color: $white;
 	}
 }
 .items{
@@ -300,7 +301,7 @@ input[type="submit"]{
 .link{
 	background-position: -192px 0;
 }
-.skype{
+.sk{
 	background-position: -256px 0;
 }
 // FOOTER

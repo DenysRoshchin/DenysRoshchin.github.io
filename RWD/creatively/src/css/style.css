@@ -486,7 +486,7 @@ ul, ol {
     width: 100%; }
 
 .text {
-  padding: 208px 120px;
+  padding: 200px 100px 0 100px;
   text-align: center; }
   .text__txt {
     margin-bottom: 50px;
@@ -514,7 +514,8 @@ ul, ol {
     text-transform: uppercase;
     padding-top: 30px;
     margin-bottom: 80px;
-    position: relative; }
+    position: relative;
+    color: #fff; }
     .works__title:after {
       content: '';
       display: block;
@@ -716,7 +717,7 @@ input[type="submit"] {
 .link {
   background-position: -192px 0; }
 
-.skype {
+.sk {
   background-position: -256px 0; }
 
 .footer {
