@@ -1,0 +1,73 @@
+@import 	'norm',
+			'mixins',
+			'fonts',
+			'var';
+
+img{
+	width: 100%;
+	height: 100%;
+}
+
+// HEADER
+header{
+	background:  url(../img/header__bg.jpg) center center no-repeat;
+	background-size: cover;
+	min-height: 1099px;
+}
+.top, .menu-list, .slider-top, .slider-items, .vitae, .descr, .slider-work {
+	@include css3-prefix(display, flex);
+}
+.top{
+	padding-top: 20px;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	align-items: center;
+	text-transform: uppercase;
+	a{
+		font: 20px $lato;
+	}
+	&__span{
+		font-weight: bold;
+	}	
+}
+.menu-list{
+	&__links{
+		text-transform: uppercase;
+	}
+}
+#slider-top{
+	margin-top: 300px;
+}
+.slider-items{
+	align-items: center;
+	justify-content: center;
+}
+.heading, .text{
+	flex: 1;
+}
+// VITAE
+.vitae{
+	.img{
+		flex: 1;
+	}
+	.descr{
+		flex: 1;
+		align-items: center;
+		flex-flow: column wrap;
+		justify-content: center;
+	}
+}
+// WORKS
+.slider-work{
+	justify-content: center;
+}
+
+
+
+
+
+
+
+
