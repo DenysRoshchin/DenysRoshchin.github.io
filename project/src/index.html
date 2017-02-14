@@ -6,12 +6,13 @@
 	<title>Tekrum</title>
 	<!-- build:css css/stylemin.css -->
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/slide.css">
 	<link rel="stylesheet" href="css/style.css">
 	<!-- endbuild -->
 </head>
 <body>
-
-	<header>
+	<header class="header-top">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -34,17 +35,20 @@
 								<div class="col-lg-8">
 									<ul class="quantity">
 										<li class="quantity__item">
-											1
+											<span>
+												1<i class="fa fa-caret-down" aria-hidden="true"></i>
+											</span>
 												<ul class="sub-quantity">
 													<li class="sub-quantity__items"><a href="#">2</a></li>
 													<li class="sub-quantity__items"><a href="#">3</a></li>
 													<li class="sub-quantity__items"><a href="#">4</a></li>
 												</ul>
-											</1>
 										</li>
 									</ul>
 								</div>
-								<div class="col-lg-4 chart"></div>
+								<div class="col-lg-4" id="chart">
+									
+								</div>
 							</div>
 					</footer>
 				</div>
@@ -58,17 +62,20 @@
 								<div class="col-lg-8">
 									<ul class="quantity">
 										<li class="quantity__item">
-											1
+											<span>
+												1<i class="fa fa-caret-down" aria-hidden="true"></i>
+											</span>
 												<ul class="sub-quantity">
 													<li class="sub-quantity__items"><a href="#">2</a></li>
 													<li class="sub-quantity__items"><a href="#">3</a></li>
 													<li class="sub-quantity__items"><a href="#">4</a></li>
 												</ul>
-											</1>
 										</li>
 									</ul>
 								</div>
-								<div class="col-lg-4 chart"></div>
+								<div class="col-lg-4" id="chart">
+									
+								</div>
 							</div>
 					</footer>
 				</div>
@@ -82,17 +89,20 @@
 								<div class="col-lg-8">
 									<ul class="quantity">
 										<li class="quantity__item">
-											1
+											<span>
+												1<i class="fa fa-caret-down" aria-hidden="true"></i>
+											</span>
 												<ul class="sub-quantity">
 													<li class="sub-quantity__items"><a href="#">2</a></li>
 													<li class="sub-quantity__items"><a href="#">3</a></li>
 													<li class="sub-quantity__items"><a href="#">4</a></li>
 												</ul>
-											</1>
 										</li>
 									</ul>
 								</div>
-								<div class="col-lg-4 chart"></div>
+								<div class="col-lg-4" id="chart">
+									
+								</div>
 							</div>
 					</footer>
 				</div>
@@ -106,34 +116,69 @@
 								<div class="col-lg-8">
 									<ul class="quantity">
 										<li class="quantity__item">
-											1
+											<span>
+												1<i class="fa fa-caret-down" aria-hidden="true"></i>
+											</span>
 												<ul class="sub-quantity">
 													<li class="sub-quantity__items"><a href="#">2</a></li>
 													<li class="sub-quantity__items"><a href="#">3</a></li>
 													<li class="sub-quantity__items"><a href="#">4</a></li>
 												</ul>
-											</1>
 										</li>
 									</ul>
 								</div>
-								<div class="col-lg-4 chart"></div>
+								<div class="col-lg-4" id="chart" >
+									
+								</div>
 							</div>
 					</footer>
 				</div>
+
 				<div class="polka">
 					<img src="img/doska.jpg" alt="">
 				</div>
 			</div>
 		</div>
 	</main>
+	<!-- END OF MAIN -->
+
+	<div class="slide-menu">
+		<div id="mySidenav" class="sidenav">
+		  
+		  <header class="slide-header">
+		  	<div class="row">
+		  		<div class="col-lg-2">
+		  			<a href="javascript:void(0)" class="closebtn" ">&times;</a>
+		  		</div>
+		  		<div class="col-lg-10">
+		  			<h1 class="slide-header__title">carello</h1>
+		  		</div>	
+		  	</div>
+		  </header>
+		  <div class="content">
+			<div class="row product">
+				<div class="col-lg-4 product-img">
+					<img src="" alt="">
+				</div>
+				<div class="col-lg-8 product-info">
+					<h3 class="product-info__title"></h3>
+				</div>
+			</div>
+		  	<button class="content__btn">visualizza carrello</button>
+		  </div>
+		</div>
+		<!-- Use any element to open the sidenav -->
+		
+	</div>
 
 
 
 	<!-- build:js js/script.main.js -->
 	<script src="js/jquery-3.1.1.js"></script>
 	<script src="js/bootstrap.js"></script>
-	<script src="js/scrolling-nav.js"></script>
+	<!-- <script src="js/scrolling-nav.js"></script> -->
 	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/menu.js"></script>
 	<script src="js/script.js"></script>
 	<!-- endbuild -->
 </body>
