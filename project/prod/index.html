@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/stylemin.css">
 </head>
 <body>
-	<header>
+	<header class="header-top">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -30,7 +30,9 @@
 								<div class="col-lg-8">
 									<ul class="quantity">
 										<li class="quantity__item">
-											1
+											<span>
+												1<i class="fa fa-caret-down" aria-hidden="true"></i>
+											</span>
 												<ul class="sub-quantity">
 													<li class="sub-quantity__items"><a href="#">2</a></li>
 													<li class="sub-quantity__items"><a href="#">3</a></li>
@@ -39,7 +41,7 @@
 										</li>
 									</ul>
 								</div>
-								<div class="col-lg-4 chart">
+								<div class="col-lg-4" id="chart">
 									
 								</div>
 							</div>
@@ -55,7 +57,9 @@
 								<div class="col-lg-8">
 									<ul class="quantity">
 										<li class="quantity__item">
-											1
+											<span>
+												1<i class="fa fa-caret-down" aria-hidden="true"></i>
+											</span>
 												<ul class="sub-quantity">
 													<li class="sub-quantity__items"><a href="#">2</a></li>
 													<li class="sub-quantity__items"><a href="#">3</a></li>
@@ -64,7 +68,7 @@
 										</li>
 									</ul>
 								</div>
-								<div class="col-lg-4 chart">
+								<div class="col-lg-4" id="chart">
 									
 								</div>
 							</div>
@@ -80,7 +84,9 @@
 								<div class="col-lg-8">
 									<ul class="quantity">
 										<li class="quantity__item">
-											1
+											<span>
+												1<i class="fa fa-caret-down" aria-hidden="true"></i>
+											</span>
 												<ul class="sub-quantity">
 													<li class="sub-quantity__items"><a href="#">2</a></li>
 													<li class="sub-quantity__items"><a href="#">3</a></li>
@@ -89,7 +95,7 @@
 										</li>
 									</ul>
 								</div>
-								<div class="col-lg-4 chart">
+								<div class="col-lg-4" id="chart">
 									
 								</div>
 							</div>
@@ -105,7 +111,9 @@
 								<div class="col-lg-8">
 									<ul class="quantity">
 										<li class="quantity__item">
-											1
+											<span>
+												1<i class="fa fa-caret-down" aria-hidden="true"></i>
+											</span>
 												<ul class="sub-quantity">
 													<li class="sub-quantity__items"><a href="#">2</a></li>
 													<li class="sub-quantity__items"><a href="#">3</a></li>
@@ -114,7 +122,7 @@
 										</li>
 									</ul>
 								</div>
-								<div class="col-lg-4 chart" onclick="openNav()">
+								<div class="col-lg-4" id="chart" >
 									
 								</div>
 							</div>
@@ -131,11 +139,28 @@
 
 	<div class="slide-menu">
 		<div id="mySidenav" class="sidenav">
-		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		  <a href="#">About</a>
-		  <a href="#">Services</a>
-		  <a href="#">Clients</a>
-		  <a href="#">Contact</a>
+		  
+		  <header class="slide-header">
+		  	<div class="row">
+		  		<div class="col-lg-2">
+		  			<a href="javascript:void(0)" class="closebtn" ">&times;</a>
+		  		</div>
+		  		<div class="col-lg-10">
+		  			<h1 class="slide-header__title">carello</h1>
+		  		</div>	
+		  	</div>
+		  </header>
+		  <div class="content">
+			<div class="row product">
+				<div class="col-lg-4 product-img">
+					<img src="" alt="">
+				</div>
+				<div class="col-lg-8 product-info">
+					<h3 class="product-info__title"></h3>
+				</div>
+			</div>
+		  	<button class="content__btn">visualizza carrello</button>
+		  </div>
 		</div>
 		<!-- Use any element to open the sidenav -->
 		
