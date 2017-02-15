@@ -472,7 +472,7 @@ template {
   font-style: normal; }
 
 body {
-  background: url(../img/bg.jpg) 0 0 no-repeat;
+  background: url(../img/bg.jpg) 0 0 repeat;
   background-size: cover; }
 
 .header-top {
@@ -502,8 +502,7 @@ body {
     margin-right: 0; }
   .prod-items__title {
     font-size: 36px;
-    text-transform: uppercase;
-    color: #fff; }
+    text-transform: uppercase; }
   .prod-items__offerta {
     margin-top: 50px;
     font-size: 24px; }
@@ -562,39 +561,63 @@ body {
 footer .row {
   margin: 0; }
 
-#chart {
+.chart {
   padding: 18px 0px;
   border: 3px solid #fff;
   border-radius: 30px;
   background: url(../img/buy.png) center no-repeat;
   transition: background .3s; }
-  #chart:hover {
+  .chart:hover {
     background: yellow url(../img/buy-black.png) center no-repeat; }
 
-/* The side navigation menu */
 .sidenav {
   height: 100%;
-  /* 100% Full-height */
   width: 0;
-  /* 0 width - change this with JavaScript */
   position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Stay on top */
+  z-index: 3;
   top: 0;
   right: 0;
   background-color: #fff;
-  /* White*/
   overflow-x: hidden;
-  /* Disable horizontal scroll */
-  transition: 0.5s;
-  /* 0.5 second transition effect to slide in the sidenav */ }
+  transition: 0.5s; }
 
 .slide-header {
   text-align: center;
-  padding-top: 68px;
+  padding-top: 32px;
   min-height: 222px;
   background: #ff943d; }
+  .slide-header__title {
+    font: 60px "Bebas Regular", arial, sans-serif;
+    color: #fff; }
+
+.items {
+  text-transform: uppercase;
+  font: 18px "Gilroy Light", arial, sans-serif;
+  color: #2f2f2f;
+  margin: 37px 58px 27px 58px;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 27px 0; }
+
+.bold {
+  font-weight: bold; }
+
+.total {
+  margin: 0;
+  padding: 0 48px; }
+
+.subtotal {
+  font: 30px "Gilroy Light", arial, sans-serif; }
+
+.summ {
+  font: 48px "Gilroy Light", arial, sans-serif; }
+
+.items-btn__btn {
+  margin: 20px 78px;
+  width: 299px;
+  height: 60px;
+  border-radius: 4px;
+  background-color: #faa21b;
+  text-transform: uppercase; }
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
@@ -609,12 +632,20 @@ footer .row {
 
 .sidenav .closebtn {
   position: absolute;
-  top: -5px;
+  top: 32px;
+  left: 62px;
   font-size: 36px; }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px; }
   .sidenav a {
     font-size: 18px; } }
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: none; }

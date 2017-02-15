@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/slide.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/style.css">
 	<!-- endbuild -->
 </head>
@@ -46,7 +47,7 @@
 										</li>
 									</ul>
 								</div>
-								<div class="col-lg-4" id="chart">
+								<div class="col-lg-4 chart">
 									
 								</div>
 							</div>
@@ -72,8 +73,26 @@
 												</ul>
 										</li>
 									</ul>
+									<!-- <select id="make" name="make" >
+									    <option  value="1">1</option>
+									    <option value="2">2</option>
+									    <option value="3">3</option>
+									    <option value="4">4</option>
+									    <option value="5">5</option>
+									    <option value="6">6</option>
+									    <option value="7">7</option>
+									    <option value="8">8</option>
+									    <option value="9">9</option>
+									    <option value="10">10</option>
+									    <option value="11">11</option>
+									    <option value="12">12</option>
+									    <option value="13">13</option>
+									    <option value="14">14</option>
+									    <option value="15">15</option>
+									    <option value="16">16</option>
+								    </select> -->
 								</div>
-								<div class="col-lg-4" id="chart">
+								<div class="col-lg-4 chart">
 									
 								</div>
 							</div>
@@ -100,7 +119,7 @@
 										</li>
 									</ul>
 								</div>
-								<div class="col-lg-4" id="chart">
+								<div class="col-lg-4 chart" >
 									
 								</div>
 							</div>
@@ -127,7 +146,7 @@
 										</li>
 									</ul>
 								</div>
-								<div class="col-lg-4" id="chart" >
+								<div class="col-lg-4 chart" >
 									
 								</div>
 							</div>
@@ -141,36 +160,72 @@
 		</div>
 	</main>
 	<!-- END OF MAIN -->
-
-	<div class="slide-menu">
-		<div id="mySidenav" class="sidenav">
-		  
-		  <header class="slide-header">
-		  	<div class="row">
-		  		<div class="col-lg-2">
-		  			<a href="javascript:void(0)" class="closebtn" ">&times;</a>
-		  		</div>
-		  		<div class="col-lg-10">
-		  			<h1 class="slide-header__title">carello</h1>
-		  		</div>	
-		  	</div>
-		  </header>
-		  <div class="content">
-			<div class="row product">
-				<div class="col-lg-4 product-img">
-					<img src="" alt="">
-				</div>
-				<div class="col-lg-8 product-info">
-					<h3 class="product-info__title"></h3>
+	<div class="slide-wrap">
+		<div class="overlay">
+			
+		</div>
+		<div class="slide-menu">
+			<div id="mySidenav" class="sidenav">
+			  <header class="slide-header">
+			  	<div class="row">
+			  		<div class="col-lg-4">
+			  			<a href="javascript:void(0)" class="closebtn" "><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+			  		</div>
+			  		<div class="col-lg-5">
+			  			<h1 class="slide-header__title">carello</h1>
+			  		</div>	
+			  	</div>
+			  </header>
+				<div class=" slide-content">
+					<div class="row items">
+						<div class="col-lg-4 items__img">
+							<img src="img/product5.png" alt="">
+						</div>
+						<div class="col-lg-8 items__txt">
+							<p>offerta</p>
+							<p>fizyslim con sapore di</p>
+							<p>ananas</p>
+							<p class="qta">qta: 3</p>
+							<p class="euro"><i class="fa fa-eur" aria-hidden="true"></i><span class="bold">25.50</span></p>
+						</div>
+					</div>
+					<div class="row items">
+						<div class="col-lg-4 items__img">
+							<img src="img/product5.png" alt="">
+						</div>
+						<div class="col-lg-8 items__txt">
+							<p>offerta</p>
+							<p>fizyslim con sapore di</p>
+							<p>ananas</p>
+							<p class="qta">qta: 3</p>
+							<p class="euro"><i class="fa fa-eur" aria-hidden="true"></i><span class="bold">25.50</span></p>
+						</div>
+					</div>
+					<div class="row items">
+						<div class="col-lg-4 items__img">
+							<img src="img/product5.png" alt="">
+						</div>
+						<div class="col-lg-8 items__txt">
+							<p>offerta</p>
+							<p>fizyslim con sapore di</p>
+							<p>ananas</p>
+							<p class="qta">qta: 3</p>
+							<p class="euro"><i class="fa fa-eur" aria-hidden="true"></i><span class="bold">25.50</span></p>
+						</div>
+					</div>
+					<div class="row items total">
+						<div class="col-lg-12">
+							<p class="subtotal">subtotal</p>
+							<p class="summ"><i class="fa fa-eur" aria-hidden="true"></i>455.50</p>
+						</div>
+					</div>
+					<div class="row items-btn ">
+						<button class="items-btn__btn btn-warning">visualizza carrello</button>
+					</div>
 				</div>
 			</div>
-		  	<button class="content__btn">visualizza carrello</button>
-		  </div>
 		</div>
-		<!-- Use any element to open the sidenav -->
-		
 	</div>
-
 
 
 	<!-- build:js js/script.main.js -->
@@ -179,6 +234,7 @@
 	<!-- <script src="js/scrolling-nav.js"></script> -->
 	<script src="js/jquery.easing.min.js"></script>
 	<!-- <script src="js/menu.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 	<script src="js/script.js"></script>
 	<!-- endbuild -->
 </body>
