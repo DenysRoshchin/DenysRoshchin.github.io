@@ -29,7 +29,6 @@ main{
 .items{
 	position: relative;
 	height: 200px;
-	// border: 1px solid #000;
 	overflow: hidden;
 	&__mask{
 		text-align: center;
@@ -84,7 +83,6 @@ main{
 	opacity: 0;
 	transform: translateY(100px);
 }
-
 // FOOTER
 footer{
 	padding: 20px 0 0 0;
@@ -104,10 +102,4 @@ footer{
 }
 .fa-github-square, .fa-linkedin-square, .fa-envelope{
 	font-size: 24px;
-}
-
-
-
-@keyframes drop{
-
 }
