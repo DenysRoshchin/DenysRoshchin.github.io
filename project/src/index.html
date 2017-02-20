@@ -3,21 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Tekrum</title>
+	<title>Project</title>
 	<!-- build:css css/stylemin.css -->
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
-	<link rel="stylesheet" href="css/slide.css">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/style.css">
 	<!-- endbuild -->
 </head>
 <body>
-	<header class="header-top">
+	<header>
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h1 class="title">cassa</h1>
+			<div class="row animated bounceInDown">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 logo">
+					<h1 class="logo__name">Denys Roshchin</h1>
+					<p class="logo__position">Web Developer</p>
+					<!-- <p class="phone">+3 093 498 28 18</p> -->
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 about">
+					<p class="about__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique iste voluptatem deleniti cum architecto, adipisci facere quas laborum mollitia quidem voluptas, sequi cupiditate, sint tenetur eos fuga necessitatibus voluptatibus obcaecati!</p>
 				</div>
 			</div>
 		</div>
@@ -25,216 +31,172 @@
 	<!-- END OF HEADER -->
 	<main>
 		<div class="container">
-			<div class="row products">
-				<div class="col-lg-3 prod-items">
-					<h2 class="prod-items__title">pineapple</h2>
-					<img src="img/product1.png" alt="" class="prod-items__img">
-					<p class="prod-items__offerta">offerta limitata -50%</p>
-					<p class="prod-items__price">$8.50<sup>19.00$</sup></p>
-					<footer>
-							<div class="row">
-								<div class="col-lg-8">
-									<ul class="quantity">
-										<li class="quantity__item">
-											<span>
-												1<i class="fa fa-caret-down" aria-hidden="true"></i>
-											</span>
-												<ul class="sub-quantity">
-													<li class="sub-quantity__items"><a href="#">2</a></li>
-													<li class="sub-quantity__items"><a href="#">3</a></li>
-													<li class="sub-quantity__items"><a href="#">4</a></li>
-												</ul>
-										</li>
-									</ul>
-								</div>
-								<div class="col-lg-4 chart">
-									
-								</div>
-							</div>
-					</footer>
+			<div class="row animated fadeInLeft">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="items">
+						<a href=""><img src="img/1.jpg" alt=""></a>
+						<div class="items__mask">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, illum?</p>
+							<ul class="item-menu">
+								<li class="item-menu__items left">html5</li>
+								<li class="item-menu__items left">css3</li>
+								<li class="item-menu__items bottom">jquery</li>
+								<li class="item-menu__items right">sass</li>
+								<li class="item-menu__items right">gulp</li>
+							</ul>
+						</div>
+					</div>
 				</div>
-				<div class="col-lg-3 prod-items">
-					<h2 class="prod-items__title">berries</h2>
-					<img src="img/product2.png" alt="" class="prod-items__img">
-					<p class="prod-items__offerta">offerta limitata -50%</p>
-					<p class="prod-items__price">$8.50<sup>19.00$</sup></p>
-					<footer>
-							<div class="row">
-								<div class="col-lg-8">
-									<ul class="quantity">
-										<li class="quantity__item">
-											<span>
-												1<i class="fa fa-caret-down" aria-hidden="true"></i>
-											</span>
-												<ul class="sub-quantity">
-													<li class="sub-quantity__items"><a href="#">2</a></li>
-													<li class="sub-quantity__items"><a href="#">3</a></li>
-													<li class="sub-quantity__items"><a href="#">4</a></li>
-												</ul>
-										</li>
-									</ul>
-									<!-- <select id="make" name="make" >
-									    <option  value="1">1</option>
-									    <option value="2">2</option>
-									    <option value="3">3</option>
-									    <option value="4">4</option>
-									    <option value="5">5</option>
-									    <option value="6">6</option>
-									    <option value="7">7</option>
-									    <option value="8">8</option>
-									    <option value="9">9</option>
-									    <option value="10">10</option>
-									    <option value="11">11</option>
-									    <option value="12">12</option>
-									    <option value="13">13</option>
-									    <option value="14">14</option>
-									    <option value="15">15</option>
-									    <option value="16">16</option>
-								    </select> -->
-								</div>
-								<div class="col-lg-4 chart">
-									
-								</div>
-							</div>
-					</footer>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="items">
+						<a href=""><img src="img/2.jpg" alt=""></a>
+						<div class="items__mask">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, illum?</p>
+							<ul class="item-menu">
+								<li class="item-menu__items left">html5</li>
+								<li class="item-menu__items left">css3</li>
+								<li class="item-menu__items bottom">jquery</li>
+								<li class="item-menu__items right">sass</li>
+								<li class="item-menu__items right">gulp</li>
+							</ul>
+						</div>
+					</div>
 				</div>
-				<div class="col-lg-3 prod-items">
-					<h2 class="prod-items__title">grapefruit</h2>
-					<img src="img/product3.png" alt="" class="prod-items__img">
-					<p class="prod-items__offerta">offerta limitata -50%</p>
-					<p class="prod-items__price">$8.50<sup>19.00$</sup></p>
-					<footer>
-							<div class="row">
-								<div class="col-lg-8">
-									<ul class="quantity">
-										<li class="quantity__item">
-											<span>
-												1<i class="fa fa-caret-down" aria-hidden="true"></i>
-											</span>
-												<ul class="sub-quantity">
-													<li class="sub-quantity__items"><a href="#">2</a></li>
-													<li class="sub-quantity__items"><a href="#">3</a></li>
-													<li class="sub-quantity__items"><a href="#">4</a></li>
-												</ul>
-										</li>
-									</ul>
-								</div>
-								<div class="col-lg-4 chart" >
-									
-								</div>
-							</div>
-					</footer>
-				</div>
-				<div class="col-lg-3 prod-items">
-					<h2 class="prod-items__title">apple</h2>
-					<img src="img/product4.png" alt="" class="prod-items__img">
-					<p class="prod-items__offerta">offerta limitata -50%</p>
-					<p class="prod-items__price">$8.50<sup>19.00$</sup></p>
-					<footer>
-							<div class="row">
-								<div class="col-lg-8">
-									<ul class="quantity">
-										<li class="quantity__item">
-											<span>
-												1<i class="fa fa-caret-down" aria-hidden="true"></i>
-											</span>
-												<ul class="sub-quantity">
-													<li class="sub-quantity__items"><a href="#">2</a></li>
-													<li class="sub-quantity__items"><a href="#">3</a></li>
-													<li class="sub-quantity__items"><a href="#">4</a></li>
-												</ul>
-										</li>
-									</ul>
-								</div>
-								<div class="col-lg-4 chart" >
-									
-								</div>
-							</div>
-					</footer>
-				</div>
-
-				<div class="polka">
-					<img src="img/doska.jpg" alt="">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="items">
+						<a href=""><img src="img/3.jpg" alt=""></a>
+						<div class="items__mask">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, illum?</p>
+							<ul class="item-menu">
+								<li class="item-menu__items left">html5</li>
+								<li class="item-menu__items left">css3</li>
+								<li class="item-menu__items bottom">jquery</li>
+								<li class="item-menu__items right">sass</li>
+								<li class="item-menu__items right">gulp</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
+			<div class="row animated fadeInLeft">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="items">
+						<a href=""><img src="img/1.jpg" alt=""></a>
+						<div class="items__mask">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, illum?</p>
+							<ul class="item-menu">
+								<li class="item-menu__items left">html5</li>
+								<li class="item-menu__items left">css3</li>
+								<li class="item-menu__items bottom">jquery</li>
+								<li class="item-menu__items right">sass</li>
+								<li class="item-menu__items right">gulp</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="items">
+						<a href=""><img src="img/2.jpg" alt=""></a>
+						<div class="items__mask">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, illum?</p>
+							<ul class="item-menu">
+								<li class="item-menu__items left">html5</li>
+								<li class="item-menu__items left">css3</li>
+								<li class="item-menu__items bottom">jquery</li>
+								<li class="item-menu__items right">sass</li>
+								<li class="item-menu__items right">gulp</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="items">
+						<a href=""><img src="img/3.jpg" alt=""></a>
+						<div class="items__mask">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, illum?</p>
+							<ul class="item-menu">
+								<li class="item-menu__items left">html5</li>
+								<li class="item-menu__items left">css3</li>
+								<li class="item-menu__items bottom">jquery</li>
+								<li class="item-menu__items right">sass</li>
+								<li class="item-menu__items right">gulp</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row animated fadeInLeft">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="items">
+						<a href=""><img src="img/1.jpg" alt=""></a>
+						<div class="items__mask">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, illum?</p>
+							<ul class="item-menu">
+								<li class="item-menu__items left">html5</li>
+								<li class="item-menu__items left">css3</li>
+								<li class="item-menu__items bottom">jquery</li>
+								<li class="item-menu__items right">sass</li>
+								<li class="item-menu__items right">gulp</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="items">
+						<a href=""><img src="img/2.jpg" alt=""></a>
+						<div class="items__mask">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, illum?</p>
+							<ul class="item-menu">
+								<li class="item-menu__items left">html5</li>
+								<li class="item-menu__items left">css3</li>
+								<li class="item-menu__items bottom">jquery</li>
+								<li class="item-menu__items right">sass</li>
+								<li class="item-menu__items right">gulp</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="items">
+						<a href=""><img src="img/3.jpg" alt=""></a>
+						<div class="items__mask">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, illum?</p>
+							<ul class="item-menu">
+								<li class="item-menu__items left">html5</li>
+								<li class="item-menu__items left">css3</li>
+								<li class="item-menu__items bottom">jquery</li>
+								<li class="item-menu__items right">sass</li>
+								<li class="item-menu__items right">gulp</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 	</main>
-	<!-- END OF MAIN -->
-	<div class="slide-wrap">
-		<div class="overlay">
-			
-		</div>
-		<div class="slide-menu">
-			<div id="mySidenav" class="sidenav">
-			  <header class="slide-header">
-			  	<div class="row">
-			  		<div class="col-lg-4">
-			  			<a href="javascript:void(0)" class="closebtn" "><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-			  		</div>
-			  		<div class="col-lg-5">
-			  			<h1 class="slide-header__title">carello</h1>
-			  		</div>	
-			  	</div>
-			  </header>
-				<div class=" slide-content">
-					<div class="row items">
-						<div class="col-lg-4 items__img">
-							<img src="img/product5.png" alt="">
-						</div>
-						<div class="col-lg-8 items__txt">
-							<p>offerta</p>
-							<p>fizyslim con sapore di</p>
-							<p>ananas</p>
-							<p class="qta">qta: 3</p>
-							<p class="euro"><i class="fa fa-eur" aria-hidden="true"></i><span class="bold">25.50</span></p>
-						</div>
-					</div>
-					<div class="row items">
-						<div class="col-lg-4 items__img">
-							<img src="img/product5.png" alt="">
-						</div>
-						<div class="col-lg-8 items__txt">
-							<p>offerta</p>
-							<p>fizyslim con sapore di</p>
-							<p>ananas</p>
-							<p class="qta">qta: 3</p>
-							<p class="euro"><i class="fa fa-eur" aria-hidden="true"></i><span class="bold">25.50</span></p>
-						</div>
-					</div>
-					<div class="row items">
-						<div class="col-lg-4 items__img">
-							<img src="img/product5.png" alt="">
-						</div>
-						<div class="col-lg-8 items__txt">
-							<p>offerta</p>
-							<p>fizyslim con sapore di</p>
-							<p>ananas</p>
-							<p class="qta">qta: 3</p>
-							<p class="euro"><i class="fa fa-eur" aria-hidden="true"></i><span class="bold">25.50</span></p>
-						</div>
-					</div>
-					<div class="row items total">
-						<div class="col-lg-12">
-							<p class="subtotal">subtotal</p>
-							<p class="summ"><i class="fa fa-eur" aria-hidden="true"></i>455.50</p>
-						</div>
-					</div>
-					<div class="row items-btn ">
-						<button class="items-btn__btn btn-warning">visualizza carrello</button>
-					</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 email">
+					<i class="fa fa-envelope" aria-hidden="true"></i><a href="">denys.roshchin@gmail.com</a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 account">
+					<a href="https://github.com/DenysRoshchin/DenysRoshchin.github.io" class="account__links">
+						<i class="fa fa-github-square" aria-hidden="true"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/denys-roshchin-637ba0115?trk=hp-identity-name" class="account__links">
+						<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+					</a>
 				</div>
 			</div>
 		</div>
-	</div>
-
-
+	</footer>
+	<!-- END OF FOOTER -->
 	<!-- build:js js/script.main.js -->
 	<script src="js/jquery-3.1.1.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<!-- <script src="js/scrolling-nav.js"></script> -->
 	<script src="js/jquery.easing.min.js"></script>
-	<!-- <script src="js/menu.js"></script> -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+	<script src="js/slick.js"></script>
 	<script src="js/script.js"></script>
 	<!-- endbuild -->
 </body>

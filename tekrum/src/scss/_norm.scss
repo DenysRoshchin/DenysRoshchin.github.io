@@ -1,3 +1,6 @@
+*{
+  list-style-type: none;
+}
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -201,7 +204,7 @@ sub {
 }
 
 sup {
-  top: -0.5em;
+  top: -1.2em;
 }
 
 /* Embedded content
