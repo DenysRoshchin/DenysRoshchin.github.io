@@ -1,9 +1,14 @@
 *{
 	list-style-type: none;
+	transition: all .4s;
 }
 img{
 	width: 100%;
 	height: 100%;
+}
+body{
+	background:  url(../img/DSC_8435.jpg) 0 0 no-repeat;
+	background-size: cover;
 }
 // HEADER
 header, footer{
@@ -28,7 +33,7 @@ main{
 }
 .items{
 	position: relative;
-	height: 200px;
+	min-height: 100%;
 	overflow: hidden;
 	&__mask{
 		text-align: center;
@@ -102,4 +107,30 @@ footer{
 }
 .fa-github-square, .fa-linkedin-square, .fa-envelope{
 	font-size: 24px;
+}
+@media (max-width: 768px){
+	.logo{
+		text-align: center;
+	}
+	.col-sm-12{
+		margin-bottom: 40px;
+	}
+	footer{
+		.col-xs-12{
+			text-align: center;
+		}
+	}
+}
+@media (max-width: 500px){
+	.logo{
+		text-align: center;
+	}
+	.col-xs-12{
+		margin-bottom: 40px;
+	}
+	footer{
+		.col-xs-12{
+			text-align: center;
+		}
+	}
 }

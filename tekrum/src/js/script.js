@@ -11,10 +11,5 @@ $(function() {
 		$(this).css('display', 'none');
 		$("#mySidenav").css('width', '0px');
 	});
-	$('select').select2({
-		maximumInputLength: 4,
-		minimumResultsForSearch: 22,
-		// selectOnClose: true
-	});
 });
 
