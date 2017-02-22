@@ -90,10 +90,14 @@ footer {
 .email {
   position: relative; }
   .email__link {
+    color: #000;
     position: absolute;
+    text-decoration: none;
     top: 0px;
     left: 45px;
     font: 24px bold; }
+    .email__link:hover {
+      text-decoration: none; }
 
 .account {
   text-align: right; }

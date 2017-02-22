@@ -102,10 +102,15 @@ footer{
 .email{
 	position: relative;
 	&__link{
+		color: #000;
 		position: absolute;
+		text-decoration: none;
 		top: 0px;
 		left: 45px;
 		font: 24px bold;
+		&:hover{
+			text-decoration: none;
+		}
 	}
 }
 .account{
