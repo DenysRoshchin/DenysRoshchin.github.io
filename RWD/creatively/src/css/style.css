@@ -417,6 +417,9 @@ img {
 ul, ol {
   list-style-type: none; }
 
+* {
+  box-sizing: border-box; }
+
 .header {
   padding: 20px 0 200px;
   background: url(../img/header__bg.jpg) center no-repeat;
@@ -486,19 +489,16 @@ ul, ol {
     width: 100%; }
 
 .text {
-  padding: 200px 100px 0 100px;
-  text-align: center; }
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+  .text__wrap {
+    justify-content: center;
+    align-items: center; }
   .text__txt {
-    margin-bottom: 50px;
     position: relative; }
-  .text__txt:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 30px;
-    top: 95px;
-    left: 278px;
-    border-bottom: 2px solid #000; }
   .text__btn {
     margin-top: 20px;
     padding: 10px 30px;

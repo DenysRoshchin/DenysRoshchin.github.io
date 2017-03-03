@@ -9,6 +9,9 @@ img{
 ul,ol{
 	list-style-type: none;
 }
+*{
+	box-sizing: border-box;
+}
 // HEADER
 .header{
 	padding: 20px 0 200px;
@@ -92,21 +95,28 @@ ul,ol{
 	}
 }
 .text{
-	padding: 200px 100px 0 100px;
-	text-align: center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	// text-align: center;
+	&__wrap{
+		justify-content: center;
+		align-items: center;
+	}
 	&__txt{
-		margin-bottom: 50px;
 		position: relative;
 	}
-	&__txt:after{
-		content: '';
-		display: block;
-		position: absolute;
-		width: 30px;
-		top: 95px;
-		left: 278px;
-		border-bottom: 2px solid #000;
-	}
+	// &__txt:after{
+	// 	content: '';
+	// 	display: block;
+	// 	position: absolute;
+	// 	width: 30px;
+	// 	top: 95px;
+	// 	left: 278px;
+	// 	border-bottom: 2px solid #000;
+	// }
 	&__btn{
 		margin-top: 20px;
 		padding: 10px 30px;

@@ -14,7 +14,7 @@ header{
 	background-size: cover;
 	min-height: 1099px;
 }
-.top, .menu-list, .slider-top, .slider-items, .vitae, .descr, .slider-work {
+.top, .menu-list, .slider-top, .slider-items, .heading, .text, .vitae, .descr, .slider-work {
 	@include css3-prefix(display, flex);
 }
 .top{
@@ -41,11 +41,18 @@ header{
 	margin-top: 300px;
 }
 .slider-items{
+	border: 1px solid #000;
 	align-items: center;
-	justify-content: center;
+	
 }
 .heading, .text{
 	flex: 1;
+	justify-content: center;
+	flex-flow: column;
+}
+.heading__title{
+	margin: 0;
+	padding: 0;
 }
 // VITAE
 .vitae{
@@ -57,6 +64,13 @@ header{
 		align-items: center;
 		flex-flow: column wrap;
 		justify-content: center;
+		&__title{
+			text-transform: uppercase;
+			text-align: center;
+		}
+		&__txt{
+			padding: 0 150px;
+		}
 	}
 }
 // WORKS
