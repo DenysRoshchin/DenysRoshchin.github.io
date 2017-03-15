@@ -520,14 +520,14 @@ a {
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
-  display: flex; }
+  display: flex;
+  height: 50px; }
 
 .search-bar {
-  opacity: 0; }
+  display: none; }
 
 .visible {
   display: inline-block;
-  opacity: 1;
   padding: 0 0 0 10px;
   background: #f3f3f3;
   outline: none;

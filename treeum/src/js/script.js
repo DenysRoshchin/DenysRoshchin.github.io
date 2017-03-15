@@ -1,6 +1,8 @@
 $(function() {
 	$(".search-btn").click(function() {
 		$(".search-bar").addClass("visible animated slideInRight");	
+		$(".search-btn").css("display", "none");
+		console.log('2')
 	});
 
 	$('.error-block__title').on("mouseenter", function() {
