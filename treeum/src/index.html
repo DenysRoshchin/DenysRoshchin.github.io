@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Project</title>
+	<!-- build:css css/stylemin.css -->
+	<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- endbuild -->
+</head>
+<body>
+	<header class="main-header">
+		<div class="container">
+			<div class="top">
+				<div class="logo">
+					<h1 class="logo__title">treeum</h1>
+				</div>
+				<div class="menu">
+					<select class="menu-select" name="select" id="menu-select">
+						<option value="main">Mеню</option>
+						<option value="main">главная</option>
+						<optgroup label="настройки">
+							<option value="settings">светлая</option>
+							<option value="settings">темная</option>
+						</optgroup>	
+						<option value="about">о нас</option>
+						<option value="contact">контакты</option>
+					</select>
+					<ul class="menu-main">
+						<li class="menu-main__items"><a class="menu-main__links" href="#">главная</a></li>
+						<li class="menu-main__items">
+							<a class="menu-main__links" href="#">настройки</a><i class="fa fa-chevron-down" aria-hidden="true"></i>
+							<ul class="menu-sub">
+								<li class="menu-sub__items">
+									<a class="menu-sub__links" href="#">тема <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+									<ul class="menu-subsub">
+										<li class="menu-subsub__items"><a class="menu-subsub__links" href="#">светлая</a></li>
+										<li class="menu-subsub__items"><a class="menu-subsub__links" href="#">темная</a></li>
+									</ul>
+								</li>
+								<li class="menu-sub__items"><a class="menu-sub__links" href="#">дата и время</a></li>
+							</ul>
+						</li>
+						<li class="menu-main__items"><a class="menu-main__links" href="#">о нас</a></li>
+						<li class="menu-main__items"><a class="menu-main__links" href="#">контакты</a></li>
+					</ul>
+				</div>
+				<div class="search">
+					<input class="search-bar" type="search" name="search" id="search-field" placeholder="Search...">
+					<input class="search-btn" type="submit" value="">
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- END OF HEADER -->
+
+	<section id="oopss">
+		<div class="container">
+			<div class="error-block">
+				<p class="error-block__prefix error-block__prefix--lg">Page</p>
+				<p class="error-block__title">Oopss! 404</p>
+				<p class="error-block__subtitle">The page you are looking for has not been found</p>
+				<p class="error-block__prefix error-block__prefix--sm">Page</p>
+			</div>
+		</div>
+	</section>
+	<!-- END OF OOPSS -->
+
+	<footer>
+		<div class="container">
+			<div class="social">
+				<ul class="social-menu">
+					<li class="social-menu__items"><a href="#" class="social-menu__links">facebook</a></li>
+					<li class="social-menu__items"><a href="#" class="social-menu__links">twitter</a></li>
+					<li class="social-menu__items"><a href="#" class="social-menu__links">dribbble</a></li>
+					<li class="social-menu__items"><a href="#" class="social-menu__links">google</a></li>
+					<li class="social-menu__items"><a href="#" class="social-menu__links">linkedin</a></li>
+					<li class="social-menu__items"><a href="#" class="social-menu__links">pinterest</a></li>
+					<li class="social-menu__items"><a href="#" class="social-menu__links">instagram</a></li>
+				</ul>
+			</div>
+			<hr>
+			<nav class="footer-menu">
+				<a href="#" class="footer-menu__links active">home</a>
+				<a href="#" class="footer-menu__links">travel</a>
+				<a href="#" class="footer-menu__links">architecture</a>
+				<a href="#" class="footer-menu__links">about</a>
+				<a href="#" class="footer-menu__links">contact</a>
+			</nav>
+			<hr>
+			<div class="copy">
+				<p class="copy__txt">&copy; 2016 Treeum <span class="copy__txt-span">Design by Me</span></p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- build:js js/script.main.js -->
+	<script src="js/jquery-3.1.1.js"></script>
+	<!-- <script src="js/bootstrap.js"></script> -->
+	<!-- <script src="js/scrolling-nav.js"></script> -->
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/script.js"></script>
+	<!-- endbuild -->
+</body>
+</html>
