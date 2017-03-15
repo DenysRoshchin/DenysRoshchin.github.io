@@ -15,8 +15,6 @@
 /// @group sass-css3-mixins
 ////
 
-// 
-
 
 /// Adds a browser prefix to the property
 /// @param {*} $property Property
@@ -226,7 +224,7 @@
 /// @require {mixin} css3-prefix
 
 @mixin flex($value: 1) {
-  @include css3-prefix('display', $value);
+  @include css3-prefix('box-flex', $value);
 }
 
 
