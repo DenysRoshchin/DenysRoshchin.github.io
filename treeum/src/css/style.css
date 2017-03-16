@@ -576,9 +576,9 @@ form {
     z-index: -1;
     top: -4px;
     border-top-width: 1.5em;
-    border-left-width: 25px;
+    border-left-width: 26px;
     border-right-color: transparent;
-    right: -11px;
+    right: -12px;
     -webkit-transition: height 0.5s;
     transition: height 0.5s; }
   .error-block__title {
