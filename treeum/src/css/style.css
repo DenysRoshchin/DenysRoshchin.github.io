@@ -560,7 +560,7 @@ form {
     height: 0.2em;
     border: 1.5em solid #000;
     z-index: -1;
-    top: -5px;
+    top: -4px;
     border-top-width: 1.5em;
     border-left-color: transparent;
     border-right-width: 25px;
@@ -574,7 +574,7 @@ form {
     height: 0.2em;
     border: 1.5em solid #000;
     z-index: -1;
-    top: -5px;
+    top: -4px;
     border-top-width: 1.5em;
     border-left-width: 25px;
     border-right-color: transparent;
