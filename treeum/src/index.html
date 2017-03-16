@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Project</title>
 	<!-- build:css css/stylemin.css -->
-	<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -49,8 +48,12 @@
 					</ul>
 				</div>
 				<div class="search">
-					<input class="search-bar" type="search" name="search" id="search-field" placeholder="Search...">
-					<input class="search-btn" type="submit" value="">
+					<form action="#">
+						<div class="search-bar">
+							<input  class="search" type="search" name="search" id="search-field" placeholder="Type and hit enter">
+						</div>
+						<input class="search-btn" type="submit" value="">
+					</form>	
 				</div>
 			</div>
 		</div>
@@ -72,15 +75,13 @@
 	<footer>
 		<div class="container">
 			<div class="social">
-				<ul class="social-menu">
-					<li class="social-menu__items"><a href="#" class="social-menu__links">facebook</a></li>
-					<li class="social-menu__items"><a href="#" class="social-menu__links">twitter</a></li>
-					<li class="social-menu__items"><a href="#" class="social-menu__links">dribbble</a></li>
-					<li class="social-menu__items"><a href="#" class="social-menu__links">google</a></li>
-					<li class="social-menu__items"><a href="#" class="social-menu__links">linkedin</a></li>
-					<li class="social-menu__items"><a href="#" class="social-menu__links">pinterest</a></li>
-					<li class="social-menu__items"><a href="#" class="social-menu__links">instagram</a></li>
-				</ul>
+				<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><span class="social-span"> facebook</span></a>
+				<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><span class="social-span"> twitter</span></a>
+				<a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i><span class="social-span"> dribbble</span></a>
+				<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i><span class="social-span"> google</span></a>
+				<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i><span class="social-span"> linkeid</span></a>
+				<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i><span class="social-span"> pinterest</span></a>
+				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i><span class="social-span"> instagram</span></a>
 			</div>
 			<hr>
 			<nav class="footer-menu">

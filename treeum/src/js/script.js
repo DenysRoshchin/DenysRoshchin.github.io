@@ -1,11 +1,15 @@
 $(function() {
 	$(".search-btn").click(function() {
-		$(".search-bar").addClass("visible animated slideInRight");	
-		$(".search-btn").css("display", "none");
-		console.log('2')
+		$(".search-bar").addClass("visible animated slideInRight").toggle();
+
 	});
 
-	$('.error-block__title').on("mouseenter", function() {
+	// $(".search-btn").click(function() {
+	// 	$(".logo").toggle();
+	// 	$(".menu-select").toggle();
+	// })
+
+	$('.error-block__title').mouseenter(function() {
 		$(".error-block__title").addClass("animated bounceIn");
 	});
 
