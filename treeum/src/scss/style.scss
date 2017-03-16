@@ -141,9 +141,6 @@ form{
 	outline: none;
 	border: none;
 }
-// .search-field{
-// 	opacity: 0;
-// }
 .search-btn{
 	border: none;
 	outline: none;
@@ -158,6 +155,7 @@ form{
 .error-block{
 	text-align: center;
 	&__prefix{
+		color: #fff;
 		width: 50px;
 		margin: 0 auto;
 		z-index: 10;
@@ -166,21 +164,35 @@ form{
 	&__prefix--sm{
 		display: none;
 	}
-	// &__prefix:before, &__prefix:after{
-	// 	content: '';
-	// 	width: 0;
-	// 	height: 0;
-	// 	border-width: 25px;
-	// 	border-style: solid;
-	// 	bottom: -16px;
-	// 	position: absolute;
-	// }
 	&__prefix:before{
-		border-color: #000 #000 #000 transparent;
-
+		 content: "";
+	    font-size: 0.5em;
+	    position: absolute;
+	    height: 0.2em;
+	    border: 1.5em solid #000;
+	    z-index: -1;
+	    top: -5px;
+	    border-top-width: 1.5em;
+	    border-left-color: transparent;
+	    border-right-width: 25px;
+	    right: 26px;
+	    -webkit-transition: height 0.5s;
+	    transition: height 0.5s;
 	}
 	&__prefix:after{
-		border-color: #000 transparent #000 #000;
+		content: "";
+		font-size: 0.5em;
+		position: absolute;
+		height: 0.2em;
+		border: 1.5em solid #000;
+		z-index: -1;
+		top: -5px;
+		border-top-width: 1.5em;
+		border-left-width: 25px;
+		border-right-color: transparent;
+		right: -11px;
+		-webkit-transition: height 0.5s;
+		transition: height 0.5s;
 	}
 	&__title{
 		font-size: 115px;

@@ -546,6 +546,7 @@ form {
 .error-block {
   text-align: center; }
   .error-block__prefix {
+    color: #fff;
     width: 50px;
     margin: 0 auto;
     z-index: 10;
@@ -553,9 +554,33 @@ form {
   .error-block__prefix--sm {
     display: none; }
   .error-block__prefix:before {
-    border-color: #000 #000 #000 transparent; }
+    content: "";
+    font-size: 0.5em;
+    position: absolute;
+    height: 0.2em;
+    border: 1.5em solid #000;
+    z-index: -1;
+    top: -5px;
+    border-top-width: 1.5em;
+    border-left-color: transparent;
+    border-right-width: 25px;
+    right: 26px;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s; }
   .error-block__prefix:after {
-    border-color: #000 transparent #000 #000; }
+    content: "";
+    font-size: 0.5em;
+    position: absolute;
+    height: 0.2em;
+    border: 1.5em solid #000;
+    z-index: -1;
+    top: -5px;
+    border-top-width: 1.5em;
+    border-left-width: 25px;
+    border-right-color: transparent;
+    right: -11px;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s; }
   .error-block__title {
     font-size: 115px;
     margin: 0;
