@@ -4,10 +4,13 @@ $(function() {
 
 	});
 
-	// $(".search-btn").click(function() {
-	// 	$(".logo").toggle();
-	// 	$(".menu-select").toggle();
-	// })
+	$(".search-btn").click(function() {
+		if($(window).width() < 620){
+			$(".logo").toggle();
+			$(".menu-select").toggle();
+			// $(".search").css("width", "100%");
+		}
+	})
 
 	$('.error-block__title').mouseenter(function() {
 		$(".error-block__title").addClass("animated bounceIn");

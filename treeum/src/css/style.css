@@ -524,22 +524,14 @@ form {
   height: 50px; }
 
 .search-bar {
-  display: block; }
+  display: none; }
 
-.visible {
-  padding: 0 0 0 10px;
+.visible, .search-field {
+  width: 100%;
+  padding: 7px 0 0 10px;
   background: #f3f3f3;
   outline: none;
   border: none; }
-
-.search {
-  border: none; }
-
-@keyframes opacity {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 
 .search-btn {
   border: none;

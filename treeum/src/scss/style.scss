@@ -132,24 +132,18 @@ form{
 	height: 50px;
 }
 .search-bar{
-	display: block;
+	display: none;
 }
-.visible{
-	// width: 100%;
-	padding: 0 0 0 10px;
+.visible, .search-field{
+	width: 100%;
+	padding: 7px 0 0 10px;
 	background: $oopssBg;
 	outline: none;
 	border: none;
 }
-.search{
-	border: none;
-	// background: $oopssBg;
-	// animation: opacity .7s;
-}
-@keyframes opacity{
-	0% {opacity: 0};
-	100%{opacity: 1};
-}
+// .search-field{
+// 	opacity: 0;
+// }
 .search-btn{
 	border: none;
 	outline: none;
