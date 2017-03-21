@@ -4,7 +4,7 @@ $(function() {
 		var pos = $(this).scrollTop();
 		var about = $("#about").position();
 		var aboutHeight = $("#about").height();
-		console.log(pos)
+		console.log(pos);
 		if(pos >= (about.top - aboutHeight + 50)){
 			$(".about-items").addClass("animated bounceInDown");
 		} else{
