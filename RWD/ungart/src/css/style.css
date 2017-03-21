@@ -402,6 +402,13 @@ template {
 [hidden] {
   display: none; }
 
+.wwd__title, .portfolio__title, .team__title, .contact__title {
+  text-transform: uppercase;
+  font-family: Exo, sans-serif; }
+
+.wwd__subtitle, .portfolio__subtitle, .team__subtitle, .contact__subtitle {
+  font-family: Ubuntu, arial, sans-serif; }
+
 * {
   list-style-type: none; }
 
@@ -435,13 +442,25 @@ section {
     padding: 10px 20px;
     border-radius: 5px; }
 
-.about, .card {
+#about {
   background: #e9edef; }
 
 .about-items {
   border: 1px solid #000;
   border-radius: 5px;
-  text-align: center; }
+  padding: 0 3%;
+  text-align: center;
+  opacity: 0; }
+
+.animated {
+  opacity: 1; }
+
+.about__title {
+  font-family: Exo, arial, sans-serif;
+  text-transform: capitalize; }
+
+.about__text {
+  font-family: Ubuntu, arial, sans-serif; }
 
 .card {
   border: none;
@@ -481,6 +500,9 @@ section {
 
 #team {
   background: #394e5b; }
+
+.team {
+  color: #fff; }
 
 .items {
   margin-bottom: 40px; }
@@ -528,3 +550,46 @@ section {
   .position__position {
     text-transform: capitalize;
     margin-bottom: 10px; }
+
+#contact {
+  background: #e9edef; }
+
+footer {
+  padding: 1% 0px; }
+
+.social a {
+  display: inline-block;
+  width: 43px;
+  height: 44px;
+  background: url(../img/social-footer.png) 0 0 no-repeat;
+  transition: all .6s; }
+  .social a:hover {
+    background-position: -1px -44px; }
+
+.social .twitt {
+  background-position: -44px 0; }
+  .social .twitt:hover {
+    background-position: -44px -44px; }
+
+.social .youtube {
+  background-position: -86px 0; }
+  .social .youtube:hover {
+    background-position: -86px -44px; }
+
+.social .linke {
+  background-position: -130px 0; }
+  .social .linke:hover {
+    background-position: -130px -44px; }
+
+.social .mail {
+  background-position: -172px 0; }
+  .social .mail:hover {
+    background-position: -172px -44px; }
+
+@media (max-width: 992px) {
+  .about-items {
+    margin-bottom: 5%; } }
+
+@media (max-width: 768px) {
+  .footer-row {
+    text-align: center; } }

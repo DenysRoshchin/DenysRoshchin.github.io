@@ -1,3 +1,26 @@
+$(function() {
+	$(window).scroll(function() {
+		
+		var pos = $(this).scrollTop();
+		var about = $("#about").position();
+		var aboutHeight = $("#about").height();
+		console.log(pos)
+		if(pos >= (about.top - aboutHeight + 50)){
+			$(".about-items").addClass("animated bounceInDown");
+		} else{
+			$(".about-items").removeClass("animated bounceInDown");
+		}
+
+	})
+})
+
+
+
+
+
+
+
+
 var Person =  {
 	constructor: function(name, age, gender) {
 		this.name = name;

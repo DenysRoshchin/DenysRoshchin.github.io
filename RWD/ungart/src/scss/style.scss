@@ -2,7 +2,14 @@
 		  'var',
 		  'norm';
 // GLOBAL
-*{
+.wwd__title, .portfolio__title, .team__title, .contact__title{
+	text-transform: uppercase;
+	font-family: Exo, sans-serif;
+}
+.wwd__subtitle, .portfolio__subtitle, .team__subtitle, .contact__subtitle{
+	font-family: Ubuntu, arial, sans-serif;
+}
+*{	
 	list-style-type: none;
 }
 section{
@@ -42,13 +49,28 @@ section{
 	}
 }
 // WWD
-.about, .card{
+#about{
 	background: $wwdBg;
 }
+
 .about-items{
 	border: 1px solid #000;
 	border-radius: 5px;
+	padding: 0 3%;
 	text-align: center;
+	opacity: 0;
+}
+.animated{
+	opacity: 1;
+}
+.about{
+	&__title{
+		font-family: Exo, arial, sans-serif;
+		text-transform: capitalize;
+	}
+	&__text{
+		font-family: Ubuntu, arial, sans-serif;
+	}
 }
 .card{
 	border: none;
@@ -93,6 +115,9 @@ section{
 // TEAM
 #team{
 	background: $teamBg;
+}
+.team{
+	color: #fff;
 }
 .items{
 	margin-bottom: 40px;
@@ -150,5 +175,60 @@ section{
 	&__position{
 		text-transform: capitalize;
 		margin-bottom: 10px;
+	}
+}
+// CONTACT
+#contact{
+	background: #e9edef;
+}
+// FOOTER
+footer{
+	padding: 1% 0px;
+}
+.social{
+	a{
+		display: inline-block;
+		width: 43px;
+		height: 44px;
+		background: url(../img/social-footer.png) 0 0 no-repeat;
+		transition: all .6s;
+		&:hover{
+			background-position: -1px -44px;
+			}
+		}
+		.twitt{
+			background-position: -44px 0;
+			&:hover{
+				background-position: -44px -44px;
+			}
+		}
+		.youtube{
+			background-position: -86px 0;
+			&:hover{
+				background-position: -86px -44px;
+			}
+		}
+		.linke{
+			background-position: -130px 0;
+			&:hover{
+				background-position: -130px -44px;
+			}
+		}
+		.mail{
+			background-position: -172px 0;
+			&:hover{
+				background-position: -172px -44px;
+			}
+		}
+}
+
+@media (max-width: 992px){
+	.about-items{
+		margin-bottom: 5%;
+	}
+}
+@media (max-width: 768px){
+	.footer-row{
+		text-align: center;
 	}
 }
