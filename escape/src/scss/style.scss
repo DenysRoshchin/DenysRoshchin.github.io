@@ -92,9 +92,6 @@ header{
 		text-decoration: none;
 	}
 }
-// .show{
-// 	max-height: 10em;
-// }
 .middle{
 	padding: 150px 0 270px 0;
 	text-align: center;
@@ -338,6 +335,7 @@ footer{
 	font: 14px $regular;
 	background: $blue;
 }
+// MEDIA
 @media (max-width: 840px){
 	.develop-wrap{
 		.develop{
@@ -383,8 +381,8 @@ footer{
 		max-height: 0px;
 	}
 	.show{
-	max-height: 10em;
-}
+		max-height: 10em;
+	}
 	.middle{
 		&__pretitle{
 			font-size: 16px;
