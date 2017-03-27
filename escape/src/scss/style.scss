@@ -6,14 +6,12 @@
 // GLOBAL
 .wrapper{
 	max-width: 1020px;
+	padding: 0 10px;
 	margin: 0 auto;
 }
 *{
 	box-sizing: border-box;
 }
-// img{
-// 	width: 100%;
-// }
 // HEADER
 header{
 	background: rgba(0,0,0,.5) url(../img/header_bg.jpg) 0 0 no-repeat;
@@ -21,7 +19,7 @@ header{
 }
 .top{
 	padding: 2% 0;
-	@include flexbox($alignment: center);
+	@include flexbox($spacing: space-between, $alignment: center);
 	.logo{
 		&__link{
 			text-transform: uppercase;
@@ -34,12 +32,69 @@ header{
 		}
 	}
 	.menu{
-		// @include flexbox($spacing: space-around);
 		a{
 			text-transform: capitalize;
+			margin-right: 10px;
 		}
 	}
 }
+#mobile-menu{
+	display: none;
+}
+.hidden-menu{
+	width: 100%;
+	@include flexbox($direction: column, $spacing: center)
+	position: relative;
+}
+.toggle{
+	display: none;
+	outline: 0;
+	align-self: center;
+	padding: 15px 10px;
+	border: none;
+	border-radius: 2px;
+	span{
+		display: block;
+		width: 20px;
+		height: 3px;
+		position: relative;
+		background: #000;
+		&:before{
+			content: "";
+			display: block;
+			position: absolute;
+			top: -5px;
+			width: 20px;
+			height: 3px;
+			background: #000;
+		}
+		&:after{
+			content: "";
+			display: block;
+			width: 20px;
+			height: 3px;
+			position: absolute;
+			bottom: -5px;
+			background: #000;
+		}
+	}
+}
+.mobile-menu{
+	text-align: center;
+	background: rgba(0,0,0,.3);
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	transition: max-height .4s;
+	&__links{
+		color: #fff;
+		text-decoration: none;
+	}
+}
+// .show{
+// 	max-height: 10em;
+// }
 .middle{
 	padding: 150px 0 270px 0;
 	text-align: center;
@@ -102,7 +157,6 @@ header{
 		padding-right: 10%;
 	}
 }
-
 // CATEGORIES
 #categories{
 	padding: 100px 0;
@@ -151,16 +205,6 @@ header{
 	@include flexbox($direction: column, $spacing: center, $alignment: flex-start);
 	position: relative;
 	background: #fff;
-	// &:after, &:after{
-	// 	content: ''; 
- //    	position: absolute;
- //    	border: 17px solid transparent;
-	// }
-	// &:after{
-	// 	border-right: 24px solid #fff;
-	// 	bottom: 86px;
-	// 	left: -40px;
-	// }	
 	p:nth-child(2){
 		color: $blue;
 	}
@@ -168,17 +212,6 @@ header{
 .content-txt--arrow-right{
 	position: relative;
 	background: #fff;
-	// &:after, &:after{
-	// 	content: ''; 
- //    	position: absolute;
- //    	border: 17px solid transparent;
-	// }
-	// &:after{
-	// 	border-left: 24px solid #fff;
-	// 	bottom: 86px;
-	// 	left: 0;
-	// 	right: -40px;
-	// }	
 }
 // LOGOS
 .logos{
@@ -337,6 +370,21 @@ footer{
 	}
 }
 @media (max-width: 550px){
+	.menu{
+		display: none;
+	}
+	.toggle{
+		display: block;
+	}
+	#mobile-menu{
+		display: block;
+	}
+	.mobile-menu{
+		max-height: 0px;
+	}
+	.show{
+	max-height: 10em;
+}
 	.middle{
 		&__pretitle{
 			font-size: 16px;
