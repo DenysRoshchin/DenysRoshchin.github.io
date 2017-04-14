@@ -169,7 +169,7 @@ a{
 }
 // ARTICLES
 .articles__items{
-	padding: 75px 0;
+	margin-bottom: 50px;
 	text-align: center;
 }
 .articles__title{
@@ -344,9 +344,6 @@ time{
 	}
 }
 @media (max-width: 767px){
-	.articles__items{
-		padding: 40px 0;
-	}
 	.blog__photo{
 		display: none;
 	}
@@ -356,5 +353,15 @@ time{
 	}
 	.header-main__menu{
 		padding: 0;
+	}
+	.header-main__span{
+		display: block;
+		margin: 10px auto;
+	}
+	.header-main__link{
+		margin-right: 18px;
+	}
+	.slick{
+		display: none;
 	}
 }

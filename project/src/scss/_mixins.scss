@@ -15,6 +15,17 @@
 /// @group sass-css3-mixins
 ////
 
+@mixin flexbox($direction: row, $spacing: space-between, $wrap: no-wrap, $alignment: null ){
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $spacing;
+  flex-wrap: $wrap;
+  align-items: $alignment;
+}
 
 /// Adds a browser prefix to the property
 /// @param {*} $property Property
