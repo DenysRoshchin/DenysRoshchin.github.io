@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box; }
+
+.container {
+  padding: 20px; }
+
+#box {
+  width: 200px;
+  height: 200px;
+  background: pink;
+  transition: transform 300ms ease-in-out;
+  pointer-events: none;
+  transition: all 2.5s ease; }
+
+@keyframes animation1 {
+  0% {
+    transform: translateX(0px); }
+  25% {
+    transform: translateX(200px); }
+  50% {
+    transform: translateX(200px) translateY(200px); }
+  75% {
+    transform: translateX(0px) translateY(200px); }
+  100% {
+    transform: translateX(0px) translateY(0px); } }
