@@ -1,0 +1,230 @@
+@import "mixins",
+		  "var",
+		  "norm";
+body{
+	font-family: Roboto, arial, sans-serif;
+}
+.title{
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+.navbar-toggleable-md{
+	background-color: transparent;
+	border: none;
+}
+.navbar-brand{
+	width: 95px;
+	height: 95px;
+}
+.navbar-nav{
+	margin-top: 18px;
+}
+.navbar-nav > li > a{
+	text-transform: uppercase;
+}
+.navbar-toggle{
+	margin-top: 26px;
+}
+.container-fluid{
+	border-right: 2px solid $yellow;
+}
+// ABOUT-COMPANY
+.about-company{
+	color: $white;
+	background:  url(../img/main-banner.jpg) center center no-repeat;
+	// background-size: cover;
+	height: 584px;
+}
+.main-title{
+	position: relative;
+	padding-top: 212px;
+	text-transform: uppercase;
+	font-size: 48px;
+	color: $white;
+	letter-spacing: 1.9px;
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0px;
+		bottom: -5px;
+		width: 274px;
+		border-bottom: 6px solid $yellow;
+	}
+}
+.about{
+	padding-top: 117px;
+	&__items{
+		border-top: 2px solid $white;
+		padding-top: 15px;
+		font-size: 18px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+// NEWS
+.news{
+	background: $grey;
+	padding-top: 60px;
+}
+.image{
+	width: 310px;
+	height: 310px;
+	background: $white;
+	border: 1px solid #000;
+}
+.txt{
+	border: 1px solid #000;
+	background: $white;
+	padding: 55px 60px 58px 50px;
+	margin: 97px 0 97px -120px;
+	&__txt{
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 300;
+	}
+}
+.card{
+	text-align: center;
+	background: transparent;
+	border: none;
+}
+.card-title{
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.card-text{
+	font-weight: 300;
+}
+.card-footer{
+	background-color: transparent;
+	border: none;
+	small{
+		position: relative;
+		text-transform: uppercase;
+		letter-spacing: .6px;
+		font-weight: 900;
+		font-size: 14px;
+		&:after{
+			content: '';
+			display: block;
+			width: 100px;
+			height: 2px;
+			background: $yellow;
+			position: absolute;
+		}
+	}
+}
+// DEMO
+.demo{
+	padding: 43px 0;
+	margin-bottom: 171px;
+}
+.zuni{
+	border-bottom: 2px solid $black;
+	padding-bottom: 10px;
+	margin-bottom: 17px;
+}
+.carousel-control-prev, .carousel-control-next{
+	top: 320px;
+	width: 50px;
+	height: 50px;
+	// border: 1px solid #000;
+	opacity: 1;
+	background: $yellow;
+}
+.carousel-control-prev{
+	left: 630px;
+}
+.carousel-control-next{
+	right: -19px;
+}
+// TEAM
+.team{
+	background: $grey;
+	padding-bottom: 70px;
+}
+.team-img{
+	margin-top: -63px;
+}
+.team-members{
+	margin-top: -49px;
+	&__count{
+		font-size: 70px;
+		letter-spacing: 2.8px;
+		color: $yellow;
+		font-weight: 900;
+	}
+	.title{
+		&:after{
+			content: '';
+			display: block;
+			width: 205px;
+			height: 2px;
+			background: $black;
+		}
+	}
+	&__txt{
+		font-weight: 300;
+	}
+}
+.team-photo{
+	margin-top: -45px;
+
+	p{
+		margin-top: 10px;
+		text-transform: uppercase;
+		font-weight: 300;
+		span{
+			font-weight: 700;
+		}
+	}
+}
+// PARTNERS
+.partners-text{
+	.title{
+		letter-spacing: 1px;
+		&:after{
+			content: '';
+			display: block;
+			width: 308px;
+			height: 2px;
+			background: $black;
+		}
+	}
+	&__txt{
+		font-weight: 300;
+	}
+}
+.work-with{
+	height: 313px;
+	background: $white;
+	border: 1px solid #000;
+	padding: 66px 50px;
+}
+
+
+
+
+
+
+
+
+
+.progressContainer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #eee;
+}
+.progress{
+	height: 4px;
+	background: red;
+	width: 0;
+	transition: width .5s;
+}
