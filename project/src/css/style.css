@@ -11,7 +11,8 @@ ul, ol {
   list-style-type: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #fff; }
 
 figure {
   margin: 0; }
@@ -408,6 +409,9 @@ template {
 [hidden] {
   display: none; }
 
+img {
+  width: 100%; }
+
 body {
   font-family: Roboto, arial, sans-serif; }
 
@@ -431,21 +435,18 @@ body {
 .navbar-nav > li > a {
   text-transform: uppercase; }
 
-.navbar-toggle {
+.navbar-toggler {
   margin-top: 26px; }
-
-.container-fluid {
-  border-right: 2px solid #f5d900; }
 
 .about-company {
   color: #fff;
   background: url(../img/main-banner.jpg) center center no-repeat;
-  height: 584px; }
+  height: 584px;
+  text-transform: uppercase; }
 
 .main-title {
+  align-self: flex-end;
   position: relative;
-  padding-top: 212px;
-  text-transform: uppercase;
   font-size: 48px;
   color: #fff;
   letter-spacing: 1.9px; }
@@ -458,47 +459,85 @@ body {
     width: 274px;
     border-bottom: 6px solid #f5d900; }
 
-.about {
-  padding-top: 117px; }
-  .about__items {
-    border-top: 2px solid #fff;
-    padding-top: 15px;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-align: center; }
+.container-flex {
+  height: 540px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: no-wrap; }
+
+.main-menu {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: no-wrap; }
+  .main-menu__items {
+    text-align: center;
+    border-top: 2px solid #fff; }
+  .main-menu__links:hover {
+    color: #fff;
+    text-decoration: none; }
+
+@media (max-width: 450px) {
+  .main-title {
+    align-self: center; }
+  .main-menu {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: no-wrap; }
+    .main-menu__items {
+      border-top: none;
+      padding: 10px 0;
+      background: rgba(0, 0, 0, 0.3);
+      transition: background .34s; }
+      .main-menu__items:hover {
+        background: rgba(0, 0, 0, 0.6); } }
 
 .news {
   background: #ebebeb;
   padding-top: 60px; }
 
-.image {
-  width: 310px;
-  height: 310px;
-  background: #fff;
-  border: 1px solid #000; }
-
-.txt {
-  border: 1px solid #000;
+.news-text {
   background: #fff;
   padding: 55px 60px 58px 50px;
   margin: 97px 0 97px -120px; }
-  .txt__txt {
+  .news-text__txt {
+    margin-top: 25px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 300; }
 
+@media (max-width: 450px) {
+  .news-img {
+    display: none; }
+  .news-text {
+    margin: 0; } }
+
 .card {
-  text-align: center;
   background: transparent;
   border: none; }
 
-.card-title {
+.card-block .title {
   font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase; }
+  letter-spacing: .6px;
+  margin-bottom: 16px; }
 
-.card-text {
-  font-weight: 300; }
+.card-block__text {
+  font-weight: 300;
+  letter-spacing: .6px; }
 
 .card-footer {
   background-color: transparent;
@@ -514,8 +553,8 @@ body {
       display: block;
       width: 100px;
       height: 2px;
-      background: #f5d900;
-      position: absolute; }
+      position: absolute;
+      background: #f5d900; }
 
 .demo {
   padding: 43px 0;
@@ -539,8 +578,20 @@ body {
 .carousel-control-next {
   right: -19px; }
 
+@media (max-width: 450px) {
+  .demo {
+    margin-bottom: 60px; }
+  .carousel-control-prev, .carousel-control-next {
+    top: 145px; }
+  .carousel-control-prev {
+    left: 283px; }
+  .carousel-control-next {
+    right: -1px; } }
+
+.wrapper {
+  background: #ebebeb; }
+
 .team {
-  background: #ebebeb;
   padding-bottom: 70px; }
 
 .team-img {
@@ -561,6 +612,14 @@ body {
     background: #000; }
   .team-members__txt {
     font-weight: 300; }
+
+@media (max-width: 450px) {
+  .team-members {
+    margin-top: 0; }
+    .team-members__txt {
+      margin-bottom: 50px; }
+  .team-photo {
+    margin-bottom: 60px; } }
 
 .team-photo {
   margin-top: -45px; }
@@ -586,8 +645,27 @@ body {
 .work-with {
   height: 313px;
   background: #fff;
-  border: 1px solid #000;
-  padding: 66px 50px; }
+  padding: 66px 50px;
+  margin-bottom: 80px; }
+
+.first-row {
+  margin-bottom: 46px; }
+
+footer .container {
+  height: 100px; }
+  footer .container .row {
+    height: 100px; }
+
+.footer-link a {
+  display: inline-block;
+  width: 101px;
+  height: 33px; }
+
+.footer-link__face {
+  background: url(../img/facebook-logo.svg) 0 0 no-repeat; }
+
+.footer-link__youtube {
+  background: url(../img/youtube.jpg) 0 0 no-repeat; }
 
 .progressContainer {
   position: fixed;
