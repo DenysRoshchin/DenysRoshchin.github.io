@@ -2,7 +2,7 @@
 		  "var",
 		  "norm";
 img{
-	width: 100%;
+	max-width: 100%;
 }
 body{
 	font-family: Roboto, arial, sans-serif;
@@ -13,16 +13,32 @@ body{
 	font-weight: 500;
 	letter-spacing: 1px;
 }
+// HEADER
+header{
+	.container{
+		&:after{
+			content: '';
+			display: inline-block;
+			height: 100px;
+			width: 2px;
+			background: $yellow;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+}
 .navbar-toggleable-md{
 	background-color: transparent;
 	border: none;
+	margin-bottom: 22px;
 }
 .navbar-brand{
 	width: 95px;
 	height: 95px;
 }
 .navbar-nav{
-	margin-top: 18px;
+	margin-top: 31px;
 }
 .navbar-nav > li > a{
 	text-transform: uppercase;
@@ -34,13 +50,13 @@ body{
 .about-company{
 	color: $white;
 	background:  url(../img/main-banner.jpg) center center no-repeat;
+	background-size: cover;
 	height: 584px;
 	text-transform: uppercase;
 }
 .main-title{
 	align-self: flex-end;
 	position: relative;
-	// padding-top: 212px;
 	font-size: 48px;
 	color: $white;
 	letter-spacing: 1.9px;
@@ -71,48 +87,40 @@ body{
 		}
 	}
 }
-@media (max-width: 450px){
-	.main-title{
-		align-self: center;
-	}
-	.main-menu{
-		@include flexbox($direction: column);
-		&__items{
-			border-top: none;
-			padding: 10px 0;
-			background: rgba(0,0,0,.3);
-			transition: background .34s;
-			&:hover{
-				background: rgba(0,0,0,.6);
-			}
-		}
-	}
-}
-// .about{
-// 	padding-top: 117px;
-// 	&__items{
-// 		border-top: 2px solid $white;
-// 		padding-top: 15px;
-// 		font-size: 18px;
-// 		text-transform: uppercase;
-// 		text-align: center;
-// 	}
-// }
 // NEWS
 .news{
 	background: $grey;
-	padding-top: 60px;
 }
-// .image{
-// 	width: 310px;
-// 	height: 310px;
-// 	background: $white;
-// 	border: 1px solid #000;
-// }
+.news, .demo, .partners{
+	.container{
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			width: 2px;
+			height: 100%;
+			background: $yellow;
+		}
+	}
+}
+.news-img{
+	position: relative;
+	padding-top: 60px;
+	margin-left: 40px;
+	&__txt{
+		text-transform: uppercase;
+		position: absolute;
+		top: 229px;
+		left: -60px;
+		transform: rotate(-90deg);
+		transform-origin: left top 0;
+	}
+}
 .news-text{
 	background: $white;
 	padding: 55px 60px 58px 50px;
-	margin: 97px 0 97px -120px;
+	margin: 207px 0 97px -88px;
 	&__txt{
 		margin-top: 25px;
 		font-size: 16px;
@@ -120,23 +128,20 @@ body{
 		font-weight: 300;
 	}
 }
-@media (max-width: 450px){
-	.news-img{
-		display: none;
-	}
-	.news-text{
-		margin: 0;
-	}
-}
 .card{
 	background: transparent;
 	border: none;
+}
+.card-block-title{
+	height: 107px;
+}
+.card-description{
+	height: 248px;
 }
 .card-block{
 	.title{
 		font-size: 16px;
 		letter-spacing: .6px;
-		margin-bottom: 16px;
 	}
 	&__text{
 		font-weight: 300;
@@ -146,6 +151,7 @@ body{
 .card-footer{
 	background-color: transparent;
 	border: none;
+	margin-bottom: 37px;
 	small{
 		position: relative;
 		text-transform: uppercase;
@@ -163,14 +169,22 @@ body{
 	}
 }
 // DEMO
-.demo{
-	padding: 43px 0;
-	margin-bottom: 171px;
+.demo-header{
+	position: relative;
+	&__txt{
+		text-transform: uppercase;
+		position: absolute;
+		top: 145px;
+		left: -210px;
+		transform: rotate(-90deg);
+		transform-origin: left top 0;
+	}
 }
 .zuni{
 	border-bottom: 2px solid $black;
 	padding-bottom: 10px;
 	margin-bottom: 17px;
+	padding-top: 43px;
 }
 .carousel-control-prev, .carousel-control-next{
 	top: 320px;
@@ -185,30 +199,24 @@ body{
 .carousel-control-next{
 	right: -19px;
 }
-@media (max-width: 450px){
-	.demo{
-		margin-bottom: 60px;
-	}
-	.carousel-control-prev, .carousel-control-next{
-		top: 145px;
-	}
-	.carousel-control-prev{
-		left: 283px;
-	}
-	.carousel-control-next{
-		right: -1px;
-	}
-}
 // WRAPPER
 .wrapper{
 	background: $grey;
 }
 // TEAM
 .team{
-	padding-bottom: 70px;
+	margin-top: 137px;
 }
 .team-img{
 	margin-top: -63px;
+	position: relative;
+	&__txt{
+		position: absolute;
+		transform: rotate(-90deg);
+		transform-origin: left top 0;
+		top: 190px;
+		left: -17px;
+	}
 }
 .team-members{
 	margin-top: -49px;
@@ -231,17 +239,6 @@ body{
 		font-weight: 300;
 	}
 }
-@media (max-width: 450px){
-	.team-members{
-		margin-top: 0;
-		&__txt{
-			margin-bottom: 50px;
-		}
-	}
-	.team-photo{
-		margin-bottom: 60px;
-	}
-}
 .team-photo{
 	margin-top: -45px;
 	p{
@@ -257,6 +254,8 @@ body{
 .partners-text{
 	.title{
 		letter-spacing: 1px;
+		display: inline-block;
+		width: auto;
 		&:after{
 			content: '';
 			display: block;
@@ -270,10 +269,29 @@ body{
 	}
 }
 .work-with{
-	height: 313px;
+	margin-top: 70px;
 	background: $white;
 	padding: 66px 50px;
+	margin-left: 69px;
 	margin-bottom: 80px;
+	position: relative;
+	&__txt{
+		position: absolute;
+		top: 190px;
+		left: -87px;
+		transform: rotate(-90deg);
+		transform-origin: left top 0;
+	}
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		height: 100%;
+		background: #fff;
+		top: 0;
+		width: calc((100vw - 960px + 15px) / 2);
+		left: 100%;
+	}
 }
 .first-row{
 	margin-bottom: 46px;
@@ -293,19 +311,10 @@ footer{
 		width: 101px;
 		height: 33px;
 	}
-	&__face{
-		background: url(../img/facebook-logo.svg) 0 0 no-repeat;
-	}
 	&__youtube{
 		background: url(../img/youtube.jpg) 0 0 no-repeat;
 	}
 }
-
-
-
-
-
-
 .progressContainer{
 	position: fixed;
 	bottom: 0;
@@ -319,4 +328,115 @@ footer{
 	background: red;
 	width: 0;
 	transition: width .5s;
+}
+@media (min-width: 1660px){
+	.work-with{
+		&:after{
+			width: calc((100vw - 1041px - 84px) / 2);
+			left: 100%;
+			top: 0;
+		}
+	}
+}
+@media (max-width: 450px){
+	.main-title{
+		align-self: center;
+		&:after{
+			width: 294px;
+		}
+	}
+	.main-menu{
+		@include flexbox($direction: column);
+		&__items{
+			border-top: none;
+			padding: 10px 0;
+			background: rgba(0,0,0,.3);
+			transition: background .34s;
+			&:hover{
+				background: rgba(0,0,0,.6);
+			}
+		}
+	}
+	.news-img{
+		display: none;
+	}
+	.news-text{
+		margin: 40px 0 40px 0;
+		padding: 30px 20px;
+		text-align: center;
+		.title{
+			font-size: 20px;
+		}
+	}
+	.card{
+		text-align: center;
+	}
+	.card-description{
+		height: 150px;
+	}
+	header, .news, .demo, .partners{
+		.container{
+			&:after{
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				width: 0;
+			}
+		}
+	}
+	.news-img__txt, .demo-header__txt, .team-img__txt, .work-with__txt{
+		display: none;
+	}
+	.demo{
+		margin-bottom: 60px;
+	}
+	.team-img{
+		margin-top: 60px;
+	}
+	.carousel-control-prev, .carousel-control-next{
+		top: 77%;
+	}
+	.carousel-control-prev{
+		left: 0px;
+	}
+	.carousel-control-next{
+		right: 0px;
+	}
+	.team-members{
+		text-align: center;
+		margin-top: 0;
+		.title{
+			&:after{
+				width: auto;
+			}
+		}
+		&__txt{
+			margin-bottom: 50px;
+		}
+	}
+	.team-photo{
+		text-align: center;
+		margin-bottom: 60px;
+	}
+	.partners-text{
+		.title{
+			text-align: center;	
+			&:after{
+				width: auto;
+			}
+		}
+	}
+	.work-with{
+		margin-left: 0;
+	}
+	.first-row{
+		margin-bottom: 0;
+	}
+	.logos{
+		text-align: center;
+		&__items{
+			margin-bottom: 20px;
+		}
+	}
 }
