@@ -1,0 +1,285 @@
+@import "mixins",
+		  "var",
+		  "norm";
+body{
+	font-family: "PT Sans", sans-serif;
+}
+img{
+	max-width: 100%;
+}
+.wrapper{
+	max-width: 1020px;
+	margin: 0 auto;
+	padding: 10px 20px;
+}
+.btn{
+	padding: 20px 40px;
+	background: $orange;
+	color: $white;
+	border: none;
+	border-bottom: 5px solid $darkOrange;
+	.arrows{
+			animation: fadeOut 2s ease-in-out infinite;
+	}
+	transition: all 1s;
+	&:hover{
+		background: $darkOrange;
+		color: $white;
+	}
+}
+.main-header{
+	text-align: center;
+	animation: bounceInDown 1s ease-in-out .5s;	
+}
+.logo{
+
+	&__subtitle{
+		margin-top: -15px;
+		padding-left: 60px;
+		padding-bottom: 60px;
+		border-bottom: 1px solid #000;
+	}
+}
+.freeWeb{
+	width: 80%;
+	margin: 0 auto;
+	font-family: "PT Sans", sans-serif;
+	text-transform: uppercase;
+	&__title{
+		font-weight: 900;
+		color: $orange;
+	}
+	&__subtitle{
+		font-size: 22px;
+	}
+	&__btn{
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+}
+// MEETING
+.meeting{
+	margin-top: 40px;
+	@include flexbox($wrap: wrap);
+}
+.when{
+	background: $orange;
+	padding: 30px;
+	flex: 1;
+}
+.when-header{
+	@include flexbox($spacing: space-around);
+}
+.calendar{
+	.month{
+		padding: 3px 25px;
+		background: $dark;
+		color: $white;
+		p{
+			margin: 0;
+		}
+	}
+	.day{
+		background: #eee;
+		text-align: center;
+		padding: 8px 0;
+		p{
+			font-size: 22px;
+		}
+	}
+}
+.date{
+	width: 60%;
+	color: $white;
+	text-transform: uppercase;
+	.wensday{
+		margin-top: 0;
+	}
+	.dayOf{
+		border-bottom: 1px dashed $white;
+		padding-bottom: 10px;
+	}
+}
+.img-block{
+	margin: 55px 0;
+	text-align: center;
+	color: $white;
+}
+.lector{
+	margin-top: -20px;
+	font-style: italic;
+}
+.lector-name{
+	text-transform: uppercase;
+}
+.about{
+	margin-left: 15px;
+	color: $white;
+	&__items{
+		margin-bottom: 10px;
+	}
+}
+.before-start{
+	padding: 30px;
+	background: $lgray;
+	flex: 1;
+}
+.counter{
+	text-align: center;
+	&__title{
+		text-transform: uppercase;
+		font-weight: 900;
+	}
+}
+#clockdiv{
+	@include flexbox();
+	span{
+
+		position: relative;
+		padding-top: 10px;
+		font-size: 24px;
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		background: $dark;
+		border-radius: 5px;
+		color: $white;
+	}
+}
+.content{
+	margin-top: 40px;
+	text-align: center;
+	&__title{
+		text-transform: uppercase;
+		font-size: 22px;
+		font-weight: 900;
+	}
+	&__items{
+		text-align: left;
+		margin-bottom: 20px;
+		font-size: 18px;
+		position: relative;
+	}
+}
+.fa-check{
+	position: absolute;
+	color: $darkOrange;
+	top: 2px;
+	left: -20px;
+}
+
+// FOR_WHOM
+.for-whom{
+	@include flexbox($direction: column);
+	text-align: center;
+	padding: 30px;
+	.format{
+		font-style: italic;
+		font-size: 18px;
+	}
+	&__btn{
+		width: 200px;
+		margin: 40px auto;
+	}
+	&__whom{
+		font-weight: 900;
+		font-size: 24px;
+		padding-bottom: 40px;
+		border-bottom: 1px dashed #000;
+	}
+}
+// MAIN
+.main{
+	background:  url(../img/bg.png) center center no-repeat;
+}
+.article-title{
+	text-align: center;
+}
+.about-img{
+	text-align: center;
+	padding: 30px;
+	background: rgba(0,0,0,.1);
+		img{
+		width: 500px;
+		margin: 0 auto;
+	}
+	.figcaption{
+		margin-top: 10px;
+		font-size: 18px;
+		font-weight: 900
+	}
+}
+// COME
+.come{
+	text-align: center;
+	&__title{
+		font-size: 24px;
+		font-weight: 900;
+	}
+}
+@media screen and (max-width: 699px){
+	.logo__subtitle{
+		padding-bottom: 10px;
+	}
+ 	.article-title{
+ 		font-size: 18px;
+ 		font-weight: 900;
+ 		margin-top: 0;
+ 	}
+ 	.come__btn{
+ 		font-size: 12px;
+ 		padding: 10px 18px;
+ 	}
+ 	.before-start{
+ 		order: 0;
+ 	}
+ 	.when{
+ 		order: 1;
+ 	}
+}
+.footer{
+	margin-top: 80px;
+	text-align: center;
+	font-size: 36px;
+}
+
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100%{
+  	opacity: 1;
+  }
+}
