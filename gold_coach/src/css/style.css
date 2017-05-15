@@ -628,7 +628,7 @@ img {
     font-size: 24px;
     font-weight: 900; }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 500px) {
   .logo__subtitle {
     padding-bottom: 10px; }
   .article-title {
