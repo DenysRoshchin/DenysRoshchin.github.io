@@ -21,7 +21,7 @@ img{
 	.arrows{
 			animation: fadeOut 2s ease-in-out infinite;
 	}
-	transition: all 1s;
+	transition: color 1s;
 	&:hover{
 		background: $darkOrange;
 		color: $white;
@@ -54,7 +54,7 @@ img{
 	}
 	&__btn{
 		padding: 20px;
-		margin-bottom: 20px;
+		margin: 20px 0;
 	}
 }
 // MEETING

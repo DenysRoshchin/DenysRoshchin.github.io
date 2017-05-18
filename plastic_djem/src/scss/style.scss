@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import 'mixins';
+// FLOATS
+.container {
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 0 0 2px #cccccc;
+}
+.columns-container {
+    padding: 10px;
+    background: #ecf0f1;
+    border: 2px solid #34495e;
+    &:after{
+        content: '';
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+.float {
+    width: 150px;
+    min-height: 100px;
+    padding: 10px;
+    color: white;
+    background: #3498db;
+    border: 2px solid #34495e;
+}
+.float1 {
+    float: left;
+}
+.float2 {
+    float: right;
+}
+// TEMPLATE
+.wrapper{
+    max-width: 920px;
+    // max-height: 100vh;
+    margin: 0 auto;
+    padding: 30px 30px;
+    background: #eee;
+}
+.header{
+    @include flexbox($spacing: center, $alignment: flex-start);
+    min-height: 50px;
+    margin-bottom: 20px;
+    .title{
+        text-transform: uppercase;
+        font-size: 21px;
+        margin: 0;
+        align-self: center;
+    }
+}
+.block-wrap{
+    @include flexbox();
+}
+.left-block{
+    flex: 1;
+    margin-right: 10px;
+    &__items{
+        min-height: 200px;
+        margin-top: 10px;
+        border: 1px solid #000;
+    }
+    &__items:first-child{
+        margin-top: 0;
+    }
+}
+.right-block{
+    flex: 1;
+    margin-left: 10px;
+    &__items{
+        min-height: 115px;
+        border: 1px solid #000;
+        margin-top: 10px;
+    }
+    &__items:first-child{
+        margin-top: 0;
+    }
+    &__items:nth-child(2){
+        min-height: 180px;
+    }
+    &__items:nth-child(3){
+        min-height: 180px;
+    }
+}
+.footer{
+    min-height: 80px;
+    @include flexbox($spacing: center);
+    .title{
+        text-transform: uppercase;
+    }
+    margin-top: 20px;
+}
+.header, .footer{
+    border: 1px solid #000;
+}
+
+@media screen and(max-width: 640px){
+    .container{
+        display: none;
+    }
+    .block-wrap{
+        @include flexbox($direction: column);
+        .left-block, .right-block{
+            margin: 0;
+        }
+    }
+}
+// PRIME FACTORS
+fieldset{
+    padding: 30px 30px;
+}
+#align{
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

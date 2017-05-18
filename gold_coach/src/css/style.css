@@ -433,7 +433,7 @@ img {
   color: #fff;
   border: none;
   border-bottom: 5px solid #ff332a;
-  transition: all 1s; }
+  transition: color 1s; }
   .btn .arrows {
     animation: fadeOut 2s ease-in-out infinite; }
   .btn:hover {
@@ -461,7 +461,7 @@ img {
     font-size: 22px; }
   .freeWeb__btn {
     padding: 20px;
-    margin-bottom: 20px; }
+    margin: 20px 0; }
 
 .meeting {
   margin-top: 40px;

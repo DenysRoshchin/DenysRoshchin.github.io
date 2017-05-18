@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Project</title>
+	<link rel="stylesheet" href="css/stylemin.css">
+</head>
+<body>
+
+<!-- FLOATS -->
+	<div class="wrapper">
+		<div class="container">
+	       <div class="columns-container">
+	           <div class="float float1">
+	                    .float1<br>
+	           </div>
+	           <div class="float float2">
+	                    .float2
+	           </div>
+	       </div>
+	   </div>        
+   </div>
+<!-- END OF FLOATS -->
+
+<!-- TEMPLATE -->
+	<div class="wrapper">
+		<header class="header">
+			<h1 class="title">header</h1>
+		</header>
+		<main class="main">
+			<div class="block-wrap">
+				<div class="left-block">
+					<div class="left-block__items"></div>
+					<div class="left-block__items"></div>
+					<div class="left-block__items"></div>
+				</div>
+				<div class="right-block">
+					<div class="right-block__items"></div>
+					<div class="right-block__items"></div>
+					<div class="right-block__items"></div>
+					<div class="right-block__items"></div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<p class="title">footer</p>
+		</footer>
+	</div>
+<!-- END OF TEMPLATE -->
+
+
+<!-- PRIME FACTORS -->
+	<div class="wrapper">
+		<form>
+			<fieldset>
+				<legend>Prime Factors</legend>
+				
+				<table>
+					<tr>
+						<td>
+							<label for="number">Number:</label>
+						</td>
+						<td>
+							<input type="number" id="number" autocomplete="off" oninput="factor()">
+							<input id="random" type="button" value="Random">
+						</td>
+					</tr>
+					<tr>
+						<td>Factorization:</td>
+						<td id="align">
+							<span id="factorization0"></span><br>
+							<span id="factorization1"><sup>&nbsp;</sup></span>	
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+	</div>	
+<!-- END OF PRIME FACTORS -->
+
+	<script src="js/script.main.js"></script>
+</body>
+</html>
