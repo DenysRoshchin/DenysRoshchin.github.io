@@ -140,4 +140,3 @@ function clearChildren(node) {
 var TIMES = "\u00D7"; 
 var NBSP  = "\u00A0";
 
-;
