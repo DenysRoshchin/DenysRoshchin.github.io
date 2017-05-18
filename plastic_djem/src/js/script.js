@@ -2,7 +2,7 @@
 // Find the sum of all array’s elements using JS. 
 // Note, the array’s nesting level can be random. 
 
-var arr = [[2,[3]], 1, 2, [3, 4, [5, 6], 7], 8, [9, 10]];
+var arr = [[2,[3]], 1, [[1],[1],[1]],2, [3, 4, [5, 6], 7], 8, [9, 10]];
 
 var flatten = arr => arr.reduce(
   (a, b) => a.concat(Array.isArray(b) ? flatten(b) : b), []
@@ -18,7 +18,7 @@ function arraySum(arr) {
 	return summ;	
 }
 
-console.log(arraySum(concatArr));
+console.log("Sum of all array's elements: " + arraySum(concatArr));
 
 
 

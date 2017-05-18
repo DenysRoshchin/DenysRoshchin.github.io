@@ -40,10 +40,25 @@
 // TEMPLATE
 .wrapper{
     max-width: 920px;
-    // max-height: 100vh;
     margin: 0 auto;
     padding: 30px 30px;
     background: #eee;
+}
+.wrapper{
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .inner{
+        margin-left: 10px;
+    }
+    ul{
+        margin-left: 30px;
+        list-style-type: none;
+    }
+    li>ul{
+        margin-left: 5px;
+    }
 }
 .header{
     @include flexbox($spacing: center, $alignment: flex-start);
@@ -110,11 +125,17 @@
         .left-block, .right-block{
             margin: 0;
         }
+        .right-block__items:first-child{
+            margin-top: 10px;
+        }
     }
 }
 // PRIME FACTORS
 fieldset{
     padding: 30px 30px;
+}
+#number{
+    width: 50%;
 }
 #align{
     position: absolute;
