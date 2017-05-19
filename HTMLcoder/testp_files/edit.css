@@ -1,0 +1,62 @@
+img{
+	max-width: 100%;
+}
+#sm_box{
+	top: 107px;;
+}
+.main_menu .mm-icon a{
+	background: none;
+	position: relative;
+}
+.hotpage a:after{
+	content: '';
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	background: url(Hot-icon.png);
+	top: -4px;
+	right: 13px;;
+}
+.ixp-c-logo, .ixpt-c .casumo{
+	display: block;
+	position: relative;
+	background: none;
+}
+.ixp-c-logo, .ixpt-c .casumo:before{
+	content: '';
+	display: block;
+	width: 66px;
+	height: 32px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(casumo.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.ixpt-amex, .ixpt-visa, .ixpt-mastercard{
+	height: 15px;
+}
+.ixpt tbody .ixpt-mastercard{
+	background: url(Mastercard-logo.png) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.jouez-btn{
+	padding: 5px;
+	border-radius: 2px;
+	background: red;
+}
+.ixbm-item{
+	width: 49%;
+	padding: 0;
+	background: none;
+}
+.ixbm-beginner{
+	padding-right: 6px;
+}
+.ixbm-basic{
+	padding-left: 6px;
+	border-left: 1px dashed #000;
+}
