@@ -350,7 +350,7 @@ header {
       color: #fff;
       background: rgba(50, 191, 163, 0.8);
       transition: opacity .34s; }
-    .team-item:hover .team-item__hover {
+    .team-item:hover .team-item__hover, .team-item:active .team-item__hover {
       opacity: 1; }
     .team-item:hover .team-item__name {
       color: #17d0ac; }

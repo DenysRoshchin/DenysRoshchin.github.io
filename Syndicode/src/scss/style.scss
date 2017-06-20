@@ -366,7 +366,7 @@ header{
       background: rgba(50,191,163,.8);
       transition: opacity .34s;
     }
-    &:hover &__hover{
+    &:hover &__hover, &:active &__hover{
       opacity: 1;
     }  
     &:hover &__name{
