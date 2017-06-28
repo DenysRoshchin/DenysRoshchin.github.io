@@ -1,11 +1,11 @@
 var   gulp = require('gulp'),
-			sass = require('gulp-sass'),
-			browserSync = require('browser-sync').create(),
-			useref = require('gulp-useref'),
-			uglify = require('gulp-uglify'),
-			gulpIf = require('gulp-if'),
-			cssnano = require('gulp-cssnano'),
-			image = require('gulp-imagemin');
+		sass = require('gulp-sass'),
+		browserSync = require('browser-sync').create(),
+		useref = require('gulp-useref'),
+		uglify = require('gulp-uglify'),
+		gulpIf = require('gulp-if'),
+		cssnano = require('gulp-cssnano'),
+		image = require('gulp-imagemin');
 
 
 gulp.task('sass', function() {
