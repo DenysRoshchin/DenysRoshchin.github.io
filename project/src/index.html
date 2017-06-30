@@ -6,15 +6,177 @@
 	<title>Project</title>
 	<!-- build:css css/stylemin.css -->
 	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400i,800i|Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/style.css">
 	<!-- endbuild -->
 </head>
 <body>
 	
-	<div class="test">1</div>
+	<!-- header -->
+	
+	<header>
+		<div class="mobile-top">
+			<nav class="mobile-nav">
+				<button class="open-nav">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<a href="#" class="mobile-nav__home"></a>
+				<a href="#" class="mobile-nav__search"></a>
+				<a href="#" class="mobile-nav__basket"></a>
+				<a href="#" class="mobile-nav__login"></a>
+				<a href="#" class="mobile-nav__phone"></a>
+			</nav>
+		</div>
+		<div class="container">
+			<div class="top">
+				<div class="logo">
+					<div class="logo__img">
+						<img src="img/logo.png" alt="log-img">
+					</div>
+					<p class="logo__subtitle">Интернет-магазин "Благой арт"</p>
+				</div>
+				<div class="search">
+					<input type="text" name="search-field" class="search__field" placeholder="Введите название или артикул">
+				</div>
+				<div class="contacts">
+					<div class="contacts__phone">
+						+7 (800) 707-81-39
+					</div>
+					<div class="contacts__schedule">
+						<p class="schedule">ПН-ПТ с 9:00 до 18:00</p>
+						<p class="region">Доставка по РФ и СНГ</p>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<nav class="nav">
+					<span class="menu-icon">
+						<img src="img/menu-icon.png" alt="menu-icon">
+					</span>
+					<ul class="main-nav">						
+						<button class="close-btn">
+							<span class="first"></span>
+							<span class="second"></span>
+						</button>
+						<li class="main-nav__items open-catalog">
+							<a href="#" class="main-nav__links">каталог товаров</a>
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+							<ul class="catalog">
+								<li class="catalog__items open-wedding">
+									<a href="#" class="catalog__links">Свадебная бижутерия</a>
+									<i class="fa fa-chevron-right" aria-hidden="true"></i>
+									<ul class="wedding">
+										<li class="wedding__items">
+											<a href="#" class="wedding__links">Кулоны</a>
+										</li>
+										<li class="wedding__items">
+											<a href="#" class="wedding__links">Серьги</a>
+										</li>
+										<li class="wedding__items">
+											<a href="#" class="wedding__links">Подвески</a>
+										</li>
+									</ul>
+								</li>
+								<li class="catalog__items">
+									<a href="#" class="catalog__links">Аксессуары для волос</a>
+								</li>
+								<li class="catalog__items">
+									<a href="#" class="catalog__links">Броши</a>
+								</li>
+								<li class="catalog__items open-mans">
+									<a href="#" class="catalog__links heading">Мужские аксессуары</a>
+									<i class="fa fa-chevron-right" aria-hidden="true"></i>
+									<ul class="mans">
+										<li class="mans__items">
+											<a href="#" class="mans__links">МУЖСКАЯ БИЖУТЕРИЯ</a>
+										</li>
+										<li class="mans__items">
+											<a href="#" class="mans__links">Браслеты</a>
+										</li>
+										<li class="mans__items">
+											<a href="#" class="mans__links">Кулоны</a>
+										</li>
+										<li class="mans__items">
+											<a href="#" class="mans__links">Зажимы и запонки</a>
+										</li>
+									</ul>
+								</li>
+								<li class="catalog__items">
+									<a href="#" class="catalog__links">Клатчи</a>
+								</li>
+								<li class="catalog__items">
+									<a href="#" class="catalog__links">Детская бижутерия</a>
+								</li>
+								<li class="catalog__items">
+									<a href="#" class="catalog__links">Демонстрационное <span>оборудывание</span></a>
+								</li>
+							</ul>
+						</li>
+						<li class="main-nav__items">
+							<a href="#" class="main-nav__links">условия работы</a>
+						</li>
+						<li class="main-nav__items">
+							<a href="#" class="main-nav__links">скидки</a>
+						</li>
+						<li class="main-nav__items">
+							<a href="#" class="main-nav__links">олата и доставка</a>
+						</li>
+						<li class="main-nav__items">
+							<a href="#" class="main-nav__links">документы</a>
+						</li>
+						<li class="main-nav__items">
+							<a href="#" class="main-nav__links">контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="info">
+					<div class="basket">
+						<span class="basket__count">10</span>
+						<span class="basket__goods">товаров / <span class="goods-summ">56 789 P</span></span>
+					</div>
+					<div class="login">
+						<a href="#">войти</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end of header -->
+
+	<!-- slider -->
+	<div class="slider-container">
+		<div class="slider">
+			<div class="slider__items">
+				<div class="slider-txt">
+					<p class="slider-txt__title">Новая коллекция</p>
+					<p class="slider-txt__subtitle"><span>SWAROWSKI</span> уже здесь!</p>
+				</div>
+			</div>
+			<div class="slider__items">
+				<div class="slider-txt">
+					<p class="slider-txt__title">Новая коллекция</p>
+					<p class="slider-txt__subtitle"><span>SWAROWSKI</span> уже здесь!</p>
+				</div>
+			</div>
+			<div class="slider__items">
+				<div class="slider-txt">
+					<p class="slider-txt__title">Новая коллекция</p>
+					<p class="slider-txt__subtitle"><span>SWAROWSKI</span> уже здесь!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- end of slider -->
+
 
 	<!-- build:js js/script.main.js -->
 	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/slick.js"></script>
 	<script src="js/script.js"></script>
 	<!-- endbuild -->
 </body>
