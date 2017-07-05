@@ -21,7 +21,7 @@ confirmBtn.onclick = function() {
 	compareArr = arr.splice(0, 5);
 
 	if(inpInn.length < 10 || inpInn.length > 10){
-		alert('Your inn must contein 10 digits');
+		document.querySelector('.confirm-field').innerHTML = 'Your inn must contein 10 digits';
 	} else if(compareArr.join('') < 33000){
 		alert('You to yang');
 		document.querySelector('.confirm-field').innerHTML = '<button class="red">You cant submit, to young</button>';
