@@ -8,38 +8,37 @@
 </head>
 <body>
 	
-<div class="container">
-
-
-<form action="" method="post" name="form_citydetails" id="form_citydetails" enctype="multipart/form-data" onsubmit="return false;">
-<p><b>Please enter</b> your city here to see it work. <input class="ff_elem" type="text" name="ff_nm_from[]" value="" id="f_elem_city"/>
-</form>
-
-
-<!-- 	<form  autocomplete="on">  --><!-- action="" method="post" -->
-	<!-- 	<div class="form-field">
-			<input class="form-field__inp" type="number" name="sum" max="10000" placeholder="Enter the sum" required autofocus>
-		</div>
-		<div class="form-field">
-			<input class="form-field__inp" type="number" name="term" min="1" max="12" placeholder="Enter the term" required>
-		</div>
-		<div class="form-field">
-			<input class="form-field__inp" type="number" name="inn" id="inn" size="10" placeholder="Enter the inn" required>
-		</div>	
-		<div class="form-field">
-			<input class="form-field__inp" type="text" name="name" placeholder="Enter your name" required>
-		</div>
-		<div class="form-field">
-			<input class="form-field__inp" type="text" name="surname" placeholder="Enter yor surname" required>
-		</div>
-		<div class="form-field">
-			<input class="form-field__inp" type="text" name="city" placeholder="Enter you homecity" required>
-		</div>
-		<div class="form-field">
-			<button class="form-field__btn">Submit</button>
-		</div>
-	</form>
-</div> -->
+	<div class="container">
+		<form  action="/action_page_post.php" method="post" autocomplete="on"> 
+			<div class="form-field">
+				<input class="form-field__inp" id="sum" type="number" name="sum" max="10000" placeholder="Enter the sum" required autofocus>
+			</div>
+			<div class="form-field">
+				<input class="form-field__inp" id="term" type="number" name="term" min="1" max="12" placeholder="Enter the term" required>
+			</div>
+			<div class="form-field">
+				<input class="form-field__inp" id="inn" type="number" name="inn" minlength= 10 placeholder="Enter the inn" required>
+			</div>	
+			<div class="form-field">
+				<input class="form-field__inp" type="text" name="name" placeholder="Enter your name" required>
+			</div>
+			<div class="form-field">
+			<input class="form-field__inp" type="text" name="surname" placeholder="Enter your surname" required>
+			</div>
+			<div class="form-field">
+				<input class="form-field__inp" id="f_elem_city" type="text" name="city" placeholder="Enter your homecity" required>
+			</div>
+			<div class="form-field">
+				<button class="form-field__confirm">Confirm</button>
+			</div>
+			<div class="form-field confirm-field">
+				<p>Check the details:</p>
+				<p class="sum"></p>
+				<p class="term"></p>
+				<!-- <button class="btn">Submit</button> -->
+			</div>
+		</form>
+	</div>
 
 
 	<script src="js/script.main.js"></script>

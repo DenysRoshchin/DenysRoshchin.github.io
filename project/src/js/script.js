@@ -1,11 +1,12 @@
 
-var confirm = document.querySelector('.form-field__confirm');
+var confirmBtn = document.querySelector('.form-field__confirm');
 var btn = document.querySelector('.btn');
 
 
-confirm.onclick = function() {
+confirmBtn.onclick = function() {
 	
 	var inpSum, inpTerm, inpInn, arr, compareArr;
+	
 	document.querySelector('.confirm-field').className +=' visible';
 	
 	inpSum = document.getElementById('sum').value;
@@ -23,7 +24,7 @@ confirm.onclick = function() {
 		alert('Your inn must contein 10 digits');
 	} else if(compareArr.join('') < 33000){
 		alert('You to yang');
-		document.querySelector('.confirm-field').innerHTML += '<button class="red">You cant submit, to young</button>';
+		document.querySelector('.confirm-field').innerHTML = '<button class="red">You cant submit, to young</button>';
 	} else if(compareArr.join('') > 33000){
 		document.querySelector('.sum').innerHTML = '<span>Sum: </span>' + inpSum + '<br>';
 		document.querySelector('.term').innerHTML += '<span>Term: </span>' + inpTerm + '<br>';
@@ -33,9 +34,9 @@ confirm.onclick = function() {
 };
 
 
-jQuery(function () 
- {
-	 jQuery("#f_elem_city").autocomplete({
+jQuery(function () {
+
+ 	jQuery("#f_elem_city").autocomplete({
 		source: function (request, response) {
 		 jQuery.getJSON(
 			"http://gd.geobytes.com/AutoCompleteCity?callback=?&q="+request.term,
@@ -64,12 +65,3 @@ jQuery(function ()
 
 
 
-
-
-// confirm.onclick = function() {
-// 	document.querySelector('.confirm-field').innerHTML = '<p>Chek the details:</p>' 
-// 																										 + '<br>' + '<ul><li>Sum:' + sum.value + '</li>' 
-// 																										 + '<li>Term:' + term.value + '</li>' + '</ul>' 
-// 																										 + '<br>'
-// 																										 + '<button>Submit</button>';
-// };
