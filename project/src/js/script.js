@@ -2,7 +2,6 @@
 var confirmBtn = document.querySelector('.form-field__confirm');
 var btn = document.querySelector('.btn');
 
-
 confirmBtn.onclick = function() {
 	
 	var inpSum, inpTerm, inpInn, arr, compareArr;
@@ -32,7 +31,6 @@ confirmBtn.onclick = function() {
 	} 
 
 };
-
 
 jQuery(function () {
 
