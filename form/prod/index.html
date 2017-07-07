@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Project</title>
+	<link rel="stylesheet" href="css/stylemin.css">
+</head>
+<body>
+	
+	<div class="container">
+		<form  action="/action_page_post.php" method="post" autocomplete="on"> 
+			<div class="form-field">
+				<input class="form-field__inp" id="sum" type="number" name="sum" max="10000" placeholder="Enter the sum" required autofocus>
+			</div>
+			<div class="form-field">
+				<input class="form-field__inp" id="term" type="number" name="term" min="1" max="12" placeholder="Enter the term" required>
+			</div>
+			<div class="form-field">
+				<input class="form-field__inp" id="inn" type="number" name="inn" minlength= 10 placeholder="Enter the inn" required>
+			</div>	
+			<div class="form-field">
+				<input class="form-field__inp" type="text" name="name" placeholder="Enter your name" required>
+			</div>
+			<div class="form-field">
+			<input class="form-field__inp" type="text" name="surname" placeholder="Enter your surname" required>
+			</div>
+			<div class="form-field">
+				<input class="form-field__inp" id="f_elem_city" type="text" name="city" placeholder="Enter your homecity" required>
+			</div>
+			<div class="form-field">
+				<button class="form-field__confirm">Confirm</button>
+			</div>
+			<div class="form-field confirm-field">
+				<p>Check the details:</p>
+				<p class="sum"></p>
+				<p class="term"></p>
+				<!-- <button class="btn">Submit</button> -->
+			</div>
+		</form>
+	</div>
+
+
+	<script src="js/script.main.js"></script>
+</body>
+</html>
