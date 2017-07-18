@@ -526,6 +526,17 @@ select {
     padding: 0; }
     .social-nav:after {
       display: none; }
+  .inform__items:nth-child(2) {
+    padding-left: 0; }
+  .order2 {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap; }
   .contacts-items:last-child {
     margin: 0; }
   .main-nav__links {
@@ -547,6 +558,8 @@ select {
     width: 200px; }
   .form .bottom__right button {
     padding: 2px 25px; }
+  .slider {
+    padding: 0 20px; }
   .photo img {
     width: 100%; }
   .info {
@@ -556,9 +569,9 @@ select {
     .info__baths {
       padding-left: 25px; }
       .info__baths:before {
-        left: 152px; }
+        left: 144px; }
     .info__sqrt:before {
-      left: 272px; }
+      left: 255px; }
   .slick-prev {
     left: 280px; }
   .slick-next {
@@ -612,7 +625,6 @@ select {
   #main-nav {
     height: 58px; }
     #main-nav .container {
-      text-align: center;
       position: relative; }
   .open-menu {
     padding-top: 20px; }
