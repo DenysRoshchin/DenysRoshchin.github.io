@@ -13,7 +13,6 @@ $(function() {
 		disable_search: true,
 	});
 
-
 	$('.slider').slick({
 		slidesToShow: 4,
 		  responsive: [

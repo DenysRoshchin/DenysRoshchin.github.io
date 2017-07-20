@@ -1,0 +1,773 @@
+@import "var",
+				"mixins";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: $black;
+	list-style-type: none;
+}
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+body{
+	font: normal normal 400 16px/21px Lato, arial, sans-serif;
+	color: $main_text;
+}
+.title{
+	font: normal normal 900 36px/21px Lato, arial, sans-serif;
+	margin-top: 70px;
+	margin-bottom: 30px;
+	color: $black;
+}
+// TOP-LINE
+#top-line{
+	border-bottom: 1px solid $lightGrey;;
+}
+.top-line-content, .inform{
+	height: 48px;
+	@include flex($alignment: center);
+}
+.social-nav{
+	padding: 0 10px;
+	position: relative;
+	&:before, &:after{
+		content: '';
+		display: block;
+		height: 48px;
+		position: absolute;
+		top: -13px;
+	}
+	&:before{
+		border-left: 1px solid $lightGrey;
+		left: 0;
+	}
+	&:after{
+		border-right: 1px solid $lightGrey;
+		right: 0;
+	}
+	&__links{
+		font-size: 14px;
+		display: inline-block;
+		margin: 0 7px;
+		position: relative;
+		&:after{
+			content: '';
+			display: block;
+			height: 14px;
+			position: absolute;
+			top: 3px;
+			right: -10px;
+			border-right: 1px solid $lightGrey;;
+		}
+		&:last-child:after{
+			display: none;
+		}
+		&:hover .fa{
+			color: $main_active;
+		}
+	}
+}	
+.fa{
+	color: $main_text;
+	transition: color .34s;
+}
+.inform{
+	font-size: 13px;
+	&__items, &__btn, &__schedule{
+		font-weight: 200;
+		color: $main_text;
+		height: 48px;
+		display: inline-block;
+		padding: 14px 15px;
+		border-left: 1px solid $lightGrey;
+		position: relative;
+	}
+	&__schedule{
+		padding-left: 30px;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 18px;
+			left: 15px;
+			width: 12px;
+			height: 14px;
+			background: url(../img/clock.png) 0 0 no-repeat;
+		}
+	}
+	&__items:nth-child(2){
+		padding-left: 47px;
+		.lang-flag{
+			padding: 1px;
+			border: 1px solid $lightGrey;	
+			position: absolute;
+			top: 17px;
+			left: 17px;
+		}
+	}
+	&__btn{
+		border: none;
+		background: none;
+	}
+	&__btn{
+		position: relative;
+		padding-left: 30px;
+		border-right: 1px solid $lightGrey;
+		border-left: 1px solid $lightGrey;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			width: 11px;
+			height: 12px;
+			left: 15px;
+			background: url(../img/login-icon.png) 0 0 no-repeat;
+		}
+		&:hover{
+			cursor: pointer;
+		}
+	}
+}
+select{
+	background: none;
+	border: none;
+	color: $main_text;
+}
+// CONTACTS
+.contacts{
+	min-height: 132px;
+	@include flex();
+	&-items{
+		@include flex($alignment: center);
+		&__links{
+			margin-right: 10px;
+			padding: 28px;
+			border: 3px solid $main_active;
+			border-radius: 100%;
+			background: url(../img/contacts-icons.png) center center no-repeat;
+			background-position: 0 20px;
+		}
+		&__links.mail{
+			background-position: -53px 20px;
+		}
+		&__links.map{
+			background-position: -109px 20px;
+		}
+		p{
+			font-size: 14px;
+		}
+	}
+	&-items:first-child{
+		margin-bottom: 12px;
+	}
+	&-items:last-child{
+		margin-right: 20px;
+	}
+}
+.muted{
+	display: block;
+	font-size: 15px;
+	color: $main_text;
+}
+// MAIN-NAV
+#main-nav{
+	background: $darkGrey;
+}
+.main-nav{
+	@include flex($alignment: center);
+	position: relative;
+	&__links{
+		display: inline-block;
+		padding: 17px 41px;
+		text-transform: uppercase;
+		font: normal normal 400 14px/21px Lato, Arial, sans-serif;
+		color: $white;
+		border-top: 3px solid transparent;
+		border-bottom: 3px solid transparent;
+		&--active{
+			border-top: 3px solid $main_active;
+			border-bottom: 3px solid $main_active;
+			background: rgba(178,209,45,.1);
+		}
+	}
+	&__btn{
+		@include btn($pd: 21px 49px);
+		text-transform: uppercase;
+		color: $white;
+		font: normal normal 400 14px/18px Lato, Arial, sans-serif;
+	}
+}
+.submenu{
+	display: none;
+	position: absolute;
+	background: $darkGrey;
+	padding: 0 19px;
+	border-top: 3px solid $main_active;
+	&__links{
+		display: block;
+		padding: 14px 2px;
+		color: $submenuTxt;
+		border-bottom: 1px solid $border;
+	}
+}
+// DREAM_HOUSE
+#dream_house{
+	background: url(../img/dream_house.jpg) center center no-repeat;
+	background-size: cover;
+	min-height: 741px;	
+}
+.dream_house-content{
+	@include flex($direction: column);
+}
+.txt-block{
+	width: 467px;
+	height: 164px;
+	margin-top: 140px;
+	padding: 44px 55px;
+	background: rgba(0,0,0,.6);
+	&__title{
+		font: normal normal 400 36px/21px Lato, arial, sans-serif;
+		color: $white;
+		position: relative;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			top: -10px;
+			left: -20px;
+			width: 2px;
+			height: 90px;
+			background: $main_active;
+		}
+	}
+	&__subtitle{
+		margin-top: 33px;
+		font-size: 24px;
+		font-weight: 400;
+		color: $white;
+	}
+}
+.find-btn{
+	display: none;
+}
+.form-block{
+	margin-top: 115px;
+}
+.form-caption{
+	width: 215px;
+	padding: 25px 0;
+	background: $darkGrey;
+	font-size: 22px;
+	color: $white;
+	text-transform: capitalize;
+	text-align: center;
+}
+.form{
+	@include flex();
+	background: $formBg;
+	// max-height: 215px;
+	padding: 27px;
+	&__items{
+		width: 344px;
+		.select-caption{
+			padding-left: 1px;
+			margin-bottom: 10px;
+			font-weight: bold;
+			span{
+				color: $main_text;
+				font-weight: 200;
+			}
+		}
+		.top{
+			margin-bottom: 23px;
+		}
+		.bottom{
+			@include flex();
+			&__left, &__right{
+				width: 45%;
+			}
+			&__right{
+				button{
+					margin-top: 31px;
+					@include btn($pd: 11px 36px);
+					font-size: 16px;
+					color: $white;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+#type, #location, #status, #beds, #baths{
+	width: 100%;
+	border-radius: 0px;
+}
+.chosen-container-single .chosen-single {
+	height: 40px;
+	border-radius: 0;
+	line-height: 40px;
+	border: 1px solid $lightGrey;
+	span{
+		color: $main_text;
+	}
+	div{
+		background: $main_active url(../img/arrow.png) center center no-repeat;
+		width: 40px;	
+		padding: 1px;	
+		border-left: 1px solid $lightGrey;
+	}
+}
+.chosen-container .chosen-results li{
+	border-bottom: 1px solid $lightGrey;
+	margin: 0 2px;
+	padding: 10px 10px;
+}
+// LATEST
+#latest{
+	.container{
+		text-align: center;
+	}
+}
+.subtitle{
+	font-size: 14px;
+	color: $main_text;
+	margin-top: 38px;
+	margin-bottom: 20px;
+}
+.slider{
+	@include flex();
+}
+.items{
+	border: 1px solid $lightGrey;
+	margin-top: 29px;
+	margin-right: 21px;
+	&:last-child{
+		margin-right: 0;
+	}
+}
+.photo{
+	position: relative;
+	.heart{
+		display: block;
+		width: 23px;
+		height: 18px;
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		z-index: 11;
+		background: url(../img/heart.png) 0 0 no-repeat;
+		&:hover{
+			background-position: 0 -19px;
+		}
+	}
+	.bg{
+		@include flex($alignment: center, $spacing: center);
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		height: 100%;
+		background: rgba(0,0,0,.4);
+		z-index: 10;
+		opacity: 0;
+		transition: opacity .34s;
+		&__zoom, &__link{
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			border: none;
+			background: $main_active url(../img/bg-btns.png) 0 45% no-repeat;
+			transition: transform .34s;
+			&:hover{
+				transform: scale(1.08);
+			}
+		}
+		&__zoom{
+			margin-right: 15px;
+		}
+		&__link{
+			background-position: -39px 0;
+		}
+	}
+	&:hover .bg{
+		opacity: 1;
+	}
+}
+.info{
+	@include flex($alignment: center);
+	position: relative;
+	height: 48px;
+	padding: 0px 20px;
+	span{
+		font-size: 13px;
+		color: $main_text;
+	}
+	sup{
+		color: $main_text;
+	}
+	&__bads:before, &__baths:before, &__sqrt:before{
+		content: '';
+		display: block;
+		width: 25px;
+		height: 16px;
+		position: absolute;
+		left: 20px;
+	}
+	&__bads{
+		padding-left: 30px;
+		&:before{
+			background: url(../img/bad.png) 0 0 no-repeat;
+		}
+	}
+	&__baths{
+		&:before{
+			background: url(../img/baths.png) 0 0 no-repeat;
+			left: 100px;
+		}
+	}
+	&__sqrt{
+		&:before{
+			background: url(../img/sqrt.png) 0 0 no-repeat;
+			top: 15px;
+			left: 194px;
+		}
+	}
+}
+.content, .items-footer{
+	padding: 0 20px;
+	background: $grey;
+	text-align: left;
+}
+.content{
+	&__title{
+		text-transform: uppercase;
+		font-size: 15px;
+		padding: 10px 0;
+		transition: color .34s;
+	}
+	&__txt{
+		display: block;
+		padding-bottom: 10px;
+	}
+	&:hover &__title{
+		color: $main;
+	}
+}
+.items-footer{
+	@include flex($alignment: center);
+	border-top: 1px solid $lightGrey;
+	border-bottom: 2px solid $main_active;
+	padding: 20px 20px;
+	&__price{
+		font-size: 20px;
+		font-weight: 500;
+		color: $main;
+	}
+	.share, .star{
+		display: inline-block;
+		width: 18px;
+		height: 16px;
+		background: url(../img/footer-sprite.png) 0 0 no-repeat;	
+	}
+	.share{
+		&:hover{
+			background-position: 0 -16px;
+		}
+	}
+	.star{
+		background-position: -15px 0;
+		&:hover{
+			background-position: -15px -15px;
+		}
+	}
+}
+.slick-prev, .slick-next{
+	top: -32px;
+}
+.slick-prev{
+	left: 485px;
+	background: $main url(../img/left-arrow.png) center center no-repeat;
+	&:before{
+		content: '';
+	}
+}
+.slick-next{
+	right: 489px;
+	background: $main url(../img/right-arrow.png) center center no-repeat;
+	&:before{
+		content: '';
+	}
+}
+.slick-prev, .slick-next{
+	width: 33px;
+	height: 33px;
+	border-radius: 50%;
+}
+.slick-next:hover, .slick-next:focus{
+	background: $darkGrey url(../img/right-arrow.png) center center no-repeat;
+}
+.slick-prev:hover, .slick-prev:focus{
+	background: $darkGrey url(../img/left-arrow.png) center center no-repeat;
+}
+// MEDIA
+@media screen and(max-width: 769px){
+	.social-nav{
+		padding: 0;
+		&:after{
+			display: none;
+		}
+	}
+	.inform{
+		&__items:nth-child(2){
+			padding-left: 0;
+		}
+	}
+	.order2{
+		@include flex();
+	}
+	.contacts-items:last-child{
+		margin: 0;
+	}
+	.main-nav{
+		&__links{
+			font-size: 12px;
+			padding: 17px 15px;
+		}
+		&__btn{
+			padding: 21px 12px;
+		}
+	}
+	#dream_house{
+		background: url(../img/dream_house.jpg) 60% 0 no-repeat;
+	}
+	.txt-block{
+		width: 380px;
+		height: 126px;
+		padding: 28px 55px;
+		&__title{
+			font: normal normal 400 28px/21px Lato, Arial, sans-serif;
+		}
+		&__subtitle{
+			font-size: 18px;	
+		}
+	}
+	.form{
+		&__items{
+			width: 200px;
+		}
+		.bottom{
+			&__right{
+				button{
+					padding: 2px 25px;
+				}
+			}
+		}
+	}
+	.slider{
+		padding: 0 20px;
+	}
+	.photo{
+		img{
+			width: 100%;
+		}
+	}
+	.info{
+		padding: 0 20px;
+		&__bads{
+			padding-left: 30px;
+		}
+		&__baths{
+			padding-left: 25px;
+			&:before{
+				left: 144px;
+			}
+		}
+		&__sqrt{
+			&:before{
+				left: 255px;
+			}
+		}
+	}
+	.slick-prev{
+		left: 280px;
+	}
+	.slick-next{
+		right: 280px;
+	}
+}
+@media screen and(max-width: 416px){
+	.top-line-content{
+		@include flex($direction: column)
+		height: 117px;
+	}
+	.social-nav{
+		order: 5;
+		position: absolute;
+		top: 46px;
+		&:before{
+			display: none;
+		}
+	}
+	.inform{
+		&__items, &__btn, &__schedule{
+			border: none;
+		}
+		&__items:nth-child(2){
+			padding-left: 0;
+		}
+	}
+	.order2{
+		position: absolute;
+		top: 67px;
+		left: 58px;
+		order: 5;
+	}
+	.contacts{
+		@include flex($direction: column, $alignment: center);
+		padding: 30px 0;
+		text-align: center;
+		&-items{
+			p{
+				font-size: 15px;
+			}
+			&__links{
+				display: none;
+			}
+		}
+	}
+	.muted{
+		display: inline-block;
+		font-size: 14px;
+	}
+	#main-nav{
+		height: 58px;
+		.container{
+			// text-align: center;
+			position: relative;
+		}
+	}
+	.open-menu{
+		padding-top: 20px;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	.menu-btn{
+		display: block;
+		width: 25px;
+		height: 3px;
+		margin: 0 auto;
+		background: $white;
+		margin-bottom: 5px;
+	}
+	.main-nav{
+		@include flex($direction: column);
+		padding: 0 20px;
+		&__items{
+			width: 100%;
+			border-bottom: 1px solid #000;
+		}
+		&__links{
+			width: 100%;
+			border: none;
+		}
+		&__links--active{
+			border: none;
+			background: none;
+			color: $main_active;
+		}
+		&__btn{
+			width: 100%;
+			background: $main_active;
+		}
+	}
+	.main-nav{
+		display: none;
+		z-index: 10;
+		background: $darkGrey;
+	}
+	#dream_house{
+		min-height: 170px;
+		background-size: cover;
+	}
+	.dream_house-content{
+		padding: 0 20px;
+	}
+	.txt-block{
+		margin: 20px auto;
+		width: 200px;
+		height: 71px;
+		padding: 16px;
+		&__title{
+			font-size: 16px;
+			&:before{
+				height: 37px;
+				top: 1px;
+				left: -7px;
+			}
+		}
+		&__subtitle{
+			font-size: 12px;
+			margin-top: 0;
+		}
+	}
+	.find-btn{
+		@include btn();
+		display: block;
+		width: 150px;
+		margin: -10px auto 0px;
+	}
+	.form-block{
+		display: none;
+	}
+	.slider{
+		padding: 0 20px;
+		.items{
+			margin-right: 0;
+		}
+	}
+	.slick-prev{
+		left: 70px;
+	}
+	.slick-next{
+		right: 70px;
+	}
+	.info{
+		&__baths:before{
+			left: 161px;
+		}
+		&__sqrt:before{
+			left: 292px;
+		}
+	}
+}
+@media screen and(max-width: 375px){
+	.order2{
+		left: 41px;
+	}
+	.info{
+		&__baths:before{
+			left: 145px;
+		}
+		&__sqrt:before{
+			left: 256px;
+		}
+	}
+
+}
+@media screen and(max-width: 325px){
+	.order2{
+		left: 9px;
+	}
+	.info{
+		&__baths:before{
+			left: 118px;
+		}
+		&__sqrt:before{
+			left: 200px;
+		}
+	}
+}
