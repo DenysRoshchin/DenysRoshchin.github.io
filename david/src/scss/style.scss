@@ -1,0 +1,393 @@
+// GLOBAL
+@import "mixins",
+				"var",
+				"fonts";
+@font-face {
+	font-family: "Fregat Bold Italic";
+	src: url(../fonts/Fregat_bold_italic.otf);
+}
+@font-face {
+	font-family: "Fregat Bold";
+	src: url(../fonts/Fregat_bold.otf);
+}
+@font-face {
+	font-family: "Fregat Italic";
+	src: url(../fonts/Fregat_italic.otf);
+}
+@font-face {
+	font-family: "Fregat";
+	src: url(../fonts/Fregat_regular.otf);
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	color: #000;
+}
+body{
+	font: normal normal 400 16px/24px $sans, arial, sans-serif;
+}
+.title{
+	text-transform: uppercase;
+	font-family: $fregatB;
+	font-size: 32px;
+	color: $green;
+	padding: 80px 0 40px 0;
+}
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+// HEADER
+.head-content{
+	@include flex();
+	padding: 27px 0;
+}
+.logo{
+	text-transform: uppercase;
+	font-family: $fregatB;
+	font-size: 32px;
+}
+.program{
+	@include flex();
+	&__items{
+		position: relative;
+		&:first-child{
+			&:before{
+				background-color: transparent;
+			}
+		}
+		&:before{
+			content: '';
+			display: block;
+			width: 5px;
+			height: 5px;
+			position: absolute;
+			top: 9px;
+			left: -8px;
+			background: #000;
+			border-radius: 50%;
+		}
+		margin-right: 10px;
+	}
+	&__links{
+		text-transform: uppercase;
+		font-size: 14px;
+		font-family: $fregat;
+		color: $main-txt;
+		transition: text-shadow .34s;
+		&:hover{
+			text-shadow: 0px 0px 14px rgba(150, 150, 150, 1);
+		}
+	}
+}
+.closebtn{
+	display: none;
+}
+// BACK-HEALTH
+#back-health{
+	background: url(../img/back-health.jpg) 0 0 no-repeat;
+	background-size: cover;
+	padding: 111px 0 90px 0;
+}
+.helth-content{
+	@include flex();
+}
+.back-txt{
+	width: 54%;
+	&__title{
+		font-family: $fregatB;
+		font-size: 28px;
+		color: $green;
+		line-height: 28px;
+		margin-bottom: 42px;
+	}
+	&>p{
+		margin-bottom: 35px;
+	}
+	&__register{
+		@include btnFill();
+		margin-right: 35px;
+	}
+	&__more{
+		@include btn();
+	}
+}
+// PROGRAM-FOR
+#program-for{
+	padding: 40px 0;
+	background: $green;
+}
+.for-content{
+	@include flex();
+	&__left{
+		@include flex($alignment: center)
+		p{
+			text-transform: uppercase;
+			font-family: $fregatB;
+			font-size: 20px;
+			color: $white;
+		}
+	}
+	&__right{
+		ul>li{
+			color: $white;
+		}
+	}
+}
+.fa-angle-right{
+	color: $white;
+}
+// INCLUDE
+#include{
+	text-align: center;
+}
+.include-content{
+	&__subtitle{
+		font-family: $sans;
+		font-size: 19px;
+		color: $main-txt;
+		margin-bottom: 40px;
+	}
+}
+.slider{
+	&__items{
+		img{
+			width: 100%;
+		}
+	}
+}
+.slick-prev, .slick-next{
+	border: 1px solid $green;
+	border-radius: 50%;
+	width: 65px;
+	height: 65px;
+	background: url(../img/slider-arrows.png) 0 center no-repeat;
+	background-position: 0 2px;
+}
+.slick-prev{
+	left: -90px;
+	&:hover, &:focus{
+		background: url(../img/slider-arrows.png) 0 center no-repeat;
+		background-position: 0 2px;
+	}
+}
+.slick-next{
+	right: -90px;
+	background-position: -65px 2px;
+	&:hover, &:focus{
+		background: url(../img/slider-arrows.png) 0 center no-repeat;
+		background-position: -65px 2px;
+	}
+}
+.slick-prev:before, .slick-next:before{
+	content: '';
+}
+.slick-dots{
+	bottom: 32px;
+}
+.slick-dots li button:before{
+	font-size: 47px;
+	color: $white;
+}
+.slick-dots li.slick-active button:before{
+	color: $white;
+}
+.program-info{
+	@include flex();
+	&__left{
+		margin-right: 25px;
+	}
+	&__left, &__right{
+		text-align: left;
+		.info{
+			color: $main-txt;
+			font-size: 15px;
+			position: relative;
+			&:before{
+				content: '✓';
+				display: block;
+				color: $green;
+				font-size: 24px;
+				position: absolute;
+				top: -2px;
+				left: -20px;
+			}
+		}
+	}
+}
+.info-footer{
+	padding: 60px 0;
+	color: $main-txt;
+	font-size: 15px;
+}
+// CALL
+#call{
+	background: $lightGreen;
+	padding: 60px 0;
+	text-align: center;
+}
+.call-content{
+	&__title{
+		font-family: $fregatB;
+		font-size: 24px;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+	&__subtitle{
+		font-size: 17px;
+		color: $main-txt;
+	}
+	&__btn{
+		@include btn();
+		margin-top: 45px;
+	}
+}
+.cities{
+	margin-top: 40px;
+	@include flex($spacing: space-around);
+	p{
+		color: $main-txt;
+	}
+}
+// MEDIA
+@media screen and(max-width: 770px){
+	.head-content{
+		@include flex($wrap:wrap);
+		text-align: center;
+	}
+	.logo{
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	.program__items:before{
+		display: none;
+	}
+	#back-health{
+		background-position: 50% 50%;
+		padding: 40px 0;
+	}
+	.back-txt{
+		width: 70%;
+		&__title{
+			font-size: 26px;
+		}
+	}
+	.for-content{
+		&__left{
+			text-align: center;
+		}
+	}
+	.slick-prev, .slick-next{
+		display: none;
+	}
+	.program-info{
+		padding: 0 20px;
+	}
+}
+@media screen and(max-width: 580px){
+	.title{
+		font-size: 20px;
+	}
+	.about-prog{
+		width: 100%;
+		height: 40px;
+		&__open{
+			width: 25px;
+			margin: 0 auto;
+			span{
+				display: block;
+				margin: 0 auto;
+				width: 25px;
+				height: 3px;
+				background: $grey;
+				margin: 5px 0;
+			}
+		}
+	}
+	.program{
+		@include flex($direction: column, $spacing: flex-start);
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background: rgba(0,0,0,.8);
+		overflow-x: hidden;
+		padding-top: 60px;
+		transition: all .34s;
+		text-align: center;
+		&__links{
+			color: $white;
+		}
+		&__items{
+			position: relative;
+		}
+	}
+	.closebtn{
+		display: block;
+		color: #fff;
+		font-size: 24px;
+		position: absolute;
+		top: -22px;
+		right: 9px;
+	}
+	#back-health{
+		background: $lightGreen;
+	}
+	.back-txt{
+		width: 100%;
+		text-align: center;
+		&__title{
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		&__text{
+			font-size: 15px;
+			margin-bottom: 20px;
+		}
+		&__register{
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+	}
+	.for-content{
+		@include flex($wrap: wrap);
+		&__left{
+			margin-bottom: 20px;
+		}
+	}
+	.include-content{
+		&__subtitle{
+			font-size: 15px;
+		}
+	}
+	.program-info{
+		@include flex($wrap: wrap);
+		p{
+			margin-bottom: 10px;
+		}
+	}
+	.slick-next.slick-arrow{
+		display: none !important;
+	}
+	.cities{
+		@include flex($direction: column);
+		// text-align: center;
+		p{
+			margin-bottom: 20px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
