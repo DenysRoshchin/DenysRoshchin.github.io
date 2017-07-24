@@ -2,19 +2,19 @@
 @import "mixins",
 				"var";
 @font-face {
-	font-family: "Fregat Bold Italic";
+	font-family: $fregatBI;
 	src: url(../fonts/Fregat_bold_italic.otf);
 }
 @font-face {
-	font-family: "Fregat Bold";
+	font-family: $fregatB;
 	src: url(../fonts/Fregat_bold.otf);
 }
 @font-face {
-	font-family: "Fregat Italic";
+	font-family: $fregatI;
 	src: url(../fonts/Fregat_italic.otf);
 }
 @font-face {
-	font-family: "Fregat";
+	font-family: $fregat;
 	src: url(../fonts/Fregat_regular.otf);
 }
 *{
@@ -26,7 +26,7 @@
 	color: #000;
 }
 body{
-	font: normal normal 400 16px/24px $sans, arial, sans-serif;
+	font: normal normal 400 16px/24px $sans;
 }
 .title{
 	text-transform: uppercase;

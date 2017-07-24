@@ -1,18 +1,18 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Fregat Bold Italic";
+  font-family: "Fregat Bold Italic", arial, sans-serif;
   src: url(../fonts/Fregat_bold_italic.otf); }
 
 @font-face {
-  font-family: "Fregat Bold";
+  font-family: "Fregat Bold", arial, sans-serif;
   src: url(../fonts/Fregat_bold.otf); }
 
 @font-face {
-  font-family: "Fregat Italic";
+  font-family: "Fregat Italic", arial, sans-serif;
   src: url(../fonts/Fregat_italic.otf); }
 
 @font-face {
-  font-family: "Fregat";
+  font-family: "Fregat", arial, sans-serif;
   src: url(../fonts/Fregat_regular.otf); }
 
 * {
@@ -24,7 +24,7 @@
   color: #000; }
 
 body {
-  font: normal normal 400 16px/24px "PT Sans", sans-serif, arial, sans-serif; }
+  font: normal normal 400 16px/24px "PT Sans", arial, sans-serif; }
 
 .title {
   text-transform: uppercase;
@@ -81,7 +81,7 @@ body {
   .program__links {
     text-transform: uppercase;
     font-size: 14px;
-    font-family: "Fregat";
+    font-family: "Fregat", arial, sans-serif;
     color: #363636;
     transition: text-shadow .34s; }
     .program__links:hover {
@@ -179,7 +179,7 @@ body {
   text-align: center; }
 
 .include-content__subtitle {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", arial, sans-serif;
   font-size: 19px;
   color: #363636;
   margin-bottom: 40px; }
