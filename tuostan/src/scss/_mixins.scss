@@ -1,0 +1,19 @@
+@mixin flex($direction: row, $spacing: space-between, $wrap: nowrap, $alignment: null){
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $spacing;
+  flex-wrap: $wrap;
+  align-items: $alignment;
+}
+
+@mixin btn($pd: 15px 58px, $bdrs: 5px, $bg: $darkRed, $col: $white, $bd: 1px solid $red){
+  padding: $pd;
+  border-radius: $bdrs;
+  background: $bg;
+  color: $col;
+  border: $bd;
+}

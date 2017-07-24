@@ -1,0 +1,241 @@
+// GLOBAL
+@import "mixins",
+				"var";
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	color: $black;
+}
+body{
+	font-family: Arial, sans-serif;
+}
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.title{
+	font-size: 18px;
+}
+// HEADER
+.main-header{
+	background: $bej;
+}
+.header-content{
+	@include flex($alignment: center);
+	height: 50px;
+}
+.navigation{
+	background-color: transparent;
+	&__links{
+		font-size: 14px;
+		margin-right: 30px;
+		&:last-child{
+			margin-right: 0;
+		}
+		transition: color .34s;
+		&:hover{
+			color: $red;
+		}
+	}
+}
+.header-btns{
+	@include flex($alignment: center);
+	button{
+		margin-right: 17px;
+		transition: transform .34s;
+		&:hover{
+			transform: scale(1.05);
+			cursor: pointer;
+		}
+	}
+	&__members{
+		@include btn($pd: 7px 35px, $bg: transparent, $col: $red);
+	}
+	&__buy{
+		@include btn($pd: 7px 19px, $bg: $red, $col: $white);	
+	}
+}
+.lang{
+	@include flex($direction: column, $alignment: center);
+	&-active{
+		color: $red;
+	}
+}
+// LOGO
+#logo{
+	background: url(../img/header-bg.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+.logo-content{
+	@include flex($alignment: center);
+	padding: 20px 0;
+}
+// MAIN
+#program{
+	background: $yellow;
+	padding: 29px 0;
+}
+.festival-header{
+	@include flex($direction: column);
+	margin-bottom: 20px;
+	&__home{
+		padding-left: 11px;
+		margin-bottom: 40px;
+		color: $red;
+		display: block;
+		position: relative;
+		transition: color .64s;
+		&:before{
+			content: '<';
+			display: block;
+			position: absolute;
+			left: 0;
+		}
+		&:hover{
+			color: $black;
+		}
+	}
+	&__title{
+		text-transform: uppercase;
+		font-size: 30px;
+		position: relative;
+		padding-left: 11px;
+		&:before{
+			content: '';
+			display: block;
+			width: 7px;
+			height: 22px;
+			background: $red;
+			position: absolute;
+			top: 5px;
+			left: 0px;
+		}
+	}
+	&__content{
+		@include flex();
+	}
+}
+.view{
+	&__menu, &__screen{
+		width: 20px;
+		height: 20px;
+		background: url(../img/view-sprites.png) 0 0 no-repeat;
+		border: none;
+		transition: transform .34s;
+		&:hover{
+			cursor: pointer;
+			transform: scale(1.2);
+		}
+	}
+	&__screen{
+		background-position: -23px 0;
+		margin-left: 5px;
+	}
+}
+main{
+	@include flex();
+}
+.form-item{
+	width: 267px;
+	background: $white;
+	margin-bottom: 20px;
+	padding: 28px;
+	h3{
+		font-size: 18px;
+		text-transform: uppercase;
+		color: $textGrey;
+		margin-bottom: 10px;
+	}
+}
+.form-field{
+	margin-bottom: 5px;
+}
+input[type="checkbox"]{
+	// display: none;
+}
+.form-btns{
+	width: 267px;
+	@include flex($direction: column, $alignment: center);
+	button{
+		width: 220px;
+		margin-bottom: 10px;
+		transition: transform .34s;
+		&:hover{
+			transform: scale(1.05);
+			cursor: pointer;
+		}
+	}
+	&__filtr{
+		@include btn();
+	}
+	&__reset{
+		@include btn($bg: transparent, $col: $darkRed);	
+	}
+	&__upload{
+		@include btn($bg: transparent, $col: $darkRed);
+	}
+}
+.information{
+	@include flex($direction: column);
+}
+.info{
+	@include flex();	
+}
+.info-items{
+	background: $white;
+	width: 267px;
+	margin: 0 30px 30px 0;
+	&:last-child{
+		margin-right: 0;
+	}
+	h3{
+		font-family: Ubuntu;
+		font-size: 17px;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	&__img{
+		img{
+			width: 100%;
+		}
+	}
+	&__txt{
+		padding: 25px;
+	}
+}
+.when__info{
+	font-weight: 100;
+	margin-bottom: 5px;
+	span{
+		font-weight: 100;
+		color: $textGrey;
+	}
+}
+// FOOTER
+#footer{
+	background: $darkRed;
+	padding: 50px 0;
+}
+.footer-content__top{
+	@include flex($alignment: center);
+	margin-bottom: 30px;
+}
+.footer-social{
+	@include flex();
+	a{
+		@include flex($spacing: center, $alignment: center);
+		margin-right: 5px;
+		text-align: center;
+		width: 30px;
+		height: 30px;
+		border: 1px solid #000;
+	}
+}
+.footer-content__bottom{
+	p:last-child{
+		margin-top: 20px;
+	}
+}
+

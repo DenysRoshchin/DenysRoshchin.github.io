@@ -17,7 +17,7 @@ gulp.task('sass', function() {
 	}))
 })
 
-gulp.task('watch', ['browserSync', 'sass', 'useref', 'image'], function() {
+gulp.task('watch', ['browserSync', 'sass', 'useref', 'image', 'fonts'], function() {
 	gulp.watch('src/scss/*.scss', ['sass'])
 	gulp.watch('src/scss/*.css', ['sass'])
 	gulp.watch('src/*.html').on('change', browserSync.reload)
@@ -46,7 +46,7 @@ gulp.task('image', function() {
 	.pipe(gulp.dest('prod/img'))
 })
 
-// gulp.task('fonts', function() {
-// 	return gulp.src('src/fonts/*.+(woff|woff2)')
-// 	.pipe(gulp.dest('prod/fonts'))
-// })
+gulp.task('fonts', function() {
+	return gulp.src('src/fonts/*.+(woff|woff2)')
+	.pipe(gulp.dest('prod/fonts'))
+})
