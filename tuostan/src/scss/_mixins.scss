@@ -9,7 +9,6 @@
   flex-wrap: $wrap;
   align-items: $alignment;
 }
-
 @mixin btn($pd: 15px 58px, $bdrs: 5px, $bg: $darkRed, $col: $white, $bd: 1px solid $red){
   padding: $pd;
   border-radius: $bdrs;
