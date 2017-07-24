@@ -54,7 +54,7 @@ body{
 	@include flex();
 	&__items{
 		position: relative;
-		&:first-child{
+		&:first-child, &:nth-child(2){
 			&:before{
 				background-color: transparent;
 			}
@@ -376,7 +376,6 @@ body{
 	}
 	.cities{
 		@include flex($direction: column);
-		// text-align: center;
 		p{
 			margin-bottom: 20px;
 		}

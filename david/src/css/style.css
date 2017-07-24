@@ -66,7 +66,7 @@ body {
   .program__items {
     position: relative;
     margin-right: 10px; }
-    .program__items:first-child:before {
+    .program__items:first-child:before, .program__items:nth-child(2):before {
       background-color: transparent; }
     .program__items:before {
       content: '';
